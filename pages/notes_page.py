@@ -119,8 +119,17 @@ class NotesPage(BasePage):
         )
 
         self.click(self.SAVE_BUTTON)
+
+        # wait until save button disappears
         self.wait.until(
-            EC.visibility_of_element_located(
+            EC.invisibility_of_element_located(
+                self.SAVE_BUTTON
+            )
+        )
+
+        # wait until add note button clickable
+        self.wait.until(
+            EC.element_to_be_clickable(
                 self.ADD_NOTE_BUTTON
             )
         )
