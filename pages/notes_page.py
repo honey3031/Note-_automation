@@ -69,12 +69,6 @@ class NotesPage(BasePage):
     # METHODS
     # =========================
 
-    def click_add_note(self):
-
-        logger.info("Clicking add note")
-
-        self.safe_click(self.ADD_NOTE_BUTTON)
-
     def create_note(
         self,
         title,
@@ -118,74 +112,20 @@ class NotesPage(BasePage):
             description
         )
 
-        self.click(self.SAVE_BUTTON)
+        # safer click for parallel/grid
+        self.safe_click(self.SAVE_BUTTON)
 
-        # wait until save button disappears
+        # wait until modal/form disappears
         self.wait.until(
             EC.invisibility_of_element_located(
                 self.SAVE_BUTTON
             )
         )
 
-        # wait until add note button clickable
+        # wait until page stabilizes
         self.wait.until(
             EC.element_to_be_clickable(
                 self.ADD_NOTE_BUTTON
             )
         )
-
-    def is_note_created(self, title):
-
-        logger.info(
-            f"Checking note existence: {title}"
-        )
-
-        return (
-            title.lower()
-            in self.driver.page_source.lower()
-        )
-
-    def delete_first_note(self):
-
-        logger.info("Deleting first note")
-
-        before_count = self.get_notes_count()
-
-        self.safe_click(self.DELETE_BUTTON)
-
-        self.safe_click(self.CONFIRM_DELETE)
-
-        self.wait.until(
-            lambda driver:
-            self.get_notes_count() < before_count
-        )
-
-    def get_success_message(self):
-
-        logger.info("Fetching success message")
-
-        element = self.wait.until(
-            EC.visibility_of_element_located(
-                self.SUCCESS_MESSAGE
-            )
-        )
-
-        return element.text
-    def get_notes_count(self):
-
-        self.wait.until(
-            EC.presence_of_all_elements_located(
-                (
-                    By.CSS_SELECTOR,
-                    "[data-testid='note-card']"
-                )
-            )
-        )
-
-        notes = self.driver.find_elements(
-            By.CSS_SELECTOR,
-            "[data-testid='note-card']"
-        )
-
-        return len(notes)
-    
+        
