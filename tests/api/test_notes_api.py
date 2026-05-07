@@ -120,6 +120,7 @@ def test_create_note_without_title_api():
     assert response.status_code == 400
 
 @pytest.mark.api
+@pytest.mark.performance
 def test_get_notes_response_time():
 
     token = get_token()
@@ -128,4 +129,4 @@ def test_get_notes_response_time():
 
     response = notes_api.get_notes()
 
-    assert response.elapsed.total_seconds() < 3
+    assert response.elapsed.total_seconds() < 2

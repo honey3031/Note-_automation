@@ -73,7 +73,7 @@ class NotesPage(BasePage):
 
         logger.info("Clicking add note")
 
-        self.click(self.ADD_NOTE_BUTTON)
+        self.safe_click(self.ADD_NOTE_BUTTON)
 
     def create_note(
         self,

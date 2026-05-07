@@ -6022,3 +6022,266 @@ elete API 53db4eaf
 2026-05-07 19:29:28,726 - INFO - Scrolling element into view
 2026-05-07 19:29:28,814 - INFO - Trying JS click
 2026-05-07 19:29:28,907 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")
+2026-05-07 19:40:06,472 - INFO - Calling login API
+2026-05-07 19:40:07,375 - INFO - Calling login API
+2026-05-07 19:40:07,791 - INFO - Response Status: 200
+2026-05-07 19:40:07,792 - INFO - Creating note via API: API Note 760e01c5
+2026-05-07 19:40:08,280 - INFO - Response Status: 200
+2026-05-07 19:40:08,281 - INFO - Creating note via API: 
+2026-05-07 19:40:08,545 - INFO - Calling login API
+2026-05-07 19:40:10,982 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:40:11,158 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:40:11,741 - INFO - Response Status: 200
+2026-05-07 19:40:11,743 - INFO - Creating note via API: Delete API 643675a8
+2026-05-07 19:40:12,670 - INFO - Deleting note via API: 69fc9d460fadc10297dc1645
+2026-05-07 19:40:17,208 - INFO - Performing login
+2026-05-07 19:40:17,986 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:40:28,229 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:33,530 - INFO - Performing login
+2026-05-07 19:40:36,426 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:36,427 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:41,277 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:41,278 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:48,531 - INFO - Performing login
+2026-05-07 19:40:50,294 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:50,301 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:40:50,301 - INFO - Scrolling element into view
+2026-05-07 19:40:53,977 - INFO - Trying JS click
+2026-05-07 19:40:56,154 - INFO - Creating note: DELETE_UI_API_cf2ff76d
+2026-05-07 19:40:56,155 - INFO - Clicking add note
+2026-05-07 19:40:56,155 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:41:30,251 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:33,704 - INFO - Entering text: DELETE_UI_API_cf2ff76d
+2026-05-07 19:41:34,382 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:34,383 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:35,899 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:36,161 - INFO - Entering text: Delete validation
+2026-05-07 19:41:36,642 - INFO - Calling login API
+2026-05-07 19:41:36,949 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:36,950 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:37,110 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:41:38,643 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:38,643 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:41:38,644 - INFO - Scrolling element into view
+2026-05-07 19:41:38,893 - INFO - Trying JS click
+2026-05-07 19:41:39,737 - INFO - Calling login API
+2026-05-07 19:41:39,783 - INFO - Creating note: UI_API_70b65bcc
+2026-05-07 19:41:39,786 - INFO - Clicking add note
+2026-05-07 19:41:39,786 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:41:45,957 - INFO - Response Status: 200
+2026-05-07 19:41:45,965 - INFO - Creating note via API: API_DELETE_5c726650
+2026-05-07 19:41:49,024 - INFO - Response Status: 200
+2026-05-07 19:41:49,035 - INFO - Fetching notes via API
+2026-05-07 19:41:52,329 - INFO - Deleting first note
+2026-05-07 19:42:03,227 - INFO - Entering text: UI_API_70b65bcc
+2026-05-07 19:42:04,255 - INFO - Entering text: Created via UI validated via API
+2026-05-07 19:42:05,667 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:42:06,548 - INFO - Calling login API
+2026-05-07 19:42:15,242 - INFO - Response Status: 200
+2026-05-07 19:42:15,249 - INFO - Fetching notes via API
+2026-05-07 19:42:16,924 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:19,455 - WARNING - Retry 1 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:19,455 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:22,801 - WARNING - Retry 2 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:22,802 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:24,944 - WARNING - Retry 3 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:24,945 - WARNING - Normal click failed for ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:42:24,945 - INFO - Scrolling element into view
+2026-05-07 19:42:25,194 - INFO - Trying JS click
+2026-05-07 19:42:26,567 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")
+2026-05-07 19:42:31,020 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:42:32,611 - INFO - Checking note existence: API_DELETE_5c726650
+2026-05-07 19:42:33,926 - INFO - Fetching notes via API
+2026-05-07 19:42:43,421 - INFO - Deleting note via API: 69fc9da80fadc10297dc16fc
+2026-05-07 19:42:59,613 - INFO - Performing login
+2026-05-07 19:43:01,550 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:43:15,479 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:19,346 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:19,347 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:22,296 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:22,297 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:24,464 - INFO - Performing login
+2026-05-07 19:43:24,976 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:24,977 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:24,979 - INFO - Scrolling element into view
+2026-05-07 19:43:25,148 - INFO - Trying JS click
+2026-05-07 19:43:25,933 - INFO - Calling login API
+2026-05-07 19:43:36,967 - INFO - Response Status: 200
+2026-05-07 19:43:36,976 - INFO - Creating note via API: API_UI_9542662b
+2026-05-07 19:43:39,323 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:39,604 - INFO - Checking note existence: API_DELETE_5c726650
+2026-05-07 19:43:42,306 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:42,306 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:45,232 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:45,232 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:49,220 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:49,221 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:43:49,229 - INFO - Scrolling element into view
+2026-05-07 19:43:49,434 - INFO - Trying JS click
+2026-05-07 19:43:49,603 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:43:49,728 - INFO - Creating note: DELETE_UI_API_2034b9a5
+2026-05-07 19:43:49,730 - INFO - Clicking add note
+2026-05-07 19:43:49,730 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:44:16,625 - INFO - Entering text: DELETE_UI_API_2034b9a5
+2026-05-07 19:44:17,527 - INFO - Performing login
+2026-05-07 19:44:18,760 - INFO - Entering text: Delete validation
+2026-05-07 19:44:21,381 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:44:22,921 - INFO - Calling login API
+2026-05-07 19:44:28,145 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:44:29,870 - INFO - Checking login success
+2026-05-07 19:44:30,294 - INFO - Response Status: 200
+2026-05-07 19:44:30,298 - INFO - Fetching notes via API
+2026-05-07 19:44:35,371 - INFO - Deleting first note
+2026-05-07 19:44:35,745 - INFO - Checking note existence: API_UI_9542662b
+2026-05-07 19:44:41,044 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:44:42,063 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:44:45,774 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:48,554 - WARNING - Retry 1 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:48,555 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:50,763 - INFO - Performing login
+2026-05-07 19:44:51,742 - WARNING - Retry 2 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:51,742 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:56,534 - WARNING - Retry 3 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:56,534 - WARNING - Normal click failed for ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:44:56,534 - INFO - Scrolling element into view
+2026-05-07 19:44:58,086 - INFO - Trying JS click
+2026-05-07 19:44:59,422 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")
+2026-05-07 19:45:03,387 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:05,575 - INFO - Performing login
+2026-05-07 19:45:06,449 - INFO - Waiting for error message
+2026-05-07 19:45:07,500 - INFO - Fetching notes via API
+2026-05-07 19:45:16,905 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:45:18,414 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:45:18,880 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:19,274 - INFO - Checking login success
+2026-05-07 19:45:26,106 - INFO - Logging out
+2026-05-07 19:45:26,107 - INFO - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-07 19:45:26,530 - INFO - Checking logout success
+2026-05-07 19:45:30,872 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:45:47,657 - INFO - Performing login
+2026-05-07 19:45:48,678 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:49,054 - INFO - Performing login
+2026-05-07 19:45:49,976 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:49,976 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:50,241 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:51,316 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:51,316 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:51,641 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:51,642 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:52,597 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:52,597 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:52,597 - INFO - Scrolling element into view
+2026-05-07 19:45:52,694 - INFO - Trying JS click
+2026-05-07 19:45:52,925 - INFO - Clicking add note
+2026-05-07 19:45:52,926 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:45:52,940 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:52,940 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:54,913 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:54,914 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:45:54,914 - INFO - Scrolling element into view
+2026-05-07 19:45:55,295 - INFO - Trying JS click
+2026-05-07 19:45:55,770 - INFO - Creating note: MULTI_f3927c6d
+2026-05-07 19:45:55,770 - INFO - Clicking add note
+2026-05-07 19:45:55,770 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:45:56,204 - INFO - Performing login
+2026-05-07 19:45:57,118 - INFO - Entering text: Validation test
+2026-05-07 19:45:58,388 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:45:59,522 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:02,275 - INFO - Entering text: MULTI_f3927c6d
+2026-05-07 19:46:03,568 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:03,569 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:03,586 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:46:03,730 - INFO - Entering text: Description 0
+2026-05-07 19:46:04,294 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:46:04,826 - INFO - Creating note: MULTI_5576bd61
+2026-05-07 19:46:04,827 - INFO - Clicking add note
+2026-05-07 19:46:04,827 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:46:05,094 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:05,094 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:06,082 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:46:06,083 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:46:06,382 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:06,383 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:06,384 - INFO - Scrolling element into view
+2026-05-07 19:46:06,469 - INFO - Trying JS click
+2026-05-07 19:46:06,633 - INFO - Creating note: Automation Note 44ae6169
+2026-05-07 19:46:06,633 - INFO - Clicking add note
+2026-05-07 19:46:06,633 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:46:16,651 - INFO - Entering text: Automation Note 44ae6169
+2026-05-07 19:46:17,851 - INFO - Entering text: Created by Selenium automation
+2026-05-07 19:46:18,708 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:46:19,328 - INFO - Checking note existence: Automation Note 44ae6169
+2026-05-07 19:46:31,013 - INFO - Performing login
+2026-05-07 19:46:32,894 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:34,224 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:34,260 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:36,420 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:36,420 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:37,737 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:37,738 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:46:37,739 - INFO - Scrolling element into view
+2026-05-07 19:46:37,836 - INFO - Trying JS click
+2026-05-07 19:46:43,745 - INFO - Deleting first note
+2026-05-07 19:46:43,896 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:45,259 - WARNING - Retry 1 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:45,259 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:46,528 - WARNING - Retry 2 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:46,528 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:47,800 - WARNING - Retry 3 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:47,801 - WARNING - Normal click failed for ('css selector', "[data-testid='note-delete']")
+2026-05-07 19:46:47,801 - INFO - Scrolling element into view
+2026-05-07 19:46:47,890 - INFO - Trying JS click
+2026-05-07 19:46:47,979 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")
+2026-05-07 19:47:00,734 - WARNING - Retry 2 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:00,734 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:01,490 - INFO - Entering text: MULTI_5576bd61
+2026-05-07 19:47:01,862 - INFO - Entering text: Description 1
+2026-05-07 19:47:02,201 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:47:02,570 - INFO - Creating note: MULTI_c48d4191
+2026-05-07 19:47:02,570 - INFO - Clicking add note
+2026-05-07 19:47:02,570 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:03,910 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:03,911 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:05,182 - WARNING - Retry 2 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:05,183 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:06,434 - WARNING - Retry 3 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:06,434 - WARNING - Normal click failed for ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:47:06,434 - INFO - Scrolling element into view
+2026-05-07 19:47:06,510 - INFO - Trying JS click
+2026-05-07 19:47:06,877 - INFO - Entering text: MULTI_c48d4191
+2026-05-07 19:47:07,195 - INFO - Entering text: Description 2
+2026-05-07 19:47:07,489 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:47:31,863 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 19:48:03,437 - INFO - Performing login
+2026-05-07 19:48:04,305 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 19:48:04,574 - INFO - Creating note: MULTI_f6676736
+2026-05-07 19:48:04,574 - INFO - Clicking add note
+2026-05-07 19:48:04,574 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:11,408 - INFO - Entering text: MULTI_f6676736
+2026-05-07 19:48:11,772 - INFO - Entering text: Description 0
+2026-05-07 19:48:12,158 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:48:12,512 - INFO - Creating note: MULTI_d9d5eceb
+2026-05-07 19:48:12,512 - INFO - Clicking add note
+2026-05-07 19:48:12,513 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:13,816 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:13,816 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:15,093 - WARNING - Retry 2 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:15,093 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:20,645 - WARNING - Retry 3 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:20,645 - WARNING - Normal click failed for ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:20,646 - INFO - Scrolling element into view
+2026-05-07 19:48:25,993 - INFO - Trying JS click
+2026-05-07 19:48:28,410 - INFO - Entering text: MULTI_d9d5eceb
+2026-05-07 19:48:29,177 - INFO - Entering text: Description 1
+2026-05-07 19:48:30,130 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:48:30,759 - INFO - Creating note: MULTI_8c69e9f2
+2026-05-07 19:48:30,759 - INFO - Clicking add note
+2026-05-07 19:48:30,759 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:36,025 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:36,026 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 19:48:39,108 - INFO - Entering text: MULTI_8c69e9f2
+2026-05-07 19:48:39,920 - INFO - Entering text: Description 2
+2026-05-07 19:48:41,286 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 19:48:41,963 - INFO - Calling login API
+2026-05-07 19:48:46,127 - INFO - Response Status: 200
+2026-05-07 19:48:46,128 - INFO - Fetching notes via API
