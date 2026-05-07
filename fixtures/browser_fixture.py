@@ -2,9 +2,13 @@ from selenium import webdriver
 
 from selenium.webdriver.chrome.service import Service
 
-from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.chrome import (
+    ChromeDriverManager
+)
 
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import (
+    Options
+)
 
 from config.environment import config
 
@@ -18,18 +22,38 @@ def get_driver():
 
     chrome_options = Options()
 
-    chrome_options.add_argument("--start-maximized")
-    chrome_options.add_argument("--disable-notifications")
-    chrome_options.add_argument("--disable-popup-blocking")
+    chrome_options.add_argument(
+        "--start-maximized"
+    )
+
+    chrome_options.add_argument(
+        "--disable-notifications"
+    )
+
+    chrome_options.add_argument(
+        "--disable-popup-blocking"
+    )
+
+    chrome_options.add_argument(
+        "--no-sandbox"
+    )
+
+    chrome_options.add_argument(
+        "--disable-dev-shm-usage"
+    )
 
     if config.execution == "remote":
 
         driver = webdriver.Remote(
-            command_executor="http://localhost:4444/wd/hub",
+            command_executor=
+            "http://localhost:4444/wd/hub",
             options=chrome_options
         )
 
-        logger.info("Remote Chrome browser launched using Selenium Grid")
+        logger.info(
+            "Remote Chrome browser "
+            "launched using Selenium Grid"
+        )
 
     else:
 
@@ -40,6 +64,8 @@ def get_driver():
             options=chrome_options
         )
 
-        logger.info("Local Chrome browser launched")
+        logger.info(
+            "Local Chrome browser launched"
+        )
 
     return driver
