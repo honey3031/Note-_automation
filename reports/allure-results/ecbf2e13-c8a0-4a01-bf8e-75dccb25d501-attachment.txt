@@ -1,0 +1,6 @@
+2026-05-06 10:54:31.625 | INFO     | pages.login_page:login:77 - Starting login workflow
+2026-05-06 10:54:31.628 | INFO     | pages.login_page:open_login_page:53 - Opening login page
+2026-05-06 10:54:31.628 | INFO     | pages.base_page:click:26 - Clicking element: ('css selector', "[data-testid='open-login-view']")
+2026-05-06 10:54:31.825 | INFO     | pages.login_page:enter_email:59 - Entering email: honeytalabathula@gmail.com
+2026-05-06 10:54:31.825 | INFO     | pages.base_page:type:36 - Typing text into: ('id', 'email')
+2026-05-06 10:54:31.826 | INFO     | pages.base_page:find_element:18 - Finding element: ('id', 'email')

@@ -1,0 +1,12 @@
+2026-05-06 10:35:12.193 | INFO     | pages.login_page:login:77 - Starting login workflow
+2026-05-06 10:35:12.194 | INFO     | pages.login_page:open_login_page:53 - Opening login page
+2026-05-06 10:35:12.194 | INFO     | pages.base_page:click:26 - Clicking element: ('css selector', "[data-testid='open-login-view']")
+2026-05-06 10:35:12.424 | INFO     | pages.login_page:enter_email:59 - Entering email: honeytalabathula@gmail.com
+2026-05-06 10:35:12.424 | INFO     | pages.base_page:type:36 - Typing text into: ('id', 'email')
+2026-05-06 10:35:12.424 | INFO     | pages.base_page:find_element:18 - Finding element: ('id', 'email')
+2026-05-06 10:35:20.547 | INFO     | pages.login_page:enter_password:65 - Entering password
+2026-05-06 10:35:20.547 | INFO     | pages.base_page:type:36 - Typing text into: ('id', 'password')
+2026-05-06 10:35:20.547 | INFO     | pages.base_page:find_element:18 - Finding element: ('id', 'password')
+2026-05-06 10:35:20.646 | INFO     | pages.login_page:click_login_button:71 - Clicking login button
+2026-05-06 10:35:20.646 | INFO     | pages.base_page:click:26 - Clicking element: ('css selector', "button[type='submit']")
+2026-05-06 10:35:20.786 | INFO     | pages.login_page:login:87 - Login completed

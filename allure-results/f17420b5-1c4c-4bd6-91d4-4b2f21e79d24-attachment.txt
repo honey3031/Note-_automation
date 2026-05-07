@@ -1,0 +1,3 @@
+2026-05-06 22:38:13,924 - INFO - Calling login API
+2026-05-06 22:38:14,644 - INFO - Response Status: 200
+2026-05-06 22:38:14,646 - INFO - Creating note via API: 

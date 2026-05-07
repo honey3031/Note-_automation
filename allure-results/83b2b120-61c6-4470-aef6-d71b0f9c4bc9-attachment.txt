@@ -1,0 +1,13 @@
+2026-05-07 10:04:11,058 - INFO - ====== WebDriver manager ======
+2026-05-07 10:04:12,094 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-07 10:04:12,460 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-07 10:04:12,710 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-07 10:04:14,199 - INFO - Chrome browser launched
+2026-05-07 10:04:16,720 - INFO - Performing login
+2026-05-07 10:04:17,038 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 10:04:17,192 - INFO - Calling login API
+2026-05-07 10:04:18,245 - INFO - Response Status: 200
+2026-05-07 10:04:18,248 - INFO - Creating note via API: API_DELETE_86d31367
+2026-05-07 10:04:20,683 - INFO - Checking note existence: API_DELETE_86d31367
+2026-05-07 10:04:20,999 - INFO - Deleting note via API: 69fc164d81124e02985bf528
+2026-05-07 10:04:24,604 - INFO - Checking note existence: API_DELETE_86d31367

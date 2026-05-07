@@ -1,0 +1,32 @@
+2026-05-06 22:39:36,631 - INFO - ====== WebDriver manager ======
+2026-05-06 22:39:38,277 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-06 22:39:38,626 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-06 22:39:39,337 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-06 22:39:40,202 - INFO - Chrome browser launched
+2026-05-06 22:39:42,913 - INFO - Performing login
+2026-05-06 22:39:43,471 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:39:43,772 - INFO - Creating note: MULTI_7f68e739
+2026-05-06 22:39:43,773 - INFO - Clicking add note
+2026-05-06 22:39:43,773 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:45,296 - INFO - Entering text: MULTI_7f68e739
+2026-05-06 22:39:45,539 - INFO - Entering text: Description 0
+2026-05-06 22:39:45,772 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-06 22:39:45,961 - INFO - Creating note: MULTI_e90a15b6
+2026-05-06 22:39:45,961 - INFO - Clicking add note
+2026-05-06 22:39:45,962 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:49,091 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:49,091 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:49,953 - INFO - Entering text: MULTI_e90a15b6
+2026-05-06 22:39:50,220 - INFO - Entering text: Description 1
+2026-05-06 22:39:50,465 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-06 22:39:50,665 - INFO - Creating note: MULTI_e1a2a9f3
+2026-05-06 22:39:50,665 - INFO - Clicking add note
+2026-05-06 22:39:50,665 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:53,244 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:53,245 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-06 22:39:53,969 - INFO - Entering text: MULTI_e1a2a9f3
+2026-05-06 22:39:54,218 - INFO - Entering text: Description 2
+2026-05-06 22:39:54,521 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-06 22:39:54,729 - INFO - Calling login API
+2026-05-06 22:39:56,060 - INFO - Response Status: 200
+2026-05-06 22:39:56,064 - INFO - Fetching notes via API

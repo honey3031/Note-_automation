@@ -1,0 +1,10 @@
+2026-05-07 10:05:51,154 - INFO - ====== WebDriver manager ======
+2026-05-07 10:05:52,073 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-07 10:05:52,364 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-07 10:05:52,648 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-07 10:05:54,123 - INFO - Chrome browser launched
+2026-05-07 10:05:54,448 - INFO - Performing login
+2026-05-07 10:05:57,508 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 10:05:58,776 - INFO - Deleting first note
+2026-05-07 10:05:58,801 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 10:05:58,906 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")

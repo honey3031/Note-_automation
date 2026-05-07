@@ -1,0 +1,5 @@
+base_url: "https://practice.expandtesting.com/notes/app"
+api_url: "https://practice.expandtesting.com/notes/api"
+browser: "chrome"
+execution: "remote"
+timeout: 20

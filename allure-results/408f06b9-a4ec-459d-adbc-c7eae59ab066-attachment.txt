@@ -1,0 +1,20 @@
+2026-05-07 10:03:54,462 - INFO - ====== WebDriver manager ======
+2026-05-07 10:03:55,596 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-07 10:03:56,068 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-07 10:03:56,459 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-07 10:03:57,518 - INFO - Chrome browser launched
+2026-05-07 10:04:01,477 - INFO - Performing login
+2026-05-07 10:04:01,792 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 10:04:01,896 - INFO - Creating note: DELETE_UI_API_19558207
+2026-05-07 10:04:01,897 - INFO - Clicking add note
+2026-05-07 10:04:01,897 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-07 10:04:03,704 - INFO - Entering text: DELETE_UI_API_19558207
+2026-05-07 10:04:03,932 - INFO - Entering text: Delete validation
+2026-05-07 10:04:04,137 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-07 10:04:04,253 - INFO - Calling login API
+2026-05-07 10:04:05,101 - INFO - Response Status: 200
+2026-05-07 10:04:05,102 - INFO - Fetching notes via API
+2026-05-07 10:04:05,949 - INFO - Deleting first note
+2026-05-07 10:04:06,809 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-07 10:04:06,917 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")
+2026-05-07 10:04:07,695 - INFO - Fetching notes via API

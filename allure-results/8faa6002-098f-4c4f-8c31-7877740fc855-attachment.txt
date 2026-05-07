@@ -1,0 +1,26 @@
+2026-05-06 22:40:58,104 - INFO - ====== WebDriver manager ======
+2026-05-06 22:40:59,483 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-06 22:40:59,860 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-06 22:41:00,368 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-06 22:41:01,841 - INFO - Chrome browser launched
+2026-05-06 22:41:05,581 - INFO - Performing login
+2026-05-06 22:41:06,167 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:07,297 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:07,297 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:08,498 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:08,498 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:09,656 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:09,657 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-06 22:41:09,657 - INFO - Scrolling element into view
+2026-05-06 22:41:09,680 - INFO - Trying JS click
+2026-05-06 22:41:10,860 - INFO - Deleting first note
+2026-05-06 22:41:10,909 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:12,078 - WARNING - Retry 1 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:12,079 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:13,250 - WARNING - Retry 2 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:13,250 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:14,433 - WARNING - Retry 3 for click on ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:14,434 - WARNING - Normal click failed for ('css selector', "[data-testid='note-delete']")
+2026-05-06 22:41:14,434 - INFO - Scrolling element into view
+2026-05-06 22:41:14,458 - INFO - Trying JS click
+2026-05-06 22:41:14,487 - INFO - Clicking element: ('css selector', "[data-testid='note-delete-confirm']")

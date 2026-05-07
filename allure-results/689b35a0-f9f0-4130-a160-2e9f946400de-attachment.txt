@@ -1,0 +1,2 @@
+[32mINFO    [0m root:auth_api.py:19 Calling login API
+[32mINFO    [0m root:auth_api.py:33 Response Status: 401

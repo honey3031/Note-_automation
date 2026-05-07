@@ -1,0 +1,3 @@
+[32mINFO    [0m root:auth_api.py:19 Calling login API
+[32mINFO    [0m root:auth_api.py:33 Response Status: 200
+[32mINFO    [0m root:notes_api.py:41 Creating note via API: API Note 51429d12
