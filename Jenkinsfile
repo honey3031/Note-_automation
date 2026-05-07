@@ -3,55 +3,65 @@ pipeline {
     agent any
 
     environment {
+
         EXECUTION = 'remote'
-        GRID_URL = 'http://localhost:4444'
+
+        GRID_URL =
+        'http://localhost:4444/wd/hub'
+
         BROWSER = 'chrome'
-        HEADLESS = 'true'
     }
 
     stages {
 
-        stage('Checkout') {
+        stage('Checkout Source Code') {
+
             steps {
+
                 git branch: 'main',
                 url: 'https://github.com/honey3031/Note-_automation.git'
             }
         }
 
         stage('Start Selenium Grid') {
+
             steps {
-                sh 'docker compose down || true'
-                sh 'docker compose up -d --scale chrome=4'
+
+                bat 'docker compose down'
+
+                bat 'docker compose up -d --scale chrome=2'
             }
         }
 
         stage('Install Dependencies') {
+
             steps {
-                sh '''
-                python3 -m venv venv
-                . venv/bin/activate
-                pip install --upgrade pip
-                pip install -r requirements.txt
-                '''
+
+                bat 'pip install -r requirements.txt'
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Parallel Tests') {
+
             steps {
-                sh '''
-                . venv/bin/activate
-                pytest -n 8 --alluredir=reports/allure-results
+
+                bat '''
+                pytest -n 2 ^
+                --alluredir=allure-results ^
+                --html=reports/report.html ^
+                --self-contained-html
                 '''
             }
         }
 
         stage('Generate Allure Report') {
+
             steps {
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    results: [[path: 'reports/allure-results']]
-                ])
+
+                bat '''
+                allure generate allure-results ^
+                --clean -o allure-report
+                '''
             }
         }
     }
@@ -60,26 +70,11 @@ pipeline {
 
         always {
 
-            archiveArtifacts artifacts: 'reports/**/*'
-
-            publishHTML([
-                allowMissing: true,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'reports/html',
-                reportFiles: 'report.html',
-                reportName: 'HTML Report'
-            ])
-
-            sh 'docker compose down'
-        }
-
-        success {
-            echo 'Tests Passed'
-        }
-
-        failure {
-            echo 'Tests Failed'
+            archiveArtifacts artifacts: '''
+                reports/*,
+                allure-report/*,
+                screenshots/*
+            '''
         }
     }
 }
