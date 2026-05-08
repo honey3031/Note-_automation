@@ -353,10 +353,10 @@ allure-report/
 
 | Test Type | Count |
 | --------- | ----- |
-| UI Tests  | 7     |
-| API Tests | 7     |
+| UI Tests  | 6     |
+| API Tests | 5     |
 | E2E Tests | 4     |
-| Total     | 18    |
+| Total     | 16    |
 
 ---
 
