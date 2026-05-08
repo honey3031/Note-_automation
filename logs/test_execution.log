@@ -6356,3 +6356,1812 @@ elete API 53db4eaf
 2026-05-07 23:28:27,897 - INFO - Response Status: 200
 2026-05-07 23:28:27,899 - INFO - Creating note via API: API_DELETE_e5567fe2
 2026-05-07 23:28:35,808 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-08 11:06:23,728 - INFO - Calling login API
+2026-05-08 11:06:24,825 - INFO - Response Status: 200
+2026-05-08 11:06:24,827 - INFO - Creating note via API: API Note 53bb2e40
+2026-05-08 11:06:25,885 - INFO - Response Status: 200
+2026-05-08 11:06:25,885 - INFO - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd765c0fadc10297dd29be","title":"API Note 53bb2e40","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-08T05:36:28.418Z","updated_at":"2026-05-08T05:36:28.418Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:06:25,892 - INFO - Calling login API
+2026-05-08 11:06:26,766 - INFO - Response Status: 200
+2026-05-08 11:06:26,767 - INFO - Creating note via API: Delete API f63554cf
+2026-05-08 11:06:27,349 - INFO - Deleting note via API: 69fd765d0fadc10297dd29c4
+2026-05-08 11:06:27,916 - INFO - Delete response status: 200
+2026-05-08 11:06:28,563 - INFO - Calling login API
+2026-05-08 11:06:29,457 - INFO - Response Status: 200
+2026-05-08 11:06:29,458 - INFO - Creating note via API: 
+2026-05-08 11:06:30,063 - INFO - Calling login API
+2026-05-08 11:06:30,996 - INFO - Response Status: 200
+2026-05-08 11:06:30,997 - INFO - Fetching notes via API
+2026-05-08 11:06:35,651 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:06:39,762 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:06:43,846 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:06:54,926 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:06:59,015 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:03,098 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:11,469 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:15,557 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:19,640 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:29,990 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:34,085 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:38,182 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:49,544 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:53,608 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:07:57,693 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:08,043 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:12,146 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:16,238 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:24,532 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:28,628 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:32,692 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:43,009 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:47,108 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:51,221 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:08:59,684 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:09:03,733 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:09:07,831 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=4444): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /wd/hub/session
+2026-05-08 11:09:17,067 - INFO - Calling login API
+2026-05-08 11:09:18,096 - INFO - Response Status: 200
+2026-05-08 11:09:18,098 - INFO - Creating note via API: API Note ac7d2127
+2026-05-08 11:09:18,958 - INFO - Response Status: 200
+2026-05-08 11:09:18,959 - INFO - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd77090fadc10297dd2cb9","title":"API Note ac7d2127","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-08T05:39:21.513Z","updated_at":"2026-05-08T05:39:21.513Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:09:18,964 - INFO - Calling login API
+2026-05-08 11:09:20,014 - INFO - Response Status: 200
+2026-05-08 11:09:20,016 - INFO - Creating note via API: Delete API 96e5d057
+2026-05-08 11:09:20,939 - INFO - Deleting note via API: 69fd770b0fadc10297dd2cc6
+2026-05-08 11:09:21,710 - INFO - Delete response status: 200
+2026-05-08 11:09:22,365 - INFO - Calling login API
+2026-05-08 11:09:23,255 - INFO - Response Status: 200
+2026-05-08 11:09:23,257 - INFO - Creating note via API: 
+2026-05-08 11:09:23,839 - INFO - Calling login API
+2026-05-08 11:09:24,715 - INFO - Response Status: 200
+2026-05-08 11:09:24,716 - INFO - Fetching notes via API
+2026-05-08 11:09:25,274 - INFO - ====== WebDriver manager ======
+2026-05-08 11:09:26,335 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:26,637 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:26,927 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:27,548 - INFO - WebDriver version 147.0.7727.117 selected
+2026-05-08 11:09:27,555 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:09:27,555 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:09:27,853 - INFO - Driver downloading response is 200
+2026-05-08 11:09:28,780 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:29,233 - INFO - Driver has been saved in cache [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117]
+2026-05-08 11:09:32,357 - INFO - Local Chrome browser launched
+2026-05-08 11:09:34,703 - INFO - Performing login
+2026-05-08 11:09:35,305 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:09:35,436 - INFO - Creating note: UI_API_d8434082
+2026-05-08 11:09:35,436 - INFO - Clicking add note button
+2026-05-08 11:09:35,436 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:09:36,676 - INFO - Entering text: UI_API_d8434082
+2026-05-08 11:09:36,845 - INFO - Entering text: Created via UI validated via API
+2026-05-08 11:09:37,108 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:09:37,232 - INFO - Calling login API
+2026-05-08 11:09:38,290 - INFO - Response Status: 200
+2026-05-08 11:09:38,296 - INFO - Fetching notes via API
+2026-05-08 11:09:41,417 - INFO - ====== WebDriver manager ======
+2026-05-08 11:09:42,397 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:42,706 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:42,996 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:09:43,788 - INFO - Local Chrome browser launched
+2026-05-08 11:09:46,308 - INFO - Performing login
+2026-05-08 11:09:46,723 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:09:46,913 - INFO - Calling login API
+2026-05-08 11:09:48,306 - INFO - Response Status: 200
+2026-05-08 11:09:48,308 - INFO - Creating note via API: API_UI_cc5122c2
+2026-05-08 11:09:49,021 - INFO - API Create Response Status: 200
+2026-05-08 11:09:49,021 - INFO - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd77270fadc10297dd2cff","title":"API_UI_cc5122c2","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-08T05:39:51.575Z","updated_at":"2026-05-08T05:39:51.575Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:09:51,062 - INFO - Checking if note created: API_UI_cc5122c2
+2026-05-08 11:09:51,125 - INFO - Note found: API_UI_cc5122c2
+2026-05-08 11:09:53,503 - INFO - ====== WebDriver manager ======
+2026-05-08 11:09:54,451 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:54,733 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:09:54,999 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:09:55,843 - INFO - Local Chrome browser launched
+2026-05-08 11:09:56,212 - INFO - Performing login
+2026-05-08 11:09:58,622 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:09:58,705 - INFO - Creating note: DELETE_UI_API_01f8308b
+2026-05-08 11:09:58,706 - INFO - Clicking add note button
+2026-05-08 11:09:58,706 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:09:59,968 - INFO - Entering text: DELETE_UI_API_01f8308b
+2026-05-08 11:10:00,142 - INFO - Entering text: Delete validation
+2026-05-08 11:10:00,282 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:10:00,419 - INFO - Calling login API
+2026-05-08 11:10:01,522 - INFO - Response Status: 200
+2026-05-08 11:10:01,526 - INFO - Fetching notes via API
+2026-05-08 11:10:02,610 - INFO - Deleting first note
+2026-05-08 11:10:02,649 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:10:02,881 - INFO - Note deleted successfully
+2026-05-08 11:10:02,891 - INFO - Fetching notes via API
+2026-05-08 11:10:06,107 - INFO - ====== WebDriver manager ======
+2026-05-08 11:10:07,073 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:07,354 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:07,663 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:10:08,503 - INFO - Local Chrome browser launched
+2026-05-08 11:10:10,851 - INFO - Performing login
+2026-05-08 11:10:11,349 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:11,530 - INFO - Calling login API
+2026-05-08 11:10:12,461 - INFO - Response Status: 200
+2026-05-08 11:10:12,463 - INFO - Creating note via API: API_DELETE_89dc90ae
+2026-05-08 11:10:15,865 - INFO - Checking if note created: API_DELETE_89dc90ae
+2026-05-08 11:10:15,934 - INFO - Note found: API_DELETE_89dc90ae
+2026-05-08 11:10:15,934 - INFO - Deleting note via API: 69fd773f0fadc10297dd2d45
+2026-05-08 11:10:19,302 - INFO - Checking if note created: API_DELETE_89dc90ae
+2026-05-08 11:10:19,928 - WARNING - Note not found: API_DELETE_89dc90ae
+2026-05-08 11:10:22,288 - INFO - ====== WebDriver manager ======
+2026-05-08 11:10:23,374 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:23,730 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:24,016 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:10:24,901 - INFO - Local Chrome browser launched
+2026-05-08 11:10:27,891 - INFO - Performing login
+2026-05-08 11:10:28,698 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:29,848 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:29,848 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:30,968 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:30,968 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:32,155 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:32,155 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:32,155 - INFO - Scrolling element into view
+2026-05-08 11:10:32,174 - INFO - Trying JS click
+2026-05-08 11:10:32,203 - INFO - Creating note: MULTI_5f0747f9
+2026-05-08 11:10:32,203 - INFO - Clicking add note button
+2026-05-08 11:10:32,204 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:33,518 - INFO - Entering text: MULTI_5f0747f9
+2026-05-08 11:10:33,671 - INFO - Entering text: Description 0
+2026-05-08 11:10:33,843 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:10:33,961 - INFO - Creating note: MULTI_11123c21
+2026-05-08 11:10:33,961 - INFO - Clicking add note button
+2026-05-08 11:10:33,962 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:36,040 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:36,040 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:36,431 - INFO - Entering text: MULTI_11123c21
+2026-05-08 11:10:36,650 - INFO - Entering text: Description 1
+2026-05-08 11:10:36,975 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:10:37,107 - INFO - Creating note: MULTI_b182dc70
+2026-05-08 11:10:37,108 - INFO - Clicking add note button
+2026-05-08 11:10:37,108 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:40,823 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:40,823 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:10:41,293 - INFO - Entering text: MULTI_b182dc70
+2026-05-08 11:10:41,564 - INFO - Entering text: Description 2
+2026-05-08 11:10:41,810 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:10:41,981 - INFO - Calling login API
+2026-05-08 11:10:43,262 - INFO - Response Status: 200
+2026-05-08 11:10:43,273 - INFO - Fetching notes via API
+2026-05-08 11:10:46,797 - INFO - ====== WebDriver manager ======
+2026-05-08 11:10:47,874 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:48,246 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:48,602 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:10:49,429 - INFO - Local Chrome browser launched
+2026-05-08 11:10:51,767 - INFO - Performing login
+2026-05-08 11:10:52,109 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:10:52,224 - INFO - Checking login success
+2026-05-08 11:10:55,565 - INFO - ====== WebDriver manager ======
+2026-05-08 11:10:56,543 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:56,875 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:10:57,133 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:10:57,965 - INFO - Local Chrome browser launched
+2026-05-08 11:11:01,024 - INFO - Performing login
+2026-05-08 11:11:01,590 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:02,734 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:02,734 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:03,842 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:03,843 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:04,930 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:04,931 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:04,931 - INFO - Scrolling element into view
+2026-05-08 11:11:04,950 - INFO - Trying JS click
+2026-05-08 11:11:05,017 - INFO - Waiting for error message
+2026-05-08 11:11:07,927 - INFO - ====== WebDriver manager ======
+2026-05-08 11:11:08,873 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:09,235 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:09,586 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:11:10,417 - INFO - Local Chrome browser launched
+2026-05-08 11:11:13,135 - INFO - Performing login
+2026-05-08 11:11:13,452 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:13,576 - INFO - Checking login success
+2026-05-08 11:11:14,659 - INFO - Logging out
+2026-05-08 11:11:14,659 - INFO - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-08 11:11:14,852 - INFO - Checking logout success
+2026-05-08 11:11:17,725 - INFO - ====== WebDriver manager ======
+2026-05-08 11:11:18,750 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:19,035 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:19,309 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:11:20,074 - INFO - Local Chrome browser launched
+2026-05-08 11:11:21,883 - INFO - Performing login
+2026-05-08 11:11:22,299 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:22,469 - INFO - Clicking add note button
+2026-05-08 11:11:22,470 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:11:23,653 - INFO - Entering text: Validation test
+2026-05-08 11:11:23,781 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:11:26,327 - INFO - ====== WebDriver manager ======
+2026-05-08 11:11:27,279 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:27,562 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:27,828 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:11:28,642 - INFO - Local Chrome browser launched
+2026-05-08 11:11:31,862 - INFO - Performing login
+2026-05-08 11:11:32,448 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:33,617 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:33,617 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:34,712 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:34,712 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:35,865 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:35,865 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:35,866 - INFO - Scrolling element into view
+2026-05-08 11:11:35,888 - INFO - Trying JS click
+2026-05-08 11:11:35,914 - INFO - Creating note: Automation Note 770b090f
+2026-05-08 11:11:35,914 - INFO - Clicking add note button
+2026-05-08 11:11:35,914 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:11:37,266 - INFO - Entering text: Automation Note 770b090f
+2026-05-08 11:11:37,427 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:11:37,590 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:11:37,698 - INFO - Checking if note created: Automation Note 770b090f
+2026-05-08 11:11:40,122 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xafb373+10553]
+	chromedriver!GetHandleVerifier [0xafb4a4+10684]
+	chromedriver!(No symbol) [0x901e10]
+	chromedriver!(No symbol) [0x913d82]
+	chromedriver!(No symbol) [0x912e4c]
+	chromedriver!(No symbol) [0x9093a9]
+	chromedriver!(No symbol) [0x9077c2]
+	chromedriver!(No symbol) [0x90ad1a]
+	chromedriver!(No symbol) [0x90ada8]
+	chromedriver!(No symbol) [0x946e3a]
+	chromedriver!(No symbol) [0x96d86c]
+	chromedriver!(No symbol) [0x9414f4]
+	chromedriver!(No symbol) [0x96da34]
+	chromedriver!(No symbol) [0x98aa36]
+	chromedriver!(No symbol) [0x96d606]
+	chromedriver!(No symbol) [0x940039]
+	chromedriver!(No symbol) [0x940df4]
+	chromedriver!GetHandleVerifier [0xd7ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xd7937d+28e55d]
+	chromedriver!GetHandleVerifier [0xd98215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xb14c18+29df8]
+	chromedriver!GetHandleVerifier [0xb1c6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb03c78+18e58]
+	chromedriver!GetHandleVerifier [0xb03e42+19022]
+	chromedriver!GetHandleVerifier [0xaed45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:11:45,071 - INFO - ====== WebDriver manager ======
+2026-05-08 11:11:46,030 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:46,312 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:46,596 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:11:47,419 - INFO - Local Chrome browser launched
+2026-05-08 11:11:47,781 - INFO - Performing login
+2026-05-08 11:11:50,110 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:11:50,195 - INFO - Creating note: Automation Note de2389a6
+2026-05-08 11:11:50,195 - INFO - Clicking add note button
+2026-05-08 11:11:50,195 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:11:51,625 - INFO - Entering text: Automation Note de2389a6
+2026-05-08 11:11:51,789 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:11:51,967 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:11:52,056 - INFO - Checking if note created: Automation Note de2389a6
+2026-05-08 11:11:54,498 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xafb373+10553]
+	chromedriver!GetHandleVerifier [0xafb4a4+10684]
+	chromedriver!(No symbol) [0x901e10]
+	chromedriver!(No symbol) [0x913d82]
+	chromedriver!(No symbol) [0x912e4c]
+	chromedriver!(No symbol) [0x9093a9]
+	chromedriver!(No symbol) [0x9077c2]
+	chromedriver!(No symbol) [0x90ad1a]
+	chromedriver!(No symbol) [0x90ada8]
+	chromedriver!(No symbol) [0x946e3a]
+	chromedriver!(No symbol) [0x96d86c]
+	chromedriver!(No symbol) [0x9414f4]
+	chromedriver!(No symbol) [0x96da34]
+	chromedriver!(No symbol) [0x98aa36]
+	chromedriver!(No symbol) [0x96d606]
+	chromedriver!(No symbol) [0x940039]
+	chromedriver!(No symbol) [0x940df4]
+	chromedriver!GetHandleVerifier [0xd7ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xd7937d+28e55d]
+	chromedriver!GetHandleVerifier [0xd98215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xb14c18+29df8]
+	chromedriver!GetHandleVerifier [0xb1c6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb03c78+18e58]
+	chromedriver!GetHandleVerifier [0xb03e42+19022]
+	chromedriver!GetHandleVerifier [0xaed45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:11:56,984 - INFO - ====== WebDriver manager ======
+2026-05-08 11:11:57,956 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:58,247 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:11:58,506 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:11:59,290 - INFO - Local Chrome browser launched
+2026-05-08 11:12:02,016 - INFO - Performing login
+2026-05-08 11:12:02,329 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:12:02,408 - INFO - Getting notes count
+2026-05-08 11:12:03,507 - INFO - Total notes found: 46
+2026-05-08 11:12:03,508 - INFO - Deleting first note
+2026-05-08 11:12:03,521 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:12:03,718 - INFO - Note deleted successfully
+2026-05-08 11:12:03,729 - INFO - Getting notes count
+2026-05-08 11:12:03,746 - INFO - Total notes found: 46
+2026-05-08 11:12:08,160 - INFO - ====== WebDriver manager ======
+2026-05-08 11:12:09,103 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:12:09,405 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:12:09,674 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:12:10,522 - INFO - Local Chrome browser launched
+2026-05-08 11:12:12,898 - INFO - Performing login
+2026-05-08 11:12:13,252 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:12:13,336 - INFO - Getting notes count
+2026-05-08 11:12:14,457 - INFO - Total notes found: 45
+2026-05-08 11:12:14,458 - INFO - Deleting first note
+2026-05-08 11:12:14,472 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:12:14,697 - INFO - Note deleted successfully
+2026-05-08 11:12:14,707 - INFO - Getting notes count
+2026-05-08 11:12:14,723 - INFO - Total notes found: 45
+2026-05-08 11:16:33,822 - INFO - ====== WebDriver manager ======
+2026-05-08 11:16:34,951 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:16:35,256 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:16:35,548 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:16:37,219 - INFO - Local Chrome browser launched
+2026-05-08 11:16:39,600 - INFO - Performing login
+2026-05-08 11:16:39,958 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:16:40,053 - INFO - Creating note: Automation Note 71180de3
+2026-05-08 11:16:40,053 - INFO - Clicking add note button
+2026-05-08 11:16:40,053 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:16:41,396 - INFO - Entering text: Automation Note 71180de3
+2026-05-08 11:16:41,573 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:16:41,753 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:16:41,851 - INFO - Checking if note created: Automation Note 71180de3
+2026-05-08 11:16:44,516 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x33b373+10553]
+	chromedriver!GetHandleVerifier [0x33b4a4+10684]
+	chromedriver!(No symbol) [0x141e10]
+	chromedriver!(No symbol) [0x153d82]
+	chromedriver!(No symbol) [0x152e4c]
+	chromedriver!(No symbol) [0x1493a9]
+	chromedriver!(No symbol) [0x1477c2]
+	chromedriver!(No symbol) [0x14ad1a]
+	chromedriver!(No symbol) [0x14ada8]
+	chromedriver!(No symbol) [0x186e3a]
+	chromedriver!(No symbol) [0x1ad86c]
+	chromedriver!(No symbol) [0x1814f4]
+	chromedriver!(No symbol) [0x1ada34]
+	chromedriver!(No symbol) [0x1caa36]
+	chromedriver!(No symbol) [0x1ad606]
+	chromedriver!(No symbol) [0x180039]
+	chromedriver!(No symbol) [0x180df4]
+	chromedriver!GetHandleVerifier [0x5bddb4+292f94]
+	chromedriver!GetHandleVerifier [0x5b937d+28e55d]
+	chromedriver!GetHandleVerifier [0x5d8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x354c18+29df8]
+	chromedriver!GetHandleVerifier [0x35c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x343c78+18e58]
+	chromedriver!GetHandleVerifier [0x343e42+19022]
+	chromedriver!GetHandleVerifier [0x32d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+	(No symbol) [(nil)]
+
+2026-05-08 11:16:49,303 - INFO - ====== WebDriver manager ======
+2026-05-08 11:16:50,414 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:16:50,844 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:16:51,210 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:16:52,234 - INFO - Local Chrome browser launched
+2026-05-08 11:16:54,861 - INFO - Performing login
+2026-05-08 11:16:55,231 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:16:55,417 - INFO - Creating note: Automation Note 93a850ad
+2026-05-08 11:16:55,418 - INFO - Clicking add note button
+2026-05-08 11:16:55,418 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:16:56,773 - INFO - Entering text: Automation Note 93a850ad
+2026-05-08 11:16:57,026 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:16:57,193 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:16:57,351 - INFO - Checking if note created: Automation Note 93a850ad
+2026-05-08 11:16:59,599 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x33b373+10553]
+	chromedriver!GetHandleVerifier [0x33b4a4+10684]
+	chromedriver!(No symbol) [0x141e10]
+	chromedriver!(No symbol) [0x153d82]
+	chromedriver!(No symbol) [0x152e4c]
+	chromedriver!(No symbol) [0x1493a9]
+	chromedriver!(No symbol) [0x1477c2]
+	chromedriver!(No symbol) [0x14ad1a]
+	chromedriver!(No symbol) [0x14ada8]
+	chromedriver!(No symbol) [0x186e3a]
+	chromedriver!(No symbol) [0x1ad86c]
+	chromedriver!(No symbol) [0x1814f4]
+	chromedriver!(No symbol) [0x1ada34]
+	chromedriver!(No symbol) [0x1caa36]
+	chromedriver!(No symbol) [0x1ad606]
+	chromedriver!(No symbol) [0x180039]
+	chromedriver!(No symbol) [0x180df4]
+	chromedriver!GetHandleVerifier [0x5bddb4+292f94]
+	chromedriver!GetHandleVerifier [0x5b937d+28e55d]
+	chromedriver!GetHandleVerifier [0x5d8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x354c18+29df8]
+	chromedriver!GetHandleVerifier [0x35c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x343c78+18e58]
+	chromedriver!GetHandleVerifier [0x343e42+19022]
+	chromedriver!GetHandleVerifier [0x32d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+	(No symbol) [(nil)]
+
+2026-05-08 11:17:02,208 - INFO - ====== WebDriver manager ======
+2026-05-08 11:17:03,156 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:17:03,428 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:17:03,789 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:17:04,747 - INFO - Local Chrome browser launched
+2026-05-08 11:17:07,413 - INFO - Performing login
+2026-05-08 11:17:07,754 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:17:07,837 - INFO - Getting notes count
+2026-05-08 11:17:08,969 - INFO - Total notes found: 46
+2026-05-08 11:17:08,969 - INFO - Deleting first note
+2026-05-08 11:17:08,982 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:17:09,199 - INFO - Note deleted successfully
+2026-05-08 11:17:09,217 - INFO - Getting notes count
+2026-05-08 11:17:09,234 - INFO - Total notes found: 46
+2026-05-08 11:17:13,699 - INFO - ====== WebDriver manager ======
+2026-05-08 11:17:14,609 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:17:14,886 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:17:15,242 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:17:16,190 - INFO - Local Chrome browser launched
+2026-05-08 11:17:18,942 - INFO - Performing login
+2026-05-08 11:17:19,304 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:17:19,384 - INFO - Getting notes count
+2026-05-08 11:17:20,449 - INFO - Total notes found: 45
+2026-05-08 11:17:20,450 - INFO - Deleting first note
+2026-05-08 11:17:20,464 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:17:20,669 - INFO - Note deleted successfully
+2026-05-08 11:17:20,675 - INFO - Getting notes count
+2026-05-08 11:17:20,688 - INFO - Total notes found: 45
+2026-05-08 11:20:11,832 - INFO - ====== WebDriver manager ======
+2026-05-08 11:20:13,012 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:13,396 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:13,668 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:20:15,334 - INFO - Local Chrome browser launched
+2026-05-08 11:20:17,921 - INFO - Performing login
+2026-05-08 11:20:18,314 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:20:18,522 - INFO - Creating note: Automation Note 5b1648ba
+2026-05-08 11:20:18,523 - INFO - Clicking add note button
+2026-05-08 11:20:18,523 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:20:20,140 - INFO - Entering text: Automation Note 5b1648ba
+2026-05-08 11:20:20,314 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:20:20,479 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:20:20,655 - INFO - Checking if note created: Automation Note 5b1648ba
+2026-05-08 11:20:23,800 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x107b373+10553]
+	chromedriver!GetHandleVerifier [0x107b4a4+10684]
+	chromedriver!(No symbol) [0xe81e10]
+	chromedriver!(No symbol) [0xe93d82]
+	chromedriver!(No symbol) [0xe92e4c]
+	chromedriver!(No symbol) [0xe893a9]
+	chromedriver!(No symbol) [0xe877c2]
+	chromedriver!(No symbol) [0xe8ad1a]
+	chromedriver!(No symbol) [0xe8ada8]
+	chromedriver!(No symbol) [0xec6e3a]
+	chromedriver!(No symbol) [0xeed86c]
+	chromedriver!(No symbol) [0xec14f4]
+	chromedriver!(No symbol) [0xeeda34]
+	chromedriver!(No symbol) [0xf0aa36]
+	chromedriver!(No symbol) [0xeed606]
+	chromedriver!(No symbol) [0xec0039]
+	chromedriver!(No symbol) [0xec0df4]
+	chromedriver!GetHandleVerifier [0x12fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1318215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1094c18+29df8]
+	chromedriver!GetHandleVerifier [0x109c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1083c78+18e58]
+	chromedriver!GetHandleVerifier [0x1083e42+19022]
+	chromedriver!GetHandleVerifier [0x106d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:20:28,650 - INFO - ====== WebDriver manager ======
+2026-05-08 11:20:29,656 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:29,933 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:30,226 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:20:31,180 - INFO - Local Chrome browser launched
+2026-05-08 11:20:31,561 - INFO - Performing login
+2026-05-08 11:20:33,955 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:20:34,053 - INFO - Creating note: Automation Note 7d9ae366
+2026-05-08 11:20:34,053 - INFO - Clicking add note button
+2026-05-08 11:20:34,053 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:20:35,468 - INFO - Entering text: Automation Note 7d9ae366
+2026-05-08 11:20:35,646 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:20:35,804 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:20:35,945 - INFO - Checking if note created: Automation Note 7d9ae366
+2026-05-08 11:20:38,683 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x107b373+10553]
+	chromedriver!GetHandleVerifier [0x107b4a4+10684]
+	chromedriver!(No symbol) [0xe81e10]
+	chromedriver!(No symbol) [0xe93d82]
+	chromedriver!(No symbol) [0xe92e4c]
+	chromedriver!(No symbol) [0xe893a9]
+	chromedriver!(No symbol) [0xe877c2]
+	chromedriver!(No symbol) [0xe8ad1a]
+	chromedriver!(No symbol) [0xe8ada8]
+	chromedriver!(No symbol) [0xec6e3a]
+	chromedriver!(No symbol) [0xeed86c]
+	chromedriver!(No symbol) [0xec14f4]
+	chromedriver!(No symbol) [0xeeda34]
+	chromedriver!(No symbol) [0xf0aa36]
+	chromedriver!(No symbol) [0xeed606]
+	chromedriver!(No symbol) [0xec0039]
+	chromedriver!(No symbol) [0xec0df4]
+	chromedriver!GetHandleVerifier [0x12fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1318215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1094c18+29df8]
+	chromedriver!GetHandleVerifier [0x109c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1083c78+18e58]
+	chromedriver!GetHandleVerifier [0x1083e42+19022]
+	chromedriver!GetHandleVerifier [0x106d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:20:41,137 - INFO - ====== WebDriver manager ======
+2026-05-08 11:20:42,152 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:42,466 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:42,793 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:20:43,657 - INFO - Local Chrome browser launched
+2026-05-08 11:20:46,488 - INFO - Performing login
+2026-05-08 11:20:46,803 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:20:46,888 - INFO - Getting notes count
+2026-05-08 11:20:47,963 - INFO - Total notes found: 46
+2026-05-08 11:20:47,963 - INFO - Deleting first note
+2026-05-08 11:20:47,978 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:20:48,172 - INFO - Note deleted successfully
+2026-05-08 11:20:48,198 - INFO - Getting notes count
+2026-05-08 11:20:48,237 - INFO - Total notes found: 46
+2026-05-08 11:20:52,623 - INFO - ====== WebDriver manager ======
+2026-05-08 11:20:53,690 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:54,112 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:20:54,445 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:20:55,363 - INFO - Local Chrome browser launched
+2026-05-08 11:20:58,044 - INFO - Performing login
+2026-05-08 11:20:58,428 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:20:58,509 - INFO - Getting notes count
+2026-05-08 11:20:59,593 - INFO - Total notes found: 45
+2026-05-08 11:20:59,593 - INFO - Deleting first note
+2026-05-08 11:20:59,621 - INFO - Clicking element: ('css selector', "[data-testid='note-delete']")
+2026-05-08 11:20:59,782 - INFO - Note deleted successfully
+2026-05-08 11:20:59,793 - INFO - Getting notes count
+2026-05-08 11:20:59,822 - INFO - Total notes found: 45
+2026-05-08 11:22:55,913 - INFO - ====== WebDriver manager ======
+2026-05-08 11:22:57,019 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:22:57,496 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:22:57,803 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:22:59,397 - INFO - Local Chrome browser launched
+2026-05-08 11:22:59,815 - INFO - Performing login
+2026-05-08 11:23:02,280 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:23:02,403 - INFO - Creating note: DELETE_UI_API_b07fcec1
+2026-05-08 11:23:02,403 - INFO - Clicking add note button
+2026-05-08 11:23:02,403 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:23:03,651 - INFO - Entering text: DELETE_UI_API_b07fcec1
+2026-05-08 11:23:03,795 - INFO - Entering text: Delete validation
+2026-05-08 11:23:03,911 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:23:04,003 - INFO - Calling login API
+2026-05-08 11:23:05,139 - INFO - Response Status: 200
+2026-05-08 11:23:05,143 - INFO - Fetching notes via API
+2026-05-08 11:23:06,253 - INFO - Deleting note by title: DELETE_UI_API_b07fcec1
+2026-05-08 11:23:06,254 - INFO - Getting notes count
+2026-05-08 11:23:07,012 - INFO - Total notes found: 45
+2026-05-08 11:23:07,216 - INFO - Getting notes count
+2026-05-08 11:23:07,229 - INFO - Total notes found: 45
+2026-05-08 11:23:07,730 - INFO - Getting notes count
+2026-05-08 11:23:07,777 - INFO - Total notes found: 44
+2026-05-08 11:23:07,777 - INFO - Note deleted successfully: DELETE_UI_API_b07fcec1
+2026-05-08 11:23:07,777 - INFO - Fetching notes via API
+2026-05-08 11:23:19,708 - INFO - ====== WebDriver manager ======
+2026-05-08 11:23:20,759 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:23:21,102 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:23:21,437 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:23:22,381 - INFO - Local Chrome browser launched
+2026-05-08 11:23:22,802 - INFO - Performing login
+2026-05-08 11:23:25,806 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:23:26,041 - INFO - Getting notes count
+2026-05-08 11:23:27,107 - INFO - Total notes found: 44
+2026-05-08 11:23:27,107 - INFO - Deleting first note
+2026-05-08 11:23:27,108 - INFO - Getting notes count
+2026-05-08 11:23:27,121 - INFO - Total notes found: 44
+2026-05-08 11:23:27,336 - INFO - Getting notes count
+2026-05-08 11:23:27,354 - INFO - Total notes found: 44
+2026-05-08 11:23:27,854 - INFO - Getting notes count
+2026-05-08 11:23:27,876 - INFO - Total notes found: 43
+2026-05-08 11:23:27,876 - INFO - Note deleted successfully
+2026-05-08 11:23:27,877 - INFO - Getting notes count
+2026-05-08 11:23:27,894 - INFO - Total notes found: 43
+2026-05-08 11:24:14,047 - INFO - ====== WebDriver manager ======
+2026-05-08 11:24:14,982 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:24:15,414 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:24:15,752 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:24:16,438 - INFO - Local Chrome browser launched
+2026-05-08 11:24:19,040 - INFO - Performing login
+2026-05-08 11:24:19,373 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:24:19,457 - INFO - Creating note: Automation Note 61a24069
+2026-05-08 11:24:19,457 - INFO - Clicking add note button
+2026-05-08 11:24:19,457 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:24:20,851 - INFO - Entering text: Automation Note 61a24069
+2026-05-08 11:24:20,992 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:24:21,142 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:24:21,246 - INFO - Checking if note created: Automation Note 61a24069
+2026-05-08 11:24:23,094 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x120b373+10553]
+	chromedriver!GetHandleVerifier [0x120b4a4+10684]
+	chromedriver!(No symbol) [0x1011e10]
+	chromedriver!(No symbol) [0x1023d82]
+	chromedriver!(No symbol) [0x1022e4c]
+	chromedriver!(No symbol) [0x10193a9]
+	chromedriver!(No symbol) [0x10177c2]
+	chromedriver!(No symbol) [0x101ad1a]
+	chromedriver!(No symbol) [0x101ada8]
+	chromedriver!(No symbol) [0x1056e3a]
+	chromedriver!(No symbol) [0x107d86c]
+	chromedriver!(No symbol) [0x10514f4]
+	chromedriver!(No symbol) [0x107da34]
+	chromedriver!(No symbol) [0x109aa36]
+	chromedriver!(No symbol) [0x107d606]
+	chromedriver!(No symbol) [0x1050039]
+	chromedriver!(No symbol) [0x1050df4]
+	chromedriver!GetHandleVerifier [0x148ddb4+292f94]
+	chromedriver!GetHandleVerifier [0x148937d+28e55d]
+	chromedriver!GetHandleVerifier [0x14a8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1224c18+29df8]
+	chromedriver!GetHandleVerifier [0x122c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1213c78+18e58]
+	chromedriver!GetHandleVerifier [0x1213e42+19022]
+	chromedriver!GetHandleVerifier [0x11fd45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:24:27,908 - INFO - ====== WebDriver manager ======
+2026-05-08 11:24:28,799 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:24:29,109 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:24:29,452 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:24:30,349 - INFO - Local Chrome browser launched
+2026-05-08 11:24:32,736 - INFO - Performing login
+2026-05-08 11:24:33,070 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:24:33,217 - INFO - Creating note: Automation Note a1c91163
+2026-05-08 11:24:33,218 - INFO - Clicking add note button
+2026-05-08 11:24:33,218 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:24:34,588 - INFO - Entering text: Automation Note a1c91163
+2026-05-08 11:24:34,730 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:24:34,874 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:24:34,989 - INFO - Checking if note created: Automation Note a1c91163
+2026-05-08 11:24:37,616 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x120b373+10553]
+	chromedriver!GetHandleVerifier [0x120b4a4+10684]
+	chromedriver!(No symbol) [0x1011e10]
+	chromedriver!(No symbol) [0x1023d82]
+	chromedriver!(No symbol) [0x1022e4c]
+	chromedriver!(No symbol) [0x10193a9]
+	chromedriver!(No symbol) [0x10177c2]
+	chromedriver!(No symbol) [0x101ad1a]
+	chromedriver!(No symbol) [0x101ada8]
+	chromedriver!(No symbol) [0x1056e3a]
+	chromedriver!(No symbol) [0x107d86c]
+	chromedriver!(No symbol) [0x10514f4]
+	chromedriver!(No symbol) [0x107da34]
+	chromedriver!(No symbol) [0x109aa36]
+	chromedriver!(No symbol) [0x107d606]
+	chromedriver!(No symbol) [0x1050039]
+	chromedriver!(No symbol) [0x1050df4]
+	chromedriver!GetHandleVerifier [0x148ddb4+292f94]
+	chromedriver!GetHandleVerifier [0x148937d+28e55d]
+	chromedriver!GetHandleVerifier [0x14a8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1224c18+29df8]
+	chromedriver!GetHandleVerifier [0x122c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1213c78+18e58]
+	chromedriver!GetHandleVerifier [0x1213e42+19022]
+	chromedriver!GetHandleVerifier [0x11fd45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:24:40,027 - INFO - ====== WebDriver manager ======
+2026-05-08 11:24:40,943 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:24:41,217 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:24:41,501 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:24:42,162 - INFO - Local Chrome browser launched
+2026-05-08 11:24:44,140 - INFO - Performing login
+2026-05-08 11:24:44,593 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:24:44,825 - INFO - Getting notes count
+2026-05-08 11:24:45,896 - INFO - Total notes found: 45
+2026-05-08 11:24:45,896 - INFO - Deleting first note
+2026-05-08 11:24:45,896 - INFO - Getting notes count
+2026-05-08 11:24:45,911 - INFO - Total notes found: 45
+2026-05-08 11:24:46,079 - INFO - Getting notes count
+2026-05-08 11:24:46,094 - INFO - Total notes found: 45
+2026-05-08 11:24:46,595 - INFO - Getting notes count
+2026-05-08 11:24:46,609 - INFO - Total notes found: 44
+2026-05-08 11:24:46,609 - INFO - Note deleted successfully
+2026-05-08 11:24:46,609 - INFO - Getting notes count
+2026-05-08 11:24:46,624 - INFO - Total notes found: 44
+2026-05-08 11:25:13,094 - INFO - Calling login API
+2026-05-08 11:25:13,925 - INFO - Response Status: 200
+2026-05-08 11:25:13,926 - INFO - Creating note via API: API Note 38146116
+2026-05-08 11:25:14,624 - INFO - Response Status: 200
+2026-05-08 11:25:14,625 - INFO - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd7ac50fadc10297dd3290","title":"API Note 38146116","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-08T05:55:17.166Z","updated_at":"2026-05-08T05:55:17.166Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:25:14,629 - INFO - Calling login API
+2026-05-08 11:25:15,418 - INFO - Response Status: 200
+2026-05-08 11:25:15,420 - INFO - Creating note via API: Delete API cac89693
+2026-05-08 11:25:16,052 - INFO - Deleting note via API: 69fd7ac60fadc10297dd3297
+2026-05-08 11:25:16,873 - INFO - Delete response status: 200
+2026-05-08 11:25:17,496 - INFO - Calling login API
+2026-05-08 11:25:18,152 - INFO - Response Status: 200
+2026-05-08 11:25:18,154 - INFO - Creating note via API: 
+2026-05-08 11:25:18,986 - INFO - Calling login API
+2026-05-08 11:25:19,621 - INFO - Response Status: 200
+2026-05-08 11:25:19,622 - INFO - Fetching notes via API
+2026-05-08 11:25:28,632 - INFO - ====== WebDriver manager ======
+2026-05-08 11:25:29,601 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:25:29,874 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:25:30,134 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:25:31,037 - INFO - Local Chrome browser launched
+2026-05-08 11:25:32,881 - INFO - Performing login
+2026-05-08 11:25:33,844 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:25:34,017 - INFO - Creating note: Automation Note 79590ac7
+2026-05-08 11:25:34,018 - INFO - Clicking add note button
+2026-05-08 11:25:34,018 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:25:35,679 - INFO - Entering text: Automation Note 79590ac7
+2026-05-08 11:25:35,876 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:25:36,038 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:25:36,180 - INFO - Checking if note created: Automation Note 79590ac7
+2026-05-08 11:25:38,237 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x120b373+10553]
+	chromedriver!GetHandleVerifier [0x120b4a4+10684]
+	chromedriver!(No symbol) [0x1011e10]
+	chromedriver!(No symbol) [0x1023d82]
+	chromedriver!(No symbol) [0x1022e4c]
+	chromedriver!(No symbol) [0x10193a9]
+	chromedriver!(No symbol) [0x10177c2]
+	chromedriver!(No symbol) [0x101ad1a]
+	chromedriver!(No symbol) [0x101ada8]
+	chromedriver!(No symbol) [0x1056e3a]
+	chromedriver!(No symbol) [0x107d86c]
+	chromedriver!(No symbol) [0x10514f4]
+	chromedriver!(No symbol) [0x107da34]
+	chromedriver!(No symbol) [0x109aa36]
+	chromedriver!(No symbol) [0x107d606]
+	chromedriver!(No symbol) [0x1050039]
+	chromedriver!(No symbol) [0x1050df4]
+	chromedriver!GetHandleVerifier [0x148ddb4+292f94]
+	chromedriver!GetHandleVerifier [0x148937d+28e55d]
+	chromedriver!GetHandleVerifier [0x14a8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1224c18+29df8]
+	chromedriver!GetHandleVerifier [0x122c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1213c78+18e58]
+	chromedriver!GetHandleVerifier [0x1213e42+19022]
+	chromedriver!GetHandleVerifier [0x11fd45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:25:43,115 - INFO - ====== WebDriver manager ======
+2026-05-08 11:25:44,093 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:25:44,368 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:25:44,664 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:25:45,519 - INFO - Local Chrome browser launched
+2026-05-08 11:25:47,908 - INFO - Performing login
+2026-05-08 11:25:48,268 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:25:48,403 - INFO - Creating note: Automation Note 693aa60a
+2026-05-08 11:25:48,403 - INFO - Clicking add note button
+2026-05-08 11:25:48,403 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:25:49,802 - INFO - Entering text: Automation Note 693aa60a
+2026-05-08 11:25:49,954 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:25:50,127 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:25:50,222 - INFO - Checking if note created: Automation Note 693aa60a
+2026-05-08 11:25:52,424 - ERROR - Error checking note creation: Message: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x120b373+10553]
+	chromedriver!GetHandleVerifier [0x120b4a4+10684]
+	chromedriver!(No symbol) [0x1011e10]
+	chromedriver!(No symbol) [0x1023d82]
+	chromedriver!(No symbol) [0x1022e4c]
+	chromedriver!(No symbol) [0x10193a9]
+	chromedriver!(No symbol) [0x10177c2]
+	chromedriver!(No symbol) [0x101ad1a]
+	chromedriver!(No symbol) [0x101ada8]
+	chromedriver!(No symbol) [0x1056e3a]
+	chromedriver!(No symbol) [0x107d86c]
+	chromedriver!(No symbol) [0x10514f4]
+	chromedriver!(No symbol) [0x107da34]
+	chromedriver!(No symbol) [0x109aa36]
+	chromedriver!(No symbol) [0x107d606]
+	chromedriver!(No symbol) [0x1050039]
+	chromedriver!(No symbol) [0x1050df4]
+	chromedriver!GetHandleVerifier [0x148ddb4+292f94]
+	chromedriver!GetHandleVerifier [0x148937d+28e55d]
+	chromedriver!GetHandleVerifier [0x14a8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1224c18+29df8]
+	chromedriver!GetHandleVerifier [0x122c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1213c78+18e58]
+	chromedriver!GetHandleVerifier [0x1213e42+19022]
+	chromedriver!GetHandleVerifier [0x11fd45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76535d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7790d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7790d7c1+231]
+
+2026-05-08 11:25:55,067 - INFO - ====== WebDriver manager ======
+2026-05-08 11:25:56,093 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:25:56,462 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:25:56,761 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:25:57,650 - INFO - Local Chrome browser launched
+2026-05-08 11:25:58,056 - INFO - Performing login
+2026-05-08 11:25:59,930 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:26:00,088 - INFO - Getting notes count
+2026-05-08 11:26:01,169 - INFO - Total notes found: 47
+2026-05-08 11:26:01,169 - INFO - Deleting first note
+2026-05-08 11:26:01,170 - INFO - Getting notes count
+2026-05-08 11:26:01,186 - INFO - Total notes found: 47
+2026-05-08 11:26:01,358 - INFO - Getting notes count
+2026-05-08 11:26:01,376 - INFO - Total notes found: 47
+2026-05-08 11:26:01,877 - INFO - Getting notes count
+2026-05-08 11:26:01,906 - INFO - Total notes found: 46
+2026-05-08 11:26:01,906 - INFO - Note deleted successfully
+2026-05-08 11:26:01,906 - INFO - Getting notes count
+2026-05-08 11:26:01,937 - INFO - Total notes found: 46
+2026-05-08 11:26:04,346 - INFO - ====== WebDriver manager ======
+2026-05-08 11:26:05,237 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:05,493 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:05,772 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:26:06,651 - INFO - Local Chrome browser launched
+2026-05-08 11:26:06,983 - INFO - Performing login
+2026-05-08 11:26:09,404 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:26:09,483 - INFO - Creating note: UI_API_883e5c32
+2026-05-08 11:26:09,483 - INFO - Clicking add note button
+2026-05-08 11:26:09,483 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:26:10,786 - INFO - Entering text: UI_API_883e5c32
+2026-05-08 11:26:10,932 - INFO - Entering text: Created via UI validated via API
+2026-05-08 11:26:11,084 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:26:11,177 - INFO - Calling login API
+2026-05-08 11:26:12,302 - INFO - Response Status: 200
+2026-05-08 11:26:12,305 - INFO - Fetching notes via API
+2026-05-08 11:26:16,006 - INFO - ====== WebDriver manager ======
+2026-05-08 11:26:16,891 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:17,205 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:17,478 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:26:18,204 - INFO - Local Chrome browser launched
+2026-05-08 11:26:20,081 - INFO - Performing login
+2026-05-08 11:26:20,468 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:26:20,546 - INFO - Calling login API
+2026-05-08 11:26:21,400 - INFO - Response Status: 200
+2026-05-08 11:26:21,401 - INFO - Creating note via API: API_UI_f673f798
+2026-05-08 11:26:22,404 - INFO - API Create Response Status: 200
+2026-05-08 11:26:22,404 - INFO - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd7b080fadc10297dd32ed","title":"API_UI_f673f798","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-08T05:56:24.957Z","updated_at":"2026-05-08T05:56:24.957Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:26:24,751 - INFO - Checking if note created: API_UI_f673f798
+2026-05-08 11:26:24,785 - INFO - Note found: API_UI_f673f798
+2026-05-08 11:26:27,589 - INFO - ====== WebDriver manager ======
+2026-05-08 11:26:28,448 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:28,734 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:29,030 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:26:29,851 - INFO - Local Chrome browser launched
+2026-05-08 11:26:31,874 - INFO - Performing login
+2026-05-08 11:26:32,286 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:26:32,477 - INFO - Creating note: DELETE_UI_API_a285de5d
+2026-05-08 11:26:32,477 - INFO - Clicking add note button
+2026-05-08 11:26:32,478 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:26:33,749 - INFO - Entering text: DELETE_UI_API_a285de5d
+2026-05-08 11:26:33,924 - INFO - Entering text: Delete validation
+2026-05-08 11:26:34,038 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:26:34,129 - INFO - Calling login API
+2026-05-08 11:26:34,924 - INFO - Response Status: 200
+2026-05-08 11:26:34,926 - INFO - Fetching notes via API
+2026-05-08 11:26:35,895 - INFO - Deleting note by title: DELETE_UI_API_a285de5d
+2026-05-08 11:26:35,895 - INFO - Getting notes count
+2026-05-08 11:26:36,912 - INFO - Total notes found: 49
+2026-05-08 11:26:37,264 - INFO - Getting notes count
+2026-05-08 11:26:37,278 - INFO - Total notes found: 49
+2026-05-08 11:26:37,778 - INFO - Getting notes count
+2026-05-08 11:26:37,801 - INFO - Total notes found: 48
+2026-05-08 11:26:37,801 - INFO - Note deleted successfully: DELETE_UI_API_a285de5d
+2026-05-08 11:26:37,801 - INFO - Fetching notes via API
+2026-05-08 11:26:41,355 - INFO - ====== WebDriver manager ======
+2026-05-08 11:26:42,269 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:42,559 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:42,837 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:26:43,792 - INFO - Local Chrome browser launched
+2026-05-08 11:26:44,177 - INFO - Performing login
+2026-05-08 11:26:46,618 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:26:46,755 - INFO - Calling login API
+2026-05-08 11:26:47,891 - INFO - Response Status: 200
+2026-05-08 11:26:47,894 - INFO - Creating note via API: API_DELETE_966bd375
+2026-05-08 11:26:51,468 - INFO - Checking if note created: API_DELETE_966bd375
+2026-05-08 11:26:51,537 - INFO - Note found: API_DELETE_966bd375
+2026-05-08 11:26:51,537 - INFO - Deleting note via API: 69fd7b230fadc10297dd334b
+2026-05-08 11:26:54,286 - INFO - Checking if note created: API_DELETE_966bd375
+2026-05-08 11:26:54,842 - WARNING - Note not found: API_DELETE_966bd375
+2026-05-08 11:26:57,612 - INFO - ====== WebDriver manager ======
+2026-05-08 11:26:58,472 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:58,769 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:26:59,091 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:26:59,878 - INFO - Local Chrome browser launched
+2026-05-08 11:27:02,311 - INFO - Performing login
+2026-05-08 11:27:02,667 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:27:02,878 - INFO - Creating note: MULTI_e9a1e927
+2026-05-08 11:27:02,878 - INFO - Clicking add note button
+2026-05-08 11:27:02,879 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:04,123 - INFO - Entering text: MULTI_e9a1e927
+2026-05-08 11:27:04,271 - INFO - Entering text: Description 0
+2026-05-08 11:27:04,373 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:27:04,478 - INFO - Creating note: MULTI_bfd3f24e
+2026-05-08 11:27:04,478 - INFO - Clicking add note button
+2026-05-08 11:27:04,478 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:06,340 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:06,340 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:06,595 - INFO - Entering text: MULTI_bfd3f24e
+2026-05-08 11:27:06,769 - INFO - Entering text: Description 1
+2026-05-08 11:27:06,889 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:27:06,978 - INFO - Creating note: MULTI_d857cba5
+2026-05-08 11:27:06,978 - INFO - Clicking add note button
+2026-05-08 11:27:06,978 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:08,704 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:08,704 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:08,906 - INFO - Entering text: MULTI_d857cba5
+2026-05-08 11:27:09,079 - INFO - Entering text: Description 2
+2026-05-08 11:27:09,192 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:27:09,333 - INFO - Calling login API
+2026-05-08 11:27:10,218 - INFO - Response Status: 200
+2026-05-08 11:27:10,220 - INFO - Fetching notes via API
+2026-05-08 11:27:27,341 - INFO - ====== WebDriver manager ======
+2026-05-08 11:27:28,280 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:27:28,655 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:27:28,955 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:27:29,816 - INFO - Local Chrome browser launched
+2026-05-08 11:27:32,380 - INFO - Performing login
+2026-05-08 11:27:32,740 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:27:32,824 - INFO - Creating note: Automation Note ac6c755d
+2026-05-08 11:27:32,824 - INFO - Clicking add note button
+2026-05-08 11:27:32,824 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:34,204 - INFO - Entering text: Automation Note ac6c755d
+2026-05-08 11:27:34,351 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:27:34,521 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:27:34,627 - INFO - Checking if note created: Automation Note ac6c755d
+2026-05-08 11:27:34,689 - INFO - Note found: Automation Note ac6c755d
+2026-05-08 11:27:43,816 - INFO - ====== WebDriver manager ======
+2026-05-08 11:27:44,766 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:27:45,051 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:27:45,341 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:27:46,172 - INFO - Local Chrome browser launched
+2026-05-08 11:27:48,700 - INFO - Performing login
+2026-05-08 11:27:49,051 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:27:49,137 - INFO - Creating note: Automation Note 28ca851b
+2026-05-08 11:27:49,138 - INFO - Clicking add note button
+2026-05-08 11:27:49,138 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:27:50,497 - INFO - Entering text: Automation Note 28ca851b
+2026-05-08 11:27:50,669 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:27:50,816 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:27:50,912 - INFO - Checking if note created: Automation Note 28ca851b
+2026-05-08 11:27:50,995 - INFO - Note found: Automation Note 28ca851b
+2026-05-08 11:27:53,476 - INFO - ====== WebDriver manager ======
+2026-05-08 11:27:54,344 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:27:54,637 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:27:55,944 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:27:56,879 - INFO - Local Chrome browser launched
+2026-05-08 11:27:59,338 - INFO - Performing login
+2026-05-08 11:27:59,703 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:27:59,851 - INFO - Getting notes count
+2026-05-08 11:28:00,919 - INFO - Total notes found: 53
+2026-05-08 11:28:00,919 - INFO - Deleting first note
+2026-05-08 11:28:00,919 - INFO - Getting notes count
+2026-05-08 11:28:00,937 - INFO - Total notes found: 53
+2026-05-08 11:28:01,112 - INFO - Getting notes count
+2026-05-08 11:28:01,133 - INFO - Total notes found: 53
+2026-05-08 11:28:01,634 - INFO - Getting notes count
+2026-05-08 11:28:01,653 - INFO - Total notes found: 52
+2026-05-08 11:28:01,653 - INFO - Note deleted successfully
+2026-05-08 11:28:01,653 - INFO - Getting notes count
+2026-05-08 11:28:01,668 - INFO - Total notes found: 52
+2026-05-08 11:28:04,095 - INFO - ====== WebDriver manager ======
+2026-05-08 11:28:05,245 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:05,567 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:05,879 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:28:06,789 - INFO - Local Chrome browser launched
+2026-05-08 11:28:08,953 - INFO - Performing login
+2026-05-08 11:28:09,275 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:28:09,384 - INFO - Creating note: UI_API_05615a6b
+2026-05-08 11:28:09,385 - INFO - Clicking add note button
+2026-05-08 11:28:09,385 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:28:10,637 - INFO - Entering text: UI_API_05615a6b
+2026-05-08 11:28:10,753 - INFO - Entering text: Created via UI validated via API
+2026-05-08 11:28:10,900 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:28:11,042 - INFO - Calling login API
+2026-05-08 11:28:11,868 - INFO - Response Status: 200
+2026-05-08 11:28:11,872 - INFO - Fetching notes via API
+2026-05-08 11:28:15,686 - INFO - ====== WebDriver manager ======
+2026-05-08 11:28:16,619 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:16,889 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:17,156 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:28:18,023 - INFO - Local Chrome browser launched
+2026-05-08 11:28:18,400 - INFO - Performing login
+2026-05-08 11:28:20,894 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:28:21,031 - INFO - Calling login API
+2026-05-08 11:28:22,088 - INFO - Response Status: 200
+2026-05-08 11:28:22,091 - INFO - Creating note via API: API_UI_d56e7852
+2026-05-08 11:28:22,779 - INFO - API Create Response Status: 200
+2026-05-08 11:28:22,780 - INFO - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd7b810fadc10297dd34a6","title":"API_UI_d56e7852","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-08T05:58:25.325Z","updated_at":"2026-05-08T05:58:25.325Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:28:25,567 - INFO - Checking if note created: API_UI_d56e7852
+2026-05-08 11:28:25,618 - INFO - Note found: API_UI_d56e7852
+2026-05-08 11:28:28,042 - INFO - ====== WebDriver manager ======
+2026-05-08 11:28:28,952 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:29,224 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:29,511 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:28:30,410 - INFO - Local Chrome browser launched
+2026-05-08 11:28:32,589 - INFO - Performing login
+2026-05-08 11:28:32,911 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:28:32,997 - INFO - Creating note: DELETE_UI_API_31872a57
+2026-05-08 11:28:32,997 - INFO - Clicking add note button
+2026-05-08 11:28:32,997 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:28:34,284 - INFO - Entering text: DELETE_UI_API_31872a57
+2026-05-08 11:28:34,424 - INFO - Entering text: Delete validation
+2026-05-08 11:28:34,566 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:28:34,672 - INFO - Calling login API
+2026-05-08 11:28:35,465 - INFO - Response Status: 200
+2026-05-08 11:28:35,468 - INFO - Fetching notes via API
+2026-05-08 11:28:36,450 - INFO - Deleting note by title: DELETE_UI_API_31872a57
+2026-05-08 11:28:36,450 - INFO - Getting notes count
+2026-05-08 11:28:37,666 - INFO - Total notes found: 55
+2026-05-08 11:28:37,966 - INFO - Getting notes count
+2026-05-08 11:28:37,981 - INFO - Total notes found: 55
+2026-05-08 11:28:38,482 - INFO - Getting notes count
+2026-05-08 11:28:38,518 - INFO - Total notes found: 54
+2026-05-08 11:28:38,518 - INFO - Note deleted successfully: DELETE_UI_API_31872a57
+2026-05-08 11:28:38,519 - INFO - Fetching notes via API
+2026-05-08 11:28:41,830 - INFO - ====== WebDriver manager ======
+2026-05-08 11:28:42,720 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:42,997 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:28:43,258 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:28:44,138 - INFO - Local Chrome browser launched
+2026-05-08 11:28:46,537 - INFO - Performing login
+2026-05-08 11:28:46,854 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:28:47,021 - INFO - Calling login API
+2026-05-08 11:28:47,829 - INFO - Response Status: 200
+2026-05-08 11:28:47,832 - INFO - Creating note via API: API_DELETE_3f9491b6
+2026-05-08 11:28:51,128 - INFO - Checking if note created: API_DELETE_3f9491b6
+2026-05-08 11:28:51,284 - INFO - Note found: API_DELETE_3f9491b6
+2026-05-08 11:28:51,285 - INFO - Deleting note via API: 69fd7b9b0fadc10297dd34d2
+2026-05-08 11:28:53,937 - INFO - Checking if note created: API_DELETE_3f9491b6
+2026-05-08 11:29:14,429 - ERROR - Error checking note creation: Message: 
+
+2026-05-08 11:29:17,058 - INFO - ====== WebDriver manager ======
+2026-05-08 11:29:17,979 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:29:18,260 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:29:18,587 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:29:19,469 - INFO - Local Chrome browser launched
+2026-05-08 11:29:19,826 - INFO - Performing login
+2026-05-08 11:29:22,232 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:29:22,377 - INFO - Creating note: MULTI_eb896d10
+2026-05-08 11:29:22,377 - INFO - Clicking add note button
+2026-05-08 11:29:22,377 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:23,693 - INFO - Entering text: MULTI_eb896d10
+2026-05-08 11:29:23,844 - INFO - Entering text: Description 0
+2026-05-08 11:29:23,947 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:29:24,041 - INFO - Creating note: MULTI_6e6576fa
+2026-05-08 11:29:24,042 - INFO - Clicking add note button
+2026-05-08 11:29:24,042 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:26,614 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:26,614 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:26,976 - INFO - Entering text: MULTI_6e6576fa
+2026-05-08 11:29:27,130 - INFO - Entering text: Description 1
+2026-05-08 11:29:27,271 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:29:27,406 - INFO - Creating note: MULTI_fac2be88
+2026-05-08 11:29:27,406 - INFO - Clicking add note button
+2026-05-08 11:29:27,406 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:29,631 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:29,631 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:29,964 - INFO - Entering text: MULTI_fac2be88
+2026-05-08 11:29:30,139 - INFO - Entering text: Description 2
+2026-05-08 11:29:30,256 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:29:30,349 - INFO - Calling login API
+2026-05-08 11:29:31,497 - INFO - Response Status: 200
+2026-05-08 11:29:31,512 - INFO - Fetching notes via API
+2026-05-08 11:29:50,550 - INFO - ====== WebDriver manager ======
+2026-05-08 11:29:51,450 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:29:51,768 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:29:52,047 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:29:53,098 - INFO - Local Chrome browser launched
+2026-05-08 11:29:55,507 - INFO - Performing login
+2026-05-08 11:29:56,064 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:29:56,206 - INFO - Creating note: Automation Note 0e73c984
+2026-05-08 11:29:56,207 - INFO - Clicking add note button
+2026-05-08 11:29:56,207 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:29:57,583 - INFO - Entering text: Automation Note 0e73c984
+2026-05-08 11:29:57,754 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:29:57,911 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:29:58,011 - INFO - Checking if note created: Automation Note 0e73c984
+2026-05-08 11:29:58,086 - INFO - Note found: Automation Note 0e73c984
+2026-05-08 11:30:00,353 - INFO - ====== WebDriver manager ======
+2026-05-08 11:30:01,229 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:30:01,532 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:30:01,798 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:30:02,504 - INFO - Local Chrome browser launched
+2026-05-08 11:30:05,110 - INFO - Performing login
+2026-05-08 11:30:05,503 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:30:05,744 - INFO - Getting notes count
+2026-05-08 11:30:06,823 - INFO - Total notes found: 58
+2026-05-08 11:30:06,823 - INFO - Deleting first note
+2026-05-08 11:30:06,823 - INFO - Getting notes count
+2026-05-08 11:30:06,844 - INFO - Total notes found: 58
+2026-05-08 11:30:07,006 - INFO - Getting notes count
+2026-05-08 11:30:07,023 - INFO - Total notes found: 58
+2026-05-08 11:30:07,523 - INFO - Getting notes count
+2026-05-08 11:30:07,569 - INFO - Total notes found: 57
+2026-05-08 11:30:07,570 - INFO - Note deleted successfully
+2026-05-08 11:30:07,570 - INFO - Getting notes count
+2026-05-08 11:30:07,602 - INFO - Total notes found: 57
+2026-05-08 11:49:51,280 - INFO - Calling login API
+2026-05-08 11:49:52,096 - INFO - Response Status: 200
+2026-05-08 11:49:52,098 - INFO - Creating note via API: API Note a9316b4c
+2026-05-08 11:49:52,729 - INFO - Response Status: 200
+2026-05-08 11:49:52,731 - INFO - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd808b0fadc10297dd3a3c","title":"API Note a9316b4c","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-08T06:19:55.249Z","updated_at":"2026-05-08T06:19:55.249Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:49:52,744 - INFO - Calling login API
+2026-05-08 11:49:53,448 - INFO - Response Status: 200
+2026-05-08 11:49:53,449 - INFO - Creating note via API: Delete API 341eb068
+2026-05-08 11:49:54,048 - INFO - Deleting note via API: 69fd808c0fadc10297dd3a42
+2026-05-08 11:49:54,613 - INFO - Delete response status: 200
+2026-05-08 11:49:55,237 - INFO - Calling login API
+2026-05-08 11:49:55,841 - INFO - Response Status: 200
+2026-05-08 11:49:55,842 - INFO - Creating note via API: 
+2026-05-08 11:49:56,422 - INFO - Calling login API
+2026-05-08 11:49:57,072 - INFO - Response Status: 200
+2026-05-08 11:49:57,073 - INFO - Fetching notes via API
+2026-05-08 11:49:57,655 - INFO - ====== WebDriver manager ======
+2026-05-08 11:49:59,239 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:49:59,529 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:49:59,817 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:50:01,602 - INFO - Local Chrome browser launched
+2026-05-08 11:50:04,060 - INFO - Performing login
+2026-05-08 11:50:04,575 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:50:04,889 - INFO - Creating note: UI_API_05670601
+2026-05-08 11:50:04,889 - INFO - Clicking add note button
+2026-05-08 11:50:04,889 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:50:06,340 - INFO - Entering text: UI_API_05670601
+2026-05-08 11:50:06,612 - INFO - Entering text: Created via UI validated via API
+2026-05-08 11:50:07,038 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:50:07,221 - INFO - Calling login API
+2026-05-08 11:50:08,045 - INFO - Response Status: 200
+2026-05-08 11:50:08,048 - INFO - Fetching notes via API
+2026-05-08 11:50:11,542 - INFO - ====== WebDriver manager ======
+2026-05-08 11:50:12,653 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:50:12,973 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:50:13,251 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:50:14,277 - INFO - Local Chrome browser launched
+2026-05-08 11:50:17,170 - INFO - Performing login
+2026-05-08 11:50:17,559 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:50:17,654 - INFO - Calling login API
+2026-05-08 11:50:18,541 - INFO - Response Status: 200
+2026-05-08 11:50:18,542 - INFO - Creating note via API: API_UI_57cdf759
+2026-05-08 11:50:19,172 - INFO - API Create Response Status: 200
+2026-05-08 11:50:19,172 - INFO - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd80a50fadc10297dd3a87","title":"API_UI_57cdf759","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-08T06:20:21.690Z","updated_at":"2026-05-08T06:20:21.690Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:50:20,672 - INFO - Checking if note created: API_UI_57cdf759
+2026-05-08 11:50:20,784 - INFO - Note found: API_UI_57cdf759
+2026-05-08 11:50:23,234 - INFO - ====== WebDriver manager ======
+2026-05-08 11:50:24,200 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:50:24,494 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:50:24,853 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:50:25,828 - INFO - Local Chrome browser launched
+2026-05-08 11:50:28,293 - INFO - Performing login
+2026-05-08 11:50:28,661 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:50:28,792 - INFO - Creating note: DELETE_UI_API_e879ca3a
+2026-05-08 11:50:28,792 - INFO - Clicking add note button
+2026-05-08 11:50:28,792 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:50:30,069 - INFO - Entering text: DELETE_UI_API_e879ca3a
+2026-05-08 11:50:30,209 - INFO - Entering text: Delete validation
+2026-05-08 11:50:30,346 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:50:30,446 - INFO - Calling login API
+2026-05-08 11:50:31,522 - INFO - Response Status: 200
+2026-05-08 11:50:31,524 - INFO - Fetching notes via API
+2026-05-08 11:50:32,287 - INFO - Deleting note by title: DELETE_UI_API_e879ca3a
+2026-05-08 11:50:32,288 - INFO - Getting notes count
+2026-05-08 11:50:32,538 - INFO - Total notes found: 61
+2026-05-08 11:50:32,832 - INFO - Getting notes count
+2026-05-08 11:50:32,854 - INFO - Total notes found: 61
+2026-05-08 11:50:33,354 - INFO - Getting notes count
+2026-05-08 11:50:33,388 - INFO - Total notes found: 60
+2026-05-08 11:50:33,389 - INFO - Note deleted successfully: DELETE_UI_API_e879ca3a
+2026-05-08 11:50:33,389 - INFO - Fetching notes via API
+2026-05-08 11:50:36,533 - INFO - ====== WebDriver manager ======
+2026-05-08 11:50:37,485 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:50:37,796 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:50:38,094 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:50:39,023 - INFO - Local Chrome browser launched
+2026-05-08 11:50:41,872 - INFO - Performing login
+2026-05-08 11:50:42,211 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:50:42,384 - INFO - Calling login API
+2026-05-08 11:50:43,239 - INFO - Response Status: 200
+2026-05-08 11:50:43,242 - INFO - Creating note via API: API_DELETE_7f523bd3
+2026-05-08 11:50:47,088 - INFO - Checking if note created: API_DELETE_7f523bd3
+2026-05-08 11:50:47,139 - INFO - Note found: API_DELETE_7f523bd3
+2026-05-08 11:50:47,139 - INFO - Deleting note via API: 69fd80be0fadc10297dd3abe
+2026-05-08 11:50:50,178 - INFO - Checking if note created: API_DELETE_7f523bd3
+2026-05-08 11:51:10,388 - ERROR - Error checking note creation: Message: 
+
+2026-05-08 11:51:12,818 - INFO - ====== WebDriver manager ======
+2026-05-08 11:51:13,820 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:14,107 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:14,385 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:51:15,384 - INFO - Local Chrome browser launched
+2026-05-08 11:51:18,023 - INFO - Performing login
+2026-05-08 11:51:18,338 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:51:18,439 - INFO - Creating note: MULTI_85af692b
+2026-05-08 11:51:18,439 - INFO - Clicking add note button
+2026-05-08 11:51:18,439 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:19,713 - INFO - Entering text: MULTI_85af692b
+2026-05-08 11:51:19,836 - INFO - Entering text: Description 0
+2026-05-08 11:51:19,969 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:51:20,066 - INFO - Creating note: MULTI_1bc1f7eb
+2026-05-08 11:51:20,067 - INFO - Clicking add note button
+2026-05-08 11:51:20,067 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:22,874 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:22,874 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:23,234 - INFO - Entering text: MULTI_1bc1f7eb
+2026-05-08 11:51:23,399 - INFO - Entering text: Description 1
+2026-05-08 11:51:23,507 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:51:23,606 - INFO - Creating note: MULTI_a4b52ebf
+2026-05-08 11:51:23,607 - INFO - Clicking add note button
+2026-05-08 11:51:23,607 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:25,843 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:25,843 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:51:26,130 - INFO - Entering text: MULTI_a4b52ebf
+2026-05-08 11:51:26,280 - INFO - Entering text: Description 2
+2026-05-08 11:51:26,424 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:51:26,604 - INFO - Calling login API
+2026-05-08 11:51:27,409 - INFO - Response Status: 200
+2026-05-08 11:51:27,412 - INFO - Fetching notes via API
+2026-05-08 11:51:30,689 - INFO - ====== WebDriver manager ======
+2026-05-08 11:51:31,631 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:31,920 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:32,193 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:51:33,053 - INFO - Local Chrome browser launched
+2026-05-08 11:51:35,896 - INFO - Performing login
+2026-05-08 11:51:36,246 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:51:36,393 - INFO - Checking login success
+2026-05-08 11:51:39,957 - INFO - ====== WebDriver manager ======
+2026-05-08 11:51:40,888 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:44,336 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:44,644 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:51:45,497 - INFO - Local Chrome browser launched
+2026-05-08 11:51:47,988 - INFO - Performing login
+2026-05-08 11:51:48,300 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:51:48,403 - INFO - Waiting for error message
+2026-05-08 11:51:51,379 - INFO - ====== WebDriver manager ======
+2026-05-08 11:51:52,420 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:52,720 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:51:53,016 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:51:53,879 - INFO - Local Chrome browser launched
+2026-05-08 11:51:56,667 - INFO - Performing login
+2026-05-08 11:51:57,037 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:51:57,112 - INFO - Checking login success
+2026-05-08 11:51:58,236 - INFO - Logging out
+2026-05-08 11:51:58,236 - INFO - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-08 11:51:58,309 - INFO - Checking logout success
+2026-05-08 11:52:01,311 - INFO - ====== WebDriver manager ======
+2026-05-08 11:52:02,454 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:52:02,779 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:52:03,056 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:52:04,024 - INFO - Local Chrome browser launched
+2026-05-08 11:52:06,461 - INFO - Performing login
+2026-05-08 11:52:06,771 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:52:06,856 - INFO - Clicking add note button
+2026-05-08 11:52:06,856 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:52:08,079 - INFO - Entering text: Validation test
+2026-05-08 11:52:08,212 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:52:10,770 - INFO - ====== WebDriver manager ======
+2026-05-08 11:52:11,713 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:52:12,139 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:52:12,441 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:52:13,443 - INFO - Local Chrome browser launched
+2026-05-08 11:52:16,632 - INFO - Performing login
+2026-05-08 11:52:16,971 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:52:17,062 - INFO - Creating note: Automation Note c17799b1
+2026-05-08 11:52:17,063 - INFO - Clicking add note button
+2026-05-08 11:52:17,063 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:52:18,463 - INFO - Entering text: Automation Note c17799b1
+2026-05-08 11:52:18,635 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:52:18,787 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:52:18,915 - INFO - Checking if note created: Automation Note c17799b1
+2026-05-08 11:52:18,981 - INFO - Note found: Automation Note c17799b1
+2026-05-08 11:52:21,483 - INFO - ====== WebDriver manager ======
+2026-05-08 11:52:22,417 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:52:22,702 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:52:22,983 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:52:23,845 - INFO - Local Chrome browser launched
+2026-05-08 11:52:26,187 - INFO - Performing login
+2026-05-08 11:52:26,520 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:52:26,650 - INFO - Getting notes count
+2026-05-08 11:52:27,710 - INFO - Total notes found: 64
+2026-05-08 11:52:27,711 - INFO - Deleting first note
+2026-05-08 11:52:27,711 - INFO - Getting notes count
+2026-05-08 11:52:27,737 - INFO - Total notes found: 64
+2026-05-08 11:52:27,929 - INFO - Getting notes count
+2026-05-08 11:52:27,945 - INFO - Total notes found: 64
+2026-05-08 11:52:28,446 - INFO - Getting notes count
+2026-05-08 11:52:28,473 - INFO - Total notes found: 63
+2026-05-08 11:52:28,473 - INFO - Note deleted successfully
+2026-05-08 11:52:28,473 - INFO - Getting notes count
+2026-05-08 11:52:28,491 - INFO - Total notes found: 63
+2026-05-08 11:55:35,608 - INFO - Calling login API
+2026-05-08 11:55:35,609 - INFO - Calling login API
+2026-05-08 11:55:36,697 - INFO - Calling login API
+2026-05-08 11:55:36,873 - INFO - Response Status: 200
+2026-05-08 11:55:36,875 - INFO - Fetching notes via API
+2026-05-08 11:55:36,875 - INFO - Response Status: 200
+2026-05-08 11:55:36,877 - INFO - Creating note via API: API Note 17f6a39c
+2026-05-08 11:55:37,676 - INFO - Response Status: 200
+2026-05-08 11:55:37,677 - INFO - Creating note via API: 
+2026-05-08 11:55:37,885 - INFO - xdist worker is: gw2
+2026-05-08 11:55:37,887 - INFO - ====== WebDriver manager ======
+2026-05-08 11:55:38,024 - INFO - Response Status: 200
+2026-05-08 11:55:38,024 - INFO - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd81e40fadc10297dd3bc1","title":"API Note 17f6a39c","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-08T06:25:40.511Z","updated_at":"2026-05-08T06:25:40.511Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:55:38,031 - INFO - Calling login API
+2026-05-08 11:55:38,660 - INFO - xdist worker is: gw1
+2026-05-08 11:55:38,661 - INFO - ====== WebDriver manager ======
+2026-05-08 11:55:39,344 - INFO - Response Status: 200
+2026-05-08 11:55:39,346 - INFO - Creating note via API: Delete API 4606168a
+2026-05-08 11:55:39,902 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:40,354 - INFO - Deleting note via API: 69fd81e60fadc10297dd3bc8
+2026-05-08 11:55:40,454 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:40,481 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:41,087 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:41,101 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:41,260 - INFO - Delete response status: 200
+2026-05-08 11:55:41,277 - INFO - xdist worker is: gw0
+2026-05-08 11:55:41,278 - INFO - ====== WebDriver manager ======
+2026-05-08 11:55:41,736 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:42,637 - INFO - WebDriver version 147.0.7727.117 selected
+2026-05-08 11:55:42,651 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:55:42,651 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:55:43,128 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:43,349 - INFO - WebDriver version 147.0.7727.117 selected
+2026-05-08 11:55:43,359 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:55:43,359 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:55:43,372 - INFO - Driver downloading response is 200
+2026-05-08 11:55:43,839 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:43,923 - INFO - Driver downloading response is 200
+2026-05-08 11:55:44,092 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:44,480 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:44,608 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:45,151 - INFO - Driver has been saved in cache [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117]
+2026-05-08 11:55:45,609 - INFO - Driver has been saved in cache [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117]
+2026-05-08 11:55:46,142 - INFO - WebDriver version 147.0.7727.117 selected
+2026-05-08 11:55:46,151 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:55:46,152 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-08 11:55:46,675 - INFO - Driver downloading response is 200
+2026-05-08 11:55:47,203 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:55:49,078 - INFO - Local Chrome browser launched
+2026-05-08 11:55:49,275 - INFO - Local Chrome browser launched
+2026-05-08 11:55:49,335 - INFO - Driver has been saved in cache [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117]
+2026-05-08 11:55:52,092 - INFO - Performing login
+2026-05-08 11:55:52,971 - INFO - Performing login
+2026-05-08 11:55:55,235 - INFO - Local Chrome browser launched
+2026-05-08 11:55:55,331 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:55:55,592 - INFO - Creating note: UI_API_7dce55c4
+2026-05-08 11:55:55,593 - INFO - Clicking add note button
+2026-05-08 11:55:55,594 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:55:55,671 - INFO - Performing login
+2026-05-08 11:55:58,589 - INFO - Entering text: UI_API_7dce55c4
+2026-05-08 11:55:59,316 - INFO - Entering text: Created via UI validated via API
+2026-05-08 11:55:59,542 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:55:59,819 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:55:59,968 - INFO - Calling login API
+2026-05-08 11:56:00,465 - INFO - Calling login API
+2026-05-08 11:56:01,163 - INFO - Response Status: 200
+2026-05-08 11:56:01,171 - INFO - Fetching notes via API
+2026-05-08 11:56:01,740 - INFO - Response Status: 200
+2026-05-08 11:56:01,755 - INFO - Creating note via API: API_DELETE_5c0a952c
+2026-05-08 11:56:06,475 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:56:06,752 - INFO - Checking if note created: API_DELETE_5c0a952c
+2026-05-08 11:56:06,907 - INFO - Note found: API_DELETE_5c0a952c
+2026-05-08 11:56:06,907 - INFO - Deleting note via API: 69fd81fd0fadc10297dd3be4
+2026-05-08 11:56:07,478 - INFO - Calling login API
+2026-05-08 11:56:09,070 - INFO - Response Status: 200
+2026-05-08 11:56:09,112 - INFO - Creating note via API: API_UI_4a634743
+2026-05-08 11:56:11,018 - INFO - API Create Response Status: 200
+2026-05-08 11:56:11,019 - INFO - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd82050fadc10297dd3bf5","title":"API_UI_4a634743","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-08T06:26:13.536Z","updated_at":"2026-05-08T06:26:13.536Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:56:13,705 - INFO - Checking if note created: API_DELETE_5c0a952c
+2026-05-08 11:56:14,644 - INFO - Checking if note created: API_UI_4a634743
+2026-05-08 11:56:16,419 - INFO - Note found: API_UI_4a634743
+2026-05-08 11:56:16,610 - INFO - xdist worker is: gw2
+2026-05-08 11:56:16,611 - INFO - ====== WebDriver manager ======
+2026-05-08 11:56:18,945 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:19,582 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:20,104 - INFO - Driver [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:56:22,920 - INFO - xdist worker is: gw1
+2026-05-08 11:56:22,921 - INFO - ====== WebDriver manager ======
+2026-05-08 11:56:22,933 - INFO - Local Chrome browser launched
+2026-05-08 11:56:25,292 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:26,288 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:26,621 - INFO - Performing login
+2026-05-08 11:56:26,973 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:56:28,848 - INFO - Local Chrome browser launched
+2026-05-08 11:56:29,169 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:56:29,421 - INFO - Creating note: DELETE_UI_API_ca19edc3
+2026-05-08 11:56:29,421 - INFO - Clicking add note button
+2026-05-08 11:56:29,421 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:31,492 - INFO - Entering text: DELETE_UI_API_ca19edc3
+2026-05-08 11:56:31,888 - INFO - Performing login
+2026-05-08 11:56:32,048 - INFO - Entering text: Delete validation
+2026-05-08 11:56:32,420 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:56:32,822 - INFO - Calling login API
+2026-05-08 11:56:33,306 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:56:33,571 - INFO - Creating note: MULTI_7f209552
+2026-05-08 11:56:33,571 - INFO - Clicking add note button
+2026-05-08 11:56:33,571 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:34,107 - ERROR - Error checking note creation: Message: 
+
+2026-05-08 11:56:34,189 - INFO - Response Status: 200
+2026-05-08 11:56:34,191 - INFO - Fetching notes via API
+2026-05-08 11:56:35,972 - INFO - Entering text: MULTI_7f209552
+2026-05-08 11:56:36,352 - INFO - Entering text: Description 0
+2026-05-08 11:56:36,667 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:56:36,667 - INFO - Deleting note by title: DELETE_UI_API_ca19edc3
+2026-05-08 11:56:36,668 - INFO - Getting notes count
+2026-05-08 11:56:36,909 - INFO - Creating note: MULTI_7d96519b
+2026-05-08 11:56:36,909 - INFO - Clicking add note button
+2026-05-08 11:56:36,909 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:39,111 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:39,111 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:39,790 - INFO - Entering text: MULTI_7d96519b
+2026-05-08 11:56:40,059 - INFO - Entering text: Description 1
+2026-05-08 11:56:40,325 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:56:40,516 - INFO - Creating note: MULTI_9747d472
+2026-05-08 11:56:40,516 - INFO - Clicking add note button
+2026-05-08 11:56:40,516 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:41,225 - INFO - Total notes found: 67
+2026-05-08 11:56:43,248 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:43,248 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:56:44,048 - INFO - Entering text: MULTI_9747d472
+2026-05-08 11:56:44,500 - INFO - Entering text: Description 2
+2026-05-08 11:56:44,893 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:56:45,281 - INFO - Calling login API
+2026-05-08 11:56:46,739 - INFO - Response Status: 200
+2026-05-08 11:56:46,750 - INFO - Fetching notes via API
+2026-05-08 11:56:52,946 - INFO - xdist worker is: gw0
+2026-05-08 11:56:52,947 - INFO - ====== WebDriver manager ======
+2026-05-08 11:56:53,386 - INFO - xdist worker is: gw1
+2026-05-08 11:56:53,386 - INFO - ====== WebDriver manager ======
+2026-05-08 11:56:55,394 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:56,358 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:57,029 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:57,464 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:56:57,848 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:56:58,249 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:56:59,157 - INFO - Local Chrome browser launched
+2026-05-08 11:57:00,127 - INFO - Local Chrome browser launched
+2026-05-08 11:57:02,563 - INFO - Performing login
+2026-05-08 11:57:03,593 - INFO - Performing login
+2026-05-08 11:57:04,767 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:05,072 - INFO - Checking login success
+2026-05-08 11:57:06,281 - INFO - Logging out
+2026-05-08 11:57:06,281 - INFO - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-08 11:57:06,483 - INFO - Checking logout success
+2026-05-08 11:57:07,416 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:07,601 - INFO - Checking login success
+2026-05-08 11:57:12,924 - INFO - xdist worker is: gw0
+2026-05-08 11:57:12,925 - INFO - ====== WebDriver manager ======
+2026-05-08 11:57:13,221 - INFO - xdist worker is: gw1
+2026-05-08 11:57:13,222 - INFO - ====== WebDriver manager ======
+2026-05-08 11:57:14,973 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:15,064 - INFO - xdist worker is: gw2
+2026-05-08 11:57:15,065 - INFO - ====== WebDriver manager ======
+2026-05-08 11:57:15,261 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:15,898 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:16,270 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:16,883 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:16,908 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:57:17,208 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:57:18,727 - INFO - Local Chrome browser launched
+2026-05-08 11:57:19,042 - INFO - Local Chrome browser launched
+2026-05-08 11:57:19,219 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:19,291 - INFO - Performing login
+2026-05-08 11:57:20,194 - INFO - Driver [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:57:22,334 - INFO - Local Chrome browser launched
+2026-05-08 11:57:23,809 - INFO - Performing login
+2026-05-08 11:57:25,196 - INFO - Performing login
+2026-05-08 11:57:26,797 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:26,881 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:27,043 - INFO - Creating note: Automation Note 2cb78fc3
+2026-05-08 11:57:27,043 - INFO - Clicking add note button
+2026-05-08 11:57:27,043 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:57:27,118 - INFO - Creating note: DELETE_UI_API_e274686d
+2026-05-08 11:57:27,118 - INFO - Clicking add note button
+2026-05-08 11:57:27,118 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:57:27,464 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:27,917 - INFO - Clicking add note button
+2026-05-08 11:57:27,918 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 11:57:28,961 - INFO - Entering text: DELETE_UI_API_e274686d
+2026-05-08 11:57:29,230 - INFO - Entering text: Validation test
+2026-05-08 11:57:29,291 - INFO - Entering text: Delete validation
+2026-05-08 11:57:29,518 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:57:29,518 - INFO - Entering text: Automation Note 2cb78fc3
+2026-05-08 11:57:29,588 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:57:29,760 - INFO - Calling login API
+2026-05-08 11:57:29,878 - INFO - Entering text: Created by Selenium automation
+2026-05-08 11:57:30,260 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 11:57:30,791 - INFO - Checking if note created: Automation Note 2cb78fc3
+2026-05-08 11:57:31,029 - INFO - Note found: Automation Note 2cb78fc3
+2026-05-08 11:57:31,124 - INFO - Response Status: 200
+2026-05-08 11:57:31,128 - INFO - Fetching notes via API
+2026-05-08 11:57:32,694 - INFO - Deleting note by title: DELETE_UI_API_e274686d
+2026-05-08 11:57:32,694 - INFO - Getting notes count
+2026-05-08 11:57:33,071 - INFO - Total notes found: 72
+2026-05-08 11:57:33,483 - INFO - Getting notes count
+2026-05-08 11:57:33,508 - INFO - Total notes found: 72
+2026-05-08 11:57:34,009 - INFO - Getting notes count
+2026-05-08 11:57:34,031 - INFO - Total notes found: 71
+2026-05-08 11:57:34,031 - INFO - Note deleted successfully: DELETE_UI_API_e274686d
+2026-05-08 11:57:34,031 - INFO - Fetching notes via API
+2026-05-08 11:57:35,817 - INFO - xdist worker is: gw0
+2026-05-08 11:57:35,818 - INFO - ====== WebDriver manager ======
+2026-05-08 11:57:36,995 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:37,501 - INFO - xdist worker is: gw2
+2026-05-08 11:57:37,502 - INFO - ====== WebDriver manager ======
+2026-05-08 11:57:37,503 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:37,964 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:57:39,065 - INFO - Local Chrome browser launched
+2026-05-08 11:57:39,423 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:39,427 - INFO - Performing login
+2026-05-08 11:57:40,005 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:57:40,706 - INFO - Driver [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:57:42,178 - INFO - Local Chrome browser launched
+2026-05-08 11:57:42,460 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:42,786 - INFO - Getting notes count
+2026-05-08 11:57:43,702 - INFO - Total notes found: 71
+2026-05-08 11:57:43,702 - INFO - Deleting first note
+2026-05-08 11:57:43,702 - INFO - Getting notes count
+2026-05-08 11:57:43,789 - INFO - Total notes found: 71
+2026-05-08 11:57:44,356 - INFO - Getting notes count
+2026-05-08 11:57:44,392 - INFO - Total notes found: 71
+2026-05-08 11:57:44,627 - INFO - Performing login
+2026-05-08 11:57:44,893 - INFO - Getting notes count
+2026-05-08 11:57:45,075 - INFO - Total notes found: 70
+2026-05-08 11:57:45,076 - INFO - Note deleted successfully
+2026-05-08 11:57:45,076 - INFO - Getting notes count
+2026-05-08 11:57:45,124 - INFO - Total notes found: 70
+2026-05-08 11:57:45,360 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 11:57:45,681 - INFO - Waiting for error message
+2026-05-08 11:59:54,005 - INFO - Calling login API
+2026-05-08 11:59:54,008 - INFO - Calling login API
+2026-05-08 11:59:54,834 - INFO - Calling login API
+2026-05-08 11:59:54,943 - INFO - Response Status: 200
+2026-05-08 11:59:54,944 - INFO - Creating note via API: API Note 17ea92c9
+2026-05-08 11:59:55,119 - INFO - Response Status: 200
+2026-05-08 11:59:55,121 - INFO - Fetching notes via API
+2026-05-08 11:59:55,591 - INFO - Response Status: 200
+2026-05-08 11:59:55,592 - INFO - Creating note via API: 
+2026-05-08 11:59:55,839 - INFO - Response Status: 200
+2026-05-08 11:59:55,839 - INFO - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd82e60fadc10297dd3d0c","title":"API Note 17ea92c9","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-08T06:29:58.361Z","updated_at":"2026-05-08T06:29:58.361Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 11:59:55,850 - INFO - Calling login API
+2026-05-08 11:59:55,976 - INFO - xdist worker is: gw2
+2026-05-08 11:59:55,977 - INFO - ====== WebDriver manager ======
+2026-05-08 11:59:56,353 - INFO - xdist worker is: gw1
+2026-05-08 11:59:56,354 - INFO - ====== WebDriver manager ======
+2026-05-08 11:59:56,903 - INFO - Response Status: 200
+2026-05-08 11:59:56,906 - INFO - Creating note via API: Delete API 7c4f2626
+2026-05-08 11:59:57,731 - INFO - Deleting note via API: 69fd82e80fadc10297dd3d15
+2026-05-08 11:59:57,827 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:59:58,070 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:59:58,489 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:59:58,577 - INFO - Delete response status: 200
+2026-05-08 11:59:58,595 - INFO - xdist worker is: gw0
+2026-05-08 11:59:58,596 - INFO - ====== WebDriver manager ======
+2026-05-08 11:59:58,643 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 11:59:59,134 - INFO - Driver [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 11:59:59,228 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:00:00,826 - INFO - Local Chrome browser launched
+2026-05-08 12:00:01,253 - INFO - Performing login
+2026-05-08 12:00:01,829 - INFO - Local Chrome browser launched
+2026-05-08 12:00:04,865 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:05,184 - INFO - Performing login
+2026-05-08 12:00:06,391 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:07,145 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:00:07,265 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:00:07,394 - INFO - Calling login API
+2026-05-08 12:00:07,480 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:00:07,489 - INFO - Creating note: UI_API_c24aab75
+2026-05-08 12:00:07,489 - INFO - Clicking add note button
+2026-05-08 12:00:07,489 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:08,883 - INFO - Response Status: 200
+2026-05-08 12:00:08,885 - INFO - Creating note via API: API_UI_e562533c
+2026-05-08 12:00:09,773 - INFO - Local Chrome browser launched
+2026-05-08 12:00:10,270 - INFO - Performing login
+2026-05-08 12:00:10,733 - INFO - Entering text: UI_API_c24aab75
+2026-05-08 12:00:11,538 - INFO - Entering text: Created via UI validated via API
+2026-05-08 12:00:11,668 - INFO - API Create Response Status: 200
+2026-05-08 12:00:11,669 - INFO - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fd82f60fadc10297dd3d2a","title":"API_UI_e562533c","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-08T06:30:14.179Z","updated_at":"2026-05-08T06:30:14.179Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-08 12:00:13,189 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:00:14,360 - INFO - Calling login API
+2026-05-08 12:00:16,959 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:00:17,607 - INFO - Creating note: DELETE_UI_API_09c4eea0
+2026-05-08 12:00:17,607 - INFO - Clicking add note button
+2026-05-08 12:00:17,607 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:17,769 - INFO - Response Status: 200
+2026-05-08 12:00:17,789 - INFO - Fetching notes via API
+2026-05-08 12:00:20,011 - INFO - Checking if note created: API_UI_e562533c
+2026-05-08 12:00:22,128 - INFO - Entering text: DELETE_UI_API_09c4eea0
+2026-05-08 12:00:23,059 - INFO - Entering text: Delete validation
+2026-05-08 12:00:23,275 - INFO - Note found: API_UI_e562533c
+2026-05-08 12:00:23,342 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:00:23,722 - INFO - Calling login API
+2026-05-08 12:00:25,653 - INFO - Response Status: 200
+2026-05-08 12:00:25,655 - INFO - Fetching notes via API
+2026-05-08 12:00:27,554 - INFO - Deleting note by title: DELETE_UI_API_09c4eea0
+2026-05-08 12:00:27,555 - INFO - Getting notes count
+2026-05-08 12:00:29,707 - INFO - Total notes found: 74
+2026-05-08 12:00:33,144 - INFO - xdist worker is: gw1
+2026-05-08 12:00:33,145 - INFO - ====== WebDriver manager ======
+2026-05-08 12:00:33,501 - INFO - xdist worker is: gw2
+2026-05-08 12:00:33,502 - INFO - ====== WebDriver manager ======
+2026-05-08 12:00:35,420 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:35,738 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:36,017 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:36,429 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:36,590 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:00:36,963 - INFO - Driver [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:00:38,573 - INFO - Local Chrome browser launched
+2026-05-08 12:00:38,909 - INFO - Local Chrome browser launched
+2026-05-08 12:00:39,566 - INFO - Performing login
+2026-05-08 12:00:40,418 - INFO - xdist worker is: gw0
+2026-05-08 12:00:40,418 - INFO - ====== WebDriver manager ======
+2026-05-08 12:00:41,983 - INFO - Performing login
+2026-05-08 12:00:44,199 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:45,181 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:00:45,872 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:00:47,128 - INFO - Local Chrome browser launched
+2026-05-08 12:00:48,765 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:00:48,880 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:00:49,029 - INFO - Creating note: MULTI_7c7fe6d0
+2026-05-08 12:00:49,030 - INFO - Clicking add note button
+2026-05-08 12:00:49,030 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:49,525 - INFO - Calling login API
+2026-05-08 12:00:49,820 - INFO - Performing login
+2026-05-08 12:00:51,151 - INFO - Response Status: 200
+2026-05-08 12:00:51,154 - INFO - Creating note via API: API_DELETE_626a216b
+2026-05-08 12:00:51,366 - INFO - Entering text: MULTI_7c7fe6d0
+2026-05-08 12:00:51,779 - INFO - Entering text: Description 0
+2026-05-08 12:00:51,998 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:00:52,270 - INFO - Creating note: MULTI_0cf72516
+2026-05-08 12:00:52,271 - INFO - Clicking add note button
+2026-05-08 12:00:52,271 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:53,336 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:00:54,571 - INFO - Creating note: DELETE_UI_API_6c6ee2fe
+2026-05-08 12:00:54,571 - INFO - Clicking add note button
+2026-05-08 12:00:54,571 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:55,942 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:55,943 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:00:56,483 - INFO - Entering text: DELETE_UI_API_6c6ee2fe
+2026-05-08 12:00:56,990 - INFO - Entering text: Delete validation
+2026-05-08 12:00:57,300 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:00:57,523 - INFO - Calling login API
+2026-05-08 12:00:58,144 - INFO - Entering text: MULTI_0cf72516
+2026-05-08 12:00:59,037 - INFO - Entering text: Description 1
+2026-05-08 12:00:59,446 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:00:59,606 - INFO - Response Status: 200
+2026-05-08 12:00:59,609 - INFO - Fetching notes via API
+2026-05-08 12:00:59,752 - INFO - Creating note: MULTI_e8b14596
+2026-05-08 12:00:59,752 - INFO - Clicking add note button
+2026-05-08 12:00:59,752 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:01:00,846 - INFO - Deleting note by title: DELETE_UI_API_6c6ee2fe
+2026-05-08 12:01:00,847 - INFO - Getting notes count
+2026-05-08 12:01:01,109 - INFO - Total notes found: 77
+2026-05-08 12:01:01,760 - INFO - Getting notes count
+2026-05-08 12:01:01,851 - INFO - Total notes found: 77
+2026-05-08 12:01:02,015 - WARNING - Retry 1 for click on ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:01:02,016 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:01:02,352 - INFO - Getting notes count
+2026-05-08 12:01:02,385 - INFO - Total notes found: 76
+2026-05-08 12:01:02,385 - INFO - Note deleted successfully: DELETE_UI_API_6c6ee2fe
+2026-05-08 12:01:02,385 - INFO - Fetching notes via API
+2026-05-08 12:01:02,667 - INFO - Entering text: MULTI_e8b14596
+2026-05-08 12:01:03,090 - INFO - Entering text: Description 2
+2026-05-08 12:01:03,391 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:01:03,581 - INFO - Calling login API
+2026-05-08 12:01:04,621 - INFO - Checking if note created: API_DELETE_626a216b
+2026-05-08 12:01:04,808 - INFO - Note found: API_DELETE_626a216b
+2026-05-08 12:01:04,808 - INFO - Deleting note via API: 69fd831e0fadc10297dd3d73
+2026-05-08 12:01:04,958 - INFO - Response Status: 200
+2026-05-08 12:01:04,979 - INFO - Fetching notes via API
+2026-05-08 12:01:08,663 - INFO - Checking if note created: API_DELETE_626a216b
+2026-05-08 12:01:10,540 - INFO - xdist worker is: gw0
+2026-05-08 12:01:10,541 - INFO - ====== WebDriver manager ======
+2026-05-08 12:01:10,699 - INFO - xdist worker is: gw1
+2026-05-08 12:01:10,699 - INFO - ====== WebDriver manager ======
+2026-05-08 12:01:14,173 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:14,180 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:15,370 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:15,429 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:16,254 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:01:16,317 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:01:18,126 - INFO - Local Chrome browser launched
+2026-05-08 12:01:18,347 - INFO - Local Chrome browser launched
+2026-05-08 12:01:21,708 - INFO - Performing login
+2026-05-08 12:01:22,147 - INFO - Performing login
+2026-05-08 12:01:23,228 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:01:23,505 - INFO - Waiting for error message
+2026-05-08 12:01:23,745 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:01:24,070 - INFO - Checking login success
+2026-05-08 12:01:27,799 - INFO - xdist worker is: gw1
+2026-05-08 12:01:27,799 - INFO - ====== WebDriver manager ======
+2026-05-08 12:01:28,127 - INFO - xdist worker is: gw0
+2026-05-08 12:01:28,129 - INFO - ====== WebDriver manager ======
+2026-05-08 12:01:28,695 - ERROR - Error checking note creation: Message: 
+
+2026-05-08 12:01:30,317 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:30,624 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:30,992 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:31,366 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:31,658 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:01:32,017 - INFO - Driver [C:\Users\dell\.wdm\gw0\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:01:32,940 - INFO - Local Chrome browser launched
+2026-05-08 12:01:33,851 - INFO - xdist worker is: gw2
+2026-05-08 12:01:33,852 - INFO - ====== WebDriver manager ======
+2026-05-08 12:01:33,930 - INFO - Local Chrome browser launched
+2026-05-08 12:01:36,360 - INFO - Performing login
+2026-05-08 12:01:37,079 - INFO - Performing login
+2026-05-08 12:01:38,063 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:38,908 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:40,017 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:01:40,738 - INFO - Driver [C:\Users\dell\.wdm\gw2\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:01:41,313 - INFO - Creating note: Automation Note 0dbed63a
+2026-05-08 12:01:41,314 - INFO - Clicking add note button
+2026-05-08 12:01:41,315 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:01:42,599 - INFO - Local Chrome browser launched
+2026-05-08 12:01:42,956 - INFO - Performing login
+2026-05-08 12:01:44,402 - INFO - Entering text: Automation Note 0dbed63a
+2026-05-08 12:01:44,618 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:01:44,791 - INFO - Entering text: Created by Selenium automation
+2026-05-08 12:01:44,944 - INFO - Clicking add note button
+2026-05-08 12:01:44,945 - INFO - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-08 12:01:45,209 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:01:45,495 - INFO - Checking if note created: Automation Note 0dbed63a
+2026-05-08 12:01:46,043 - INFO - Note found: Automation Note 0dbed63a
+2026-05-08 12:01:46,330 - INFO - Entering text: Validation test
+2026-05-08 12:01:46,839 - INFO - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-08 12:01:47,477 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:01:47,692 - INFO - Checking login success
+2026-05-08 12:01:48,775 - INFO - Logging out
+2026-05-08 12:01:48,775 - INFO - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-08 12:01:48,874 - INFO - Checking logout success
+2026-05-08 12:01:50,220 - INFO - xdist worker is: gw1
+2026-05-08 12:01:50,220 - INFO - ====== WebDriver manager ======
+2026-05-08 12:01:51,706 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:52,142 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-08 12:01:52,591 - INFO - Driver [C:\Users\dell\.wdm\gw1\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-08 12:01:54,328 - INFO - Local Chrome browser launched
+2026-05-08 12:01:57,142 - INFO - Performing login
+2026-05-08 12:01:57,502 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-08 12:01:57,627 - INFO - Getting notes count
+2026-05-08 12:01:58,716 - INFO - Total notes found: 78
+2026-05-08 12:01:58,716 - INFO - Deleting first note
+2026-05-08 12:01:58,716 - INFO - Getting notes count
+2026-05-08 12:01:58,734 - INFO - Total notes found: 78
+2026-05-08 12:01:58,988 - INFO - Getting notes count
+2026-05-08 12:01:59,018 - INFO - Total notes found: 78
+2026-05-08 12:01:59,518 - INFO - Getting notes count
+2026-05-08 12:01:59,535 - INFO - Total notes found: 77
+2026-05-08 12:01:59,535 - INFO - Note deleted successfully
+2026-05-08 12:01:59,535 - INFO - Getting notes count
+2026-05-08 12:01:59,552 - INFO - Total notes found: 77

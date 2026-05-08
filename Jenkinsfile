@@ -77,7 +77,7 @@ pipeline {
 
                     def status = bat(
                         returnStatus: true,
-                        script: '.\\%VENV%\\Scripts\\pytest tests --alluredir=reports/allure-results --html=reports/report.html --self-contained-html'
+                        script: '.\\%VENV%\\Scripts\\pytest -n 2 tests --alluredir=reports/allure-results --html=reports/report.html --self-contained-html'
                     )
 
                     if (status != 0) {
