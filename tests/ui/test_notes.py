@@ -55,14 +55,52 @@ def test_delete_note(driver):
 
     notes_page = NotesPage(driver)
 
-    before_delete = (
-        notes_page.get_notes_count()
+    unique_id = str(uuid.uuid4())[:8]
+
+    title = f"Delete Note {unique_id}"
+
+    notes_page.create_note(
+        title,
+        "Note created for delete validation",
+        category="Home"
     )
 
-    notes_page.delete_first_note()
+    assert notes_page.is_note_created(title)
 
-    after_delete = (
-        notes_page.get_notes_count()
+    assert notes_page.delete_note_by_title(title)
+
+    assert notes_page.is_note_absent(title)
+
+
+@pytest.mark.ui
+def test_edit_note(driver):
+
+    login(driver)
+
+    notes_page = NotesPage(driver)
+
+    unique_id = str(uuid.uuid4())[:8]
+
+    title = f"Edit Note {unique_id}"
+
+    updated_title = f"Edited Note {unique_id}"
+
+    updated_description = "Updated by Selenium automation"
+
+    notes_page.create_note(
+        title,
+        "Original note description",
+        category="Home"
     )
 
-    assert after_delete <= before_delete-1
+    notes_page.edit_note_by_title(
+        title,
+        updated_title,
+        updated_description,
+        category="Work",
+        completed=True
+    )
+
+    assert notes_page.is_note_created(updated_title)
+
+    assert not notes_page.is_note_created(title)

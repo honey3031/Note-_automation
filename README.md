@@ -95,6 +95,7 @@ notes-automation/
 * Invalid login validation
 * Logout functionality
 * Note creation
+* Note editing
 * Note deletion
 * Form validation
 
@@ -102,6 +103,7 @@ notes-automation/
 
 * GET Notes API
 * Create Note API
+* Update Note API
 * Delete Note API
 * Unauthorized access validation
 * Response validation
@@ -111,6 +113,8 @@ notes-automation/
 
 * UI → API synchronization
 * API → UI synchronization
+* UI edit reflected in API
+* API edit reflected in UI
 * UI delete reflected in API
 * API delete reflected in UI
 * Multiple note synchronization validation
@@ -157,6 +161,12 @@ Implemented:
 * Retry for intercepted clicks
 * JavaScript fallback click
 * Explicit waits
+
+After installing `pytest-rerunfailures`, command-level reruns can be enabled with:
+
+```bash
+pytest --reruns 1 --reruns-delay 2
+```
 
 ---
 
@@ -349,14 +359,26 @@ allure-report/
 
 ---
 
+# Capstone Documentation
+
+The Section 1 and advanced-quality deliverables are included under:
+
+```text
+docs/manual_test_plan.md
+docs/test_scenarios_test_cases_rtm.md
+docs/advanced_quality_intelligence.md
+```
+
+---
+
 # Total Test Coverage
 
 | Test Type | Count |
 | --------- | ----- |
-| UI Tests  | 6     |
-| API Tests | 5     |
-| E2E Tests | 4     |
-| Total     | 16    |
+| UI Tests  | 7     |
+| API Tests | 8     |
+| E2E Tests | 8     |
+| Total     | 23    |
 
 ---
 

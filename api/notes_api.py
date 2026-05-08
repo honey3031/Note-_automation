@@ -35,7 +35,8 @@ class NotesAPI:
         self,
         title,
         description,
-        category="Home"
+        category="Home",
+        completed=False
     ):
 
         logger.info(
@@ -47,10 +48,43 @@ class NotesAPI:
         payload = {
             "title": title,
             "description": description,
-            "category": category
+            "category": category,
+            "completed": completed
         }
 
         response = requests.post(
+            endpoint,
+            json=payload,
+            headers=self.headers
+        )
+
+        return response
+
+    def update_note(
+        self,
+        note_id,
+        title,
+        description,
+        category="Work",
+        completed=True
+    ):
+
+        logger.info(
+            f"Updating note via API: {note_id}"
+        )
+
+        endpoint = (
+            f"{self.base_url}/notes/{note_id}"
+        )
+
+        payload = {
+            "title": title,
+            "description": description,
+            "category": category,
+            "completed": completed
+        }
+
+        response = requests.put(
             endpoint,
             json=payload,
             headers=self.headers

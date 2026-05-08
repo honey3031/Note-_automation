@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import StaleElementReferenceException
 from pages.base_page import BasePage
 
 from utils.logger import get_logger
@@ -38,7 +39,7 @@ class NotesPage(BasePage):
 
     COMPLETED_CHECKBOX = (
         By.CSS_SELECTOR,
-        "input[type='checkbox']"
+        ".modal.show input[type='checkbox']"
     )
 
     SAVE_BUTTON = (
@@ -56,6 +57,11 @@ class NotesPage(BasePage):
         "[data-testid='note-delete']"
     )
 
+    EDIT_BUTTON = (
+        By.CSS_SELECTOR,
+        "[data-testid='note-edit']"
+    )
+
     SUCCESS_MESSAGE = (
         By.CSS_SELECTOR,
         "[data-testid='alert-message']"
@@ -64,6 +70,40 @@ class NotesPage(BasePage):
         By.CSS_SELECTOR,
         "[data-testid='note-delete-confirm']"
     )
+
+    @staticmethod
+    def _xpath_literal(text):
+
+        if "'" not in text:
+
+            return f"'{text}'"
+
+        if '"' not in text:
+
+            return f'"{text}"'
+
+        parts = text.split("'")
+
+        return "concat(" + ', "\'", '.join(
+            f"'{part}'" for part in parts
+        ) + ")"
+
+    @classmethod
+    def _note_card_by_title_locator(cls, title):
+
+        title_literal = cls._xpath_literal(
+            title.lower()
+        )
+
+        return (
+            By.XPATH,
+            "//*[@data-testid='note-card' and "
+            "contains("
+            "translate(normalize-space(.), "
+            "'ABCDEFGHIJKLMNOPQRSTUVWXYZ', "
+            "'abcdefghijklmnopqrstuvwxyz'), "
+            f"{title_literal})]"
+        )
     
 
     # =========================
@@ -80,12 +120,13 @@ class NotesPage(BasePage):
 
         logger.info(f"Checking if note created: {title}")
 
+        locator = self._note_card_by_title_locator(title)
+
         try:
 
             self.wait.until(
                 lambda driver:
-                title.lower()
-                in driver.page_source.lower()
+                len(driver.find_elements(*locator)) > 0
             )
 
             logger.info(f"Note found: {title}")
@@ -96,6 +137,29 @@ class NotesPage(BasePage):
 
             logger.error(
                 f"Error checking note creation: {e}"
+            )
+
+            return False
+
+    def is_note_absent(self, title):
+
+        logger.info(f"Checking if note absent: {title}")
+
+        locator = self._note_card_by_title_locator(title)
+
+        try:
+
+            self.wait.until(
+                lambda driver:
+                len(driver.find_elements(*locator)) == 0
+            )
+
+            return True
+
+        except Exception as e:
+
+            logger.error(
+                f"Error checking note absence: {e}"
             )
 
             return False
@@ -189,42 +253,172 @@ class NotesPage(BasePage):
 
             return False
 
-        note_cards = self.wait.until(
-            EC.presence_of_all_elements_located(
-                self.NOTES_CONTAINER
-            )
-        )
+        for attempt in range(3):
 
-        for note_card in note_cards:
+            try:
 
-            if title.lower() not in note_card.text.lower():
-
-                continue
-
-            delete_button = note_card.find_element(
-                *self.DELETE_BUTTON
-            )
-
-            delete_button.click()
-
-            self.wait.until(
-                EC.element_to_be_clickable(
-                    self.CONFIRM_DELETE
+                note_card = self.get_note_card_by_title(
+                    title
                 )
-            ).click()
 
-            self.wait.until(
-                lambda driver:
-                self.get_notes_count() < before_count
-            )
+                delete_button = note_card.find_element(
+                    *self.DELETE_BUTTON
+                )
 
-            logger.info(f"Note deleted successfully: {title}")
+                self.driver.execute_script(
+                    "arguments[0].scrollIntoView("
+                    "{block: 'center'});",
+                    delete_button
+                )
 
-            return True
+                delete_button.click()
+
+                self.wait.until(
+                    EC.element_to_be_clickable(
+                        self.CONFIRM_DELETE
+                    )
+                ).click()
+
+                self.wait.until(
+                    lambda driver:
+                    len(
+                        driver.find_elements(
+                            *self._note_card_by_title_locator(
+                                title
+                            )
+                        )
+                    ) == 0
+                )
+
+                logger.info(
+                    f"Note deleted successfully: {title}"
+                )
+
+                return True
+
+            except StaleElementReferenceException:
+
+                logger.warning(
+                    f"Retry {attempt+1} for stale note card "
+                    f"during delete"
+                )
+
+                if attempt == 2:
+
+                    raise
 
         raise TimeoutException(
             f"Note not found for deletion: {title}"
         )
+
+    def get_note_card_by_title(self, title):
+
+        logger.info(f"Finding note card by title: {title}")
+
+        locator = self._note_card_by_title_locator(title)
+
+        return self.wait.until(
+            EC.presence_of_element_located(locator),
+            message=f"Note card not found: {title}"
+        )
+
+    def get_note_details_by_title(self, title):
+
+        note_card = self.get_note_card_by_title(title)
+
+        return {
+            "title": title,
+            "text": note_card.text
+        }
+
+    def edit_note_by_title(
+        self,
+        current_title,
+        new_title,
+        new_description,
+        category="Work",
+        completed=False
+    ):
+
+        logger.info(
+            f"Editing note from '{current_title}' "
+            f"to '{new_title}'"
+        )
+
+        for attempt in range(3):
+
+            try:
+
+                note_card = self.get_note_card_by_title(
+                    current_title
+                )
+
+                edit_button = note_card.find_element(
+                    *self.EDIT_BUTTON
+                )
+
+                self.driver.execute_script(
+                    "arguments[0].scrollIntoView("
+                    "{block: 'center'});",
+                    edit_button
+                )
+
+                edit_button.click()
+
+                break
+
+            except StaleElementReferenceException:
+
+                logger.warning(
+                    f"Retry {attempt+1} for stale note card "
+                    f"during edit"
+                )
+
+                if attempt == 2:
+
+                    raise
+
+        dropdown = Select(
+            self.wait.until(
+                EC.visibility_of_element_located(
+                    self.CATEGORY_DROPDOWN
+                )
+            )
+        )
+
+        dropdown.select_by_visible_text(category)
+
+        checkbox = self.wait.until(
+            EC.presence_of_element_located(
+                self.COMPLETED_CHECKBOX
+            )
+        )
+
+        if checkbox.is_selected() != completed:
+
+            self.driver.execute_script(
+                "arguments[0].click();",
+                checkbox
+            )
+
+        self.send_keys(self.TITLE_INPUT, new_title)
+
+        self.send_keys(
+            self.DESCRIPTION_INPUT,
+            new_description
+        )
+
+        self.safe_click(self.SAVE_BUTTON)
+
+        self.wait.until(
+            lambda driver:
+            new_title.lower()
+            in driver.page_source.lower()
+        )
+
+        logger.info(f"Note edited successfully: {new_title}")
+
+        return True
 
     def create_note(
         self,
@@ -260,7 +454,10 @@ class NotesPage(BasePage):
 
             if not checkbox.is_selected():
 
-                checkbox.click()
+                self.driver.execute_script(
+                    "arguments[0].click();",
+                    checkbox
+                )
 
         self.send_keys(self.TITLE_INPUT, title)
 

@@ -16,6 +16,7 @@ from api.auth_api import AuthAPI
 from api.notes_api import NotesAPI
 
 from utils.logger import get_logger
+from utils.performance_logger import PerformanceLogger
 
 
 logger_obj = get_logger()
@@ -78,12 +79,16 @@ def test_create_note_ui_validate_api(driver):
 
     notes_data = response.json()["data"]
 
-    titles = [
-        note["title"]
-        for note in notes_data
-    ]
+    matching_note = next(
+        (
+            note for note in notes_data
+            if note["title"] == title
+            and note["description"] == description
+        ),
+        None
+    )
 
-    assert title in titles
+    assert matching_note is not None
 
 @pytest.mark.e2e
 def test_create_note_api_validate_ui(driver):
@@ -217,6 +222,94 @@ def test_delete_note_api_validate_ui(driver):
 
     assert not notes_page.is_note_created(title)
 
+
+@pytest.mark.e2e
+def test_edit_note_ui_validate_api(driver):
+
+    ui_login(driver)
+
+    notes_page = NotesPage(driver)
+
+    unique_id = str(uuid.uuid4())[:8]
+
+    title = f"EDIT_UI_API_{unique_id}"
+
+    updated_title = f"EDITED_UI_API_{unique_id}"
+
+    updated_description = "UI edit validated through API"
+
+    notes_page.create_note(
+        title,
+        "Original UI note"
+    )
+
+    notes_page.edit_note_by_title(
+        title,
+        updated_title,
+        updated_description,
+        category="Work",
+        completed=True
+    )
+
+    notes_api = get_api_client()
+
+    notes_data = notes_api.get_notes().json()["data"]
+
+    matching_note = next(
+        (
+            note for note in notes_data
+            if note["title"] == updated_title
+            and note["description"] == updated_description
+        ),
+        None
+    )
+
+    assert matching_note is not None
+
+
+@pytest.mark.e2e
+def test_edit_note_api_validate_ui(driver):
+
+    ui_login(driver)
+
+    notes_api = get_api_client()
+
+    unique_id = str(uuid.uuid4())[:8]
+
+    title = f"EDIT_API_UI_{unique_id}"
+
+    response = notes_api.create_note(
+        title,
+        "Original API note"
+    )
+
+    response_json = response.json()
+
+    note_data = response_json.get(
+        "data",
+        response_json
+    )
+
+    note_id = note_data.get("id")
+
+    assert note_id is not None
+
+    updated_title = f"EDITED_API_UI_{unique_id}"
+
+    notes_api.update_note(
+        note_id,
+        updated_title,
+        "API edit validated through UI",
+        category="Work",
+        completed=True
+    )
+
+    driver.refresh()
+
+    notes_page = NotesPage(driver)
+
+    assert notes_page.is_note_created(updated_title)
+
 @pytest.mark.e2e
 def test_multiple_notes_ui_api_sync(driver):
 
@@ -251,3 +344,27 @@ def test_multiple_notes_ui_api_sync(driver):
     for title in titles:
 
         assert title in api_titles
+
+
+@pytest.mark.e2e
+@pytest.mark.performance
+def test_notes_ui_dom_ready_under_threshold(driver):
+
+    ui_login(driver)
+
+    timing = driver.execute_script(
+        "return window.performance.timing"
+    )
+
+    dom_ready_seconds = (
+        timing["domContentLoadedEventEnd"]
+        - timing["navigationStart"]
+    ) / 1000
+
+    PerformanceLogger.record(
+        "UI DOM ready",
+        dom_ready_seconds,
+        "pass" if dom_ready_seconds < 5 else "fail"
+    )
+
+    assert dom_ready_seconds < 5
