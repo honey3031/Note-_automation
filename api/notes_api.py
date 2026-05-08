@@ -74,3 +74,25 @@ class NotesAPI:
         )
 
         return response
+
+    def delete_all_notes(self):
+
+        logger.info("Deleting all notes")
+
+        response = self.get_notes()
+
+        notes = response.json()["data"]
+
+        for note in notes:
+
+            note_id = note["id"]
+
+            delete_response = self.delete_note(
+                note_id
+            )
+
+            logger.info(
+                f"Deleted note: {note_id} | "
+                f"Status: "
+                f"{delete_response.status_code}"
+            )

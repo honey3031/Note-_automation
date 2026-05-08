@@ -46,7 +46,7 @@ pipeline {
             steps {
 
                 bat '''
-                py -m pytest -n 2^
+                py -m pytest -n 1^
                 --alluredir=allure-results ^
                 --html=reports/report.html ^
                 --self-contained-html
