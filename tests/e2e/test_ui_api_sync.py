@@ -15,6 +15,10 @@ from api.auth_api import AuthAPI
 
 from api.notes_api import NotesAPI
 
+from utils.logger import get_logger
+
+
+logger_obj = get_logger()
 
 load_dotenv()
 
@@ -102,7 +106,16 @@ def test_create_note_api_validate_ui(driver):
         description
     )
 
-    assert response.status_code == 200
+    logger_obj.info(
+        f"API Create Response Status: {response.status_code}"
+    )
+
+    logger_obj.info(
+        f"API Create Response Body: {response.text}"
+    )
+
+    assert response.status_code == 200, \
+        f"API create failed with {response.status_code}: {response.text}"
 
     # refresh UI
     driver.refresh()
@@ -135,9 +148,13 @@ def test_delete_note_ui_validate_api(driver):
     )
 
     created_note = next(
-        note for note in notes_before
-        if note["title"] == title
+        (note for note in notes_before
+        if note["title"] == title),
+        None
     )
+
+    assert created_note is not None, \
+        f"Note '{title}' not found in API response"
 
     notes_page.delete_first_note()
 
@@ -169,7 +186,18 @@ def test_delete_note_api_validate_ui(driver):
         "API delete"
     )
 
-    note_id = response.json()["data"]["id"]
+    # Handle both response formats
+    response_json = response.json()
+
+    if "data" in response_json:
+        note_data = response_json["data"]
+    else:
+        note_data = response_json
+
+    note_id = note_data.get("id")
+
+    assert note_id is not None, \
+        f"Could not extract note ID from response: {response_json}"
 
     driver.refresh()
 

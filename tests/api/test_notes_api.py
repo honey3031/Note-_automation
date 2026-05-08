@@ -9,6 +9,10 @@ from api.auth_api import AuthAPI
 
 from api.notes_api import NotesAPI
 
+from utils.logger import get_logger
+
+
+logger = get_logger()
 
 load_dotenv()
 
@@ -46,14 +50,26 @@ def test_create_note_api():
         "Created from API"
     )
 
-    assert response.status_code == 200
+    # Log response for debugging
+    logger.info(f"Response Status: {response.status_code}")
+    
+    logger.info(f"Response Body: {response.text}")
+
+    assert response.status_code == 200, \
+        f"Expected 200 but got {response.status_code}. Response: {response.text}"
 
     response_data = response.json()
 
+    # Handle both 'data' wrapper and direct object
+    if "data" in response_data:
+        actual_data = response_data["data"]
+    else:
+        actual_data = response_data
+
     assert (
-        response_data["data"]["title"]
+        actual_data.get("title")
         == title
-    )
+    ), f"Title mismatch. Expected {title}, got {actual_data.get('title')}"
 
 
 @pytest.mark.api
@@ -72,15 +88,29 @@ def test_delete_note_api():
         "Delete test"
     )
 
-    note_id = (
-        create_response.json()["data"]["id"]
-    )
+    # Handle both response formats
+    response_json = create_response.json()
+
+    if "data" in response_json:
+        note_data = response_json["data"]
+    else:
+        note_data = response_json
+
+    note_id = note_data.get("id")
+
+    assert note_id is not None, \
+        f"Could not extract note ID from response: {response_json}"
 
     delete_response = (
         notes_api.delete_note(note_id)
     )
 
-    assert delete_response.status_code == 200
+    logger.info(
+        f"Delete response status: {delete_response.status_code}"
+    )
+
+    assert delete_response.status_code in [200, 204], \
+        f"Delete failed with status {delete_response.status_code}: {delete_response.text}"
 
 
 

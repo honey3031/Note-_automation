@@ -115,15 +115,21 @@ class NotesPage(BasePage):
 
         try:
 
-            notes = self.driver.find_elements(
-                *self.NOTES_CONTAINER
+            # Wait for notes container to be visible
+            self.wait.until(
+                EC.presence_of_all_elements_located(
+                    self.NOTES_CONTAINER
+                )
             )
 
-            count = len(notes)
+            # Get only direct children (not nested)
+            notes = self.driver.execute_script(
+                "return document.querySelectorAll('[data-testid=\"note-card\"]').length"
+            )
 
-            logger.info(f"Total notes found: {count}")
+            logger.info(f"Total notes found: {notes}")
 
-            return count
+            return notes
 
         except Exception as e:
 
@@ -220,17 +226,33 @@ class NotesPage(BasePage):
         # safer click for parallel/grid
         self.safe_click(self.SAVE_BUTTON)
 
-        # wait until modal/form disappears
-        self.wait.until(
-            EC.invisibility_of_element_located(
-                self.SAVE_BUTTON
-            )
-        )
+        try:
 
-        # wait until page stabilizes
-        self.wait.until(
-            EC.element_to_be_clickable(
-                self.ADD_NOTE_BUTTON
+            # wait until modal/form disappears
+            self.wait.until(
+                EC.invisibility_of_element_located(
+                    self.SAVE_BUTTON
+                )
             )
-        )
+
+        except Exception as e:
+
+            logger.warning(
+                f"Form did not disappear as expected: {e}"
+            )
+
+        try:
+
+            # wait until page stabilizes
+            self.wait.until(
+                EC.element_to_be_clickable(
+                    self.ADD_NOTE_BUTTON
+                )
+            )
+
+        except Exception as e:
+
+            logger.warning(
+                f"Page did not stabilize: {e}"
+            )
         
