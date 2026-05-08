@@ -12,9 +12,7 @@ pipeline {
 
         BROWSER = 'chrome'
 
-        EMAIL = credentials('notes-email')
-
-        PASSWORD = credentials('notes-password')
+        NOTES_CREDS = credentials('notes-creds')
     }
 
     stages {
@@ -73,18 +71,24 @@ pipeline {
 
             steps {
 
-                script {
+                withEnv([
+                    "EMAIL=${NOTES_CREDS_USR}",
+                    "PASSWORD=${NOTES_CREDS_PSW}"
+                ]) {
 
-                    def status = bat(
-                        returnStatus: true,
-                        script: '.\\%VENV%\\Scripts\\pytest -n 2 tests --alluredir=reports/allure-results --html=reports/report.html --self-contained-html'
-                    )
+                    script {
 
-                    if (status != 0) {
+                        def status = bat(
+                            returnStatus: true,
+                            script: '.\\%VENV%\\Scripts\\pytest -n 2 tests --alluredir=reports/allure-results --html=reports/report.html --self-contained-html'
+                        )
 
-                        currentBuild.result = 'UNSTABLE'
+                        if (status != 0) {
 
-                        echo "Pytest exited with code ${status}. Continuing to publish reports."
+                            currentBuild.result = 'UNSTABLE'
+
+                            echo "Pytest exited with code ${status}. Continuing to publish reports."
+                        }
                     }
                 }
             }
