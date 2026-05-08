@@ -65,4 +65,4 @@ def test_delete_note(driver):
         notes_page.get_notes_count()
     )
 
-    assert after_delete < before_delete
+    assert after_delete <= before_delete-1

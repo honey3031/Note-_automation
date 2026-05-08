@@ -156,7 +156,7 @@ def test_delete_note_ui_validate_api(driver):
     assert created_note is not None, \
         f"Note '{title}' not found in API response"
 
-    notes_page.delete_first_note()
+    notes_page.delete_note_by_title(title)
 
     notes_after = (
         notes_api.get_notes()

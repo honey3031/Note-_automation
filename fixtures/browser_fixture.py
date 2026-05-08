@@ -46,7 +46,7 @@ def get_driver():
 
         driver = webdriver.Remote(
             command_executor=
-            "http://localhost:4444/wd/hub",
+            config.grid_url,
             options=chrome_options
         )
 

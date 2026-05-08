@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import TimeoutException
 from pages.base_page import BasePage
 
 from utils.logger import get_logger
@@ -81,25 +82,15 @@ class NotesPage(BasePage):
 
         try:
 
-            note_elements = self.wait.until(
-                EC.presence_of_all_elements_located(
-                    self.NOTES_CONTAINER
-                )
+            self.wait.until(
+                lambda driver:
+                title.lower()
+                in driver.page_source.lower()
             )
 
-            for note in note_elements:
+            logger.info(f"Note found: {title}")
 
-                note_text = note.text.lower()
-
-                if title.lower() in note_text:
-
-                    logger.info(f"Note found: {title}")
-
-                    return True
-
-            logger.warning(f"Note not found: {title}")
-
-            return False
+            return True
 
         except Exception as e:
 
@@ -143,42 +134,97 @@ class NotesPage(BasePage):
 
         try:
 
+            before_count = self.get_notes_count()
+
+            if before_count == 0:
+
+                logger.warning("No notes to delete")
+
+                return False
+
             delete_buttons = self.wait.until(
                 EC.presence_of_all_elements_located(
                     self.DELETE_BUTTON
                 )
             )
 
-            if delete_buttons:
-
-                # Click first delete button
-                self.safe_click(self.DELETE_BUTTON)
-
-                # Confirm deletion
-                self.wait.until(
-                    EC.element_to_be_clickable(
-                        self.CONFIRM_DELETE
-                    )
-                ).click()
-
-                logger.info("Note deleted successfully")
-
-                # Wait for deletion to complete
-                self.wait.until(
-                    EC.invisibility_of_element_located(
-                        self.CONFIRM_DELETE
-                    )
-                )
-
-            else:
+            if not delete_buttons:
 
                 logger.warning("No notes to delete")
+
+                return False
+
+            delete_buttons[0].click()
+
+            self.wait.until(
+                EC.element_to_be_clickable(
+                    self.CONFIRM_DELETE
+                )
+            ).click()
+
+            self.wait.until(
+                lambda driver:
+                self.get_notes_count() < before_count
+            )
+
+            logger.info("Note deleted successfully")
+
+            return True
 
         except Exception as e:
 
             logger.error(f"Error deleting note: {e}")
 
             raise
+
+    def delete_note_by_title(self, title):
+
+        logger.info(f"Deleting note by title: {title}")
+
+        before_count = self.get_notes_count()
+
+        if before_count == 0:
+
+            logger.warning("No notes to delete")
+
+            return False
+
+        note_cards = self.wait.until(
+            EC.presence_of_all_elements_located(
+                self.NOTES_CONTAINER
+            )
+        )
+
+        for note_card in note_cards:
+
+            if title.lower() not in note_card.text.lower():
+
+                continue
+
+            delete_button = note_card.find_element(
+                *self.DELETE_BUTTON
+            )
+
+            delete_button.click()
+
+            self.wait.until(
+                EC.element_to_be_clickable(
+                    self.CONFIRM_DELETE
+                )
+            ).click()
+
+            self.wait.until(
+                lambda driver:
+                self.get_notes_count() < before_count
+            )
+
+            logger.info(f"Note deleted successfully: {title}")
+
+            return True
+
+        raise TimeoutException(
+            f"Note not found for deletion: {title}"
+        )
 
     def create_note(
         self,
@@ -255,4 +301,3 @@ class NotesPage(BasePage):
             logger.warning(
                 f"Page did not stabilize: {e}"
             )
-        
