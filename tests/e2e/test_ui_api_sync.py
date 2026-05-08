@@ -211,14 +211,6 @@ def test_multiple_notes_ui_api_sync(driver):
             f"Description {i}"
         )
 
-        # wait until page stabilizes
-        notes_page.wait.until(
-            lambda driver:
-            driver.find_element(
-                *notes_page.ADD_NOTE_BUTTON
-            ).is_displayed()
-        )
-
     notes_api = get_api_client()
 
     response = notes_api.get_notes()

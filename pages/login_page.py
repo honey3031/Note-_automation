@@ -12,9 +12,9 @@ logger = get_logger()
 
 class LoginPage(BasePage):
 
-    # =========================
+    
     # LOCATORS
-    # =========================
+  
 
     OPEN_LOGIN = (
         By.XPATH,
@@ -51,10 +51,8 @@ class LoginPage(BasePage):
     )
 
     
-
-    # =========================
     # METHODS
-    # =========================
+  
 
     def login(self, email, password):
 

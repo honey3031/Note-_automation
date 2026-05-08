@@ -6285,3 +6285,74 @@ elete API 53db4eaf
 2026-05-07 19:48:41,963 - INFO - Calling login API
 2026-05-07 19:48:46,127 - INFO - Response Status: 200
 2026-05-07 19:48:46,128 - INFO - Fetching notes via API
+2026-05-07 23:26:46,704 - INFO - Calling login API
+2026-05-07 23:26:47,738 - INFO - Response Status: 200
+2026-05-07 23:26:47,740 - INFO - Fetching notes via API
+2026-05-07 23:26:47,744 - INFO - Calling login API
+2026-05-07 23:26:47,831 - INFO - Response Status: 200
+2026-05-07 23:26:47,833 - INFO - Creating note via API: API Note c4deb916
+2026-05-07 23:26:48,649 - INFO - Response Status: 200
+2026-05-07 23:26:48,651 - INFO - Creating note via API: 
+2026-05-07 23:26:48,687 - INFO - Calling login API
+2026-05-07 23:26:49,525 - INFO - Response Status: 200
+2026-05-07 23:26:49,527 - INFO - Creating note via API: Delete API e7d47dc0
+2026-05-07 23:26:50,271 - INFO - Deleting note via API: 69fcd2640fadc10297dc7cbc
+2026-05-07 23:26:50,772 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:26:53,795 - INFO - Performing login
+2026-05-07 23:26:56,725 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:26:57,175 - INFO - Creating note: UI_API_90aa60b5
+2026-05-07 23:26:59,406 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:27:02,545 - INFO - Performing login
+2026-05-07 23:27:04,702 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:06,226 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:06,227 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:07,492 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:07,492 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:09,051 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:09,052 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:09,052 - INFO - Scrolling element into view
+2026-05-07 23:27:09,248 - INFO - Trying JS click
+2026-05-07 23:27:09,413 - INFO - Calling login API
+2026-05-07 23:27:11,060 - INFO - Response Status: 200
+2026-05-07 23:27:11,062 - INFO - Creating note via API: API_UI_3ec84ddf
+2026-05-07 23:27:24,744 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:27:28,570 - INFO - Performing login
+2026-05-07 23:27:30,854 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:31,221 - INFO - Creating note: DELETE_UI_API_9d925d70
+2026-05-07 23:27:32,555 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:27:36,503 - INFO - Performing login
+2026-05-07 23:27:40,416 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:41,755 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:41,756 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:43,322 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:43,323 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:45,082 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:45,083 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:45,083 - INFO - Scrolling element into view
+2026-05-07 23:27:45,572 - INFO - Trying JS click
+2026-05-07 23:27:46,026 - INFO - Creating note: UI_API_ab618e83
+2026-05-07 23:27:48,005 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:27:51,954 - INFO - Performing login
+2026-05-07 23:27:52,984 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:54,427 - WARNING - Retry 1 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:54,428 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:56,299 - WARNING - Retry 2 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:56,299 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:59,668 - WARNING - Retry 3 for click on ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:59,669 - WARNING - Normal click failed for ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:27:59,669 - INFO - Scrolling element into view
+2026-05-07 23:28:00,400 - INFO - Trying JS click
+2026-05-07 23:28:00,827 - INFO - Calling login API
+2026-05-07 23:28:02,439 - INFO - Response Status: 200
+2026-05-07 23:28:02,443 - INFO - Creating note via API: API_UI_5c3e4967
+2026-05-07 23:28:16,538 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:28:17,003 - INFO - Performing login
+2026-05-07 23:28:21,488 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:28:22,057 - INFO - Creating note: DELETE_UI_API_63768bea
+2026-05-07 23:28:23,076 - INFO - Remote Chrome browser launched using Selenium Grid
+2026-05-07 23:28:26,064 - INFO - Performing login
+2026-05-07 23:28:26,958 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-07 23:28:27,211 - INFO - Calling login API
+2026-05-07 23:28:27,897 - INFO - Response Status: 200
+2026-05-07 23:28:27,899 - INFO - Creating note via API: API_DELETE_e5567fe2
+2026-05-07 23:28:35,808 - INFO - Remote Chrome browser launched using Selenium Grid
