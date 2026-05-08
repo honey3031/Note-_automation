@@ -69,6 +69,111 @@ class NotesPage(BasePage):
     # METHODS
     # =========================
 
+    def click_add_note(self):
+
+        logger.info("Clicking add note button")
+
+        self.safe_click(self.ADD_NOTE_BUTTON)
+
+    def is_note_created(self, title):
+
+        logger.info(f"Checking if note created: {title}")
+
+        try:
+
+            note_elements = self.wait.until(
+                EC.presence_of_all_elements_located(
+                    self.NOTES_CONTAINER
+                )
+            )
+
+            for note in note_elements:
+
+                note_text = note.text.lower()
+
+                if title.lower() in note_text:
+
+                    logger.info(f"Note found: {title}")
+
+                    return True
+
+            logger.warning(f"Note not found: {title}")
+
+            return False
+
+        except Exception as e:
+
+            logger.error(
+                f"Error checking note creation: {e}"
+            )
+
+            return False
+
+    def get_notes_count(self):
+
+        logger.info("Getting notes count")
+
+        try:
+
+            notes = self.driver.find_elements(
+                *self.NOTES_CONTAINER
+            )
+
+            count = len(notes)
+
+            logger.info(f"Total notes found: {count}")
+
+            return count
+
+        except Exception as e:
+
+            logger.error(f"Error getting notes count: {e}")
+
+            return 0
+
+    def delete_first_note(self):
+
+        logger.info("Deleting first note")
+
+        try:
+
+            delete_buttons = self.wait.until(
+                EC.presence_of_all_elements_located(
+                    self.DELETE_BUTTON
+                )
+            )
+
+            if delete_buttons:
+
+                # Click first delete button
+                self.safe_click(self.DELETE_BUTTON)
+
+                # Confirm deletion
+                self.wait.until(
+                    EC.element_to_be_clickable(
+                        self.CONFIRM_DELETE
+                    )
+                ).click()
+
+                logger.info("Note deleted successfully")
+
+                # Wait for deletion to complete
+                self.wait.until(
+                    EC.invisibility_of_element_located(
+                        self.CONFIRM_DELETE
+                    )
+                )
+
+            else:
+
+                logger.warning("No notes to delete")
+
+        except Exception as e:
+
+            logger.error(f"Error deleting note: {e}")
+
+            raise
+
     def create_note(
         self,
         title,
