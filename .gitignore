@@ -10,8 +10,6 @@ __pycache__/
 ############################
 venv/
 .venv/
-env/
-ENV/
 
 ############################
 # PyTest
@@ -34,11 +32,7 @@ allure-report/
 *.log
 logs/
 
-############################
-# Environment variables
-############################
-.env
-.env.*
+
 
 ############################
 # Test output / temp files
