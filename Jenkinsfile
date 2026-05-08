@@ -4,32 +4,31 @@ pipeline {
 
     environment {
 
-        EXECUTION = 'remote'
+        VENV = "venv"
+        
 
-        GRID_URL =
-        'http://localhost:4444/wd/hub'
-
-        BROWSER = 'chrome'
     }
 
     stages {
 
-        stage('Checkout Source Code') {
+        stage('Clone Repository') {
 
             steps {
 
                 git branch: 'main',
                 url: 'https://github.com/honey3031/Note-_automation.git'
+
             }
         }
 
-        stage('Start Selenium Grid') {
+        stage('Create Virtual Environment') {
 
             steps {
 
-                bat 'docker compose down'
+                dir('Automation') {
+                    bat 'py -m venv %VENV%'
+                }
 
-                bat 'docker compose up -d --scale chrome=2'
             }
         }
 
@@ -37,31 +36,58 @@ pipeline {
 
             steps {
 
-                bat 'py -m pip install -r requirements.txt'
+                dir('Automation') {
+                    bat '.\\%VENV%\\Scripts\\python -m pip install --upgrade pip'
+
+                    bat '.\\%VENV%\\Scripts\\pip install -r requirements.txt'
+                }
+
+            }
+        }
+
+        stage('Start Selenium Grid') {
+
+            steps {
+
+                dir('Automation') {
+                    bat 'docker compose up -d'
+                }
+
             }
         }
 
         stage('Run Parallel Tests') {
 
             steps {
-
-                bat '''
-                py -m pytest -n 1^
-                --alluredir=allure-results ^
-                --html=reports/report.html ^
-                --self-contained-html
-                '''
+                script {
+                    dir('Automation') {
+                        def status = bat(returnStatus: true, script: '.\\%VENV%\\Scripts\\pytest -n 2 --alluredir=reports/allure-results --html=reports/report.html --self-contained-html tests')
+                        if (status != 0) {
+                            currentBuild.result = 'UNSTABLE'
+                            echo "Pytest exited with code ${status}. Continuing to report publishing."
+                        }
+                    }
+                }
             }
         }
 
-        stage('Generate Allure Report') {
+        stage('Stop Selenium Grid') {
 
             steps {
 
-                bat '''
-                allure generate allure-results ^
-                --clean -o allure-report
-                '''
+                dir('Automation') {
+                    bat 'docker compose down'
+                }
+
+            }
+        }
+
+        stage('Publish Allure Results') {
+
+            steps {
+
+                allure includeProperties: false, jdk: '', results: [[path: 'Automation/reports/allure-results']]
+
             }
         }
     }
@@ -70,11 +96,28 @@ pipeline {
 
         always {
 
-            archiveArtifacts artifacts: '''
-                reports/*,
-                allure-report/*,
-                screenshots/*
-            '''
+            archiveArtifacts artifacts: 'Automation/reports/*', fingerprint: true
+
+            publishHTML([
+                allowMissing: true,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'Automation/reports',
+                reportFiles: 'report.html',
+                reportName: 'Automation Test Report'
+            ])
+        }
+
+        success {
+
+            echo 'Pipeline executed successfully'
+
+        }
+
+        failure {
+
+            echo 'Pipeline execution failed'
+
         }
     }
 }
