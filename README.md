@@ -51,6 +51,7 @@ The framework supports:
 notes-automation/
 │
 ├── api/
+│   ├── base_api.py
 │   ├── auth_api.py
 │   └── notes_api.py
 │
@@ -69,7 +70,8 @@ notes-automation/
 │   └── e2e/
 │
 ├── utils/
-│   └── logger.py
+│   ├── logger.py
+│   └── helpers.py
 │
 ├── reports/
 ├── screenshots/
@@ -131,8 +133,7 @@ Implemented using:
 pytest -n 2
 ```
 
-Supports distributed parallel execution through Selenium Grid.
-
+Parallel execution is implemented using pytest-xdist and supports both local and Selenium Grid execution.
 ---
 
 ## Selenium Grid + Docker
@@ -170,14 +171,15 @@ pytest --reruns 1 --reruns-delay 2
 
 ---
 
-## Self-Healing Logic
+# Stability & Retry Handling
 
-Framework automatically:
+Framework includes:
 
-* retries flaky actions
-* uses JS click fallback
-* stabilizes DOM synchronization
-
+* Retry handling for flaky UI interactions
+* JavaScript fallback clicks for intercepted elements
+* Explicit wait synchronization
+* DOM stabilization handling
+* Parallel execution stability improvements
 ---
 
 # Setup Instructions
@@ -385,7 +387,7 @@ docs/advanced_quality_intelligence.md
 # Key Achievements
 
 * Hybrid UI + API Automation
-* Enterprise-Level Framework Structure
+* Scalable Hybrid Automation Framework Structure
 * Parallel Selenium Execution
 * Dockerized Selenium Grid
 * Jenkins CI/CD Integration

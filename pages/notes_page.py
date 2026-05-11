@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
@@ -114,7 +114,21 @@ class NotesPage(BasePage):
 
         logger.info("Clicking add note button")
 
-        self.safe_click(self.ADD_NOTE_BUTTON)
+        self.wait.until(
+            EC.visibility_of_element_located(
+                self.ADD_NOTE_BUTTON
+            )
+        )
+
+        self.wait.until(
+            EC.element_to_be_clickable(
+                self.ADD_NOTE_BUTTON
+            )
+        )
+
+        self.safe_click(
+            self.ADD_NOTE_BUTTON
+        )
 
     def is_note_created(self, title):
 
@@ -271,13 +285,48 @@ class NotesPage(BasePage):
                     delete_button
                 )
 
-                delete_button.click()
+                try:
 
-                self.wait.until(
-                    EC.element_to_be_clickable(
+                    delete_button.click()
+
+                except Exception:
+
+                    logger.warning(
+                        "Normal delete click failed. "
+                        "Trying JS click."
+                    )
+
+                    self.driver.execute_script(
+                        "arguments[0].click();",
+                        delete_button
+                    )
+
+                try:
+
+                    delete_button.click()
+
+                except Exception:
+
+                    logger.warning(
+                        "Delete click intercepted. "
+                        "Using JS click."
+                    )
+
+                    self.driver.execute_script(
+                        "arguments[0].click();",
+                        delete_button
+                    )
+
+                confirm_button = self.wait.until(
+                    EC.presence_of_element_located(
                         self.CONFIRM_DELETE
                     )
-                ).click()
+                )
+
+                self.driver.execute_script(
+                    "arguments[0].click();",
+                    confirm_button
+                )
 
                 self.wait.until(
                     lambda driver:
@@ -349,6 +398,23 @@ class NotesPage(BasePage):
 
             try:
 
+                logger.info(
+                    f"Waiting for note card visibility: "
+                    f"{current_title}"
+                )
+
+                locator = self._note_card_by_title_locator(
+                    current_title
+                )
+
+                self.wait.until(
+                    EC.presence_of_element_located(locator)
+                )
+
+                self.wait.until(
+                    EC.visibility_of_element_located(locator)
+                )
+
                 note_card = self.get_note_card_by_title(
                     current_title
                 )
@@ -363,7 +429,21 @@ class NotesPage(BasePage):
                     edit_button
                 )
 
-                edit_button.click()
+                try:
+
+                    edit_button.click()
+
+                except Exception:
+
+                    logger.warning(
+                        "Normal edit click failed. "
+                        "Trying JS click."
+                    )
+
+                    self.driver.execute_script(
+                        "arguments[0].click();",
+                        edit_button
+                    )
 
                 break
 
@@ -432,7 +512,6 @@ class NotesPage(BasePage):
 
         self.click_add_note()
 
-        # select category
         dropdown = Select(
             self.wait.until(
                 EC.visibility_of_element_located(
@@ -443,7 +522,6 @@ class NotesPage(BasePage):
 
         dropdown.select_by_visible_text(category)
 
-        # completed checkbox
         if completed:
 
             checkbox = self.wait.until(
@@ -466,12 +544,14 @@ class NotesPage(BasePage):
             description
         )
 
-        # safer click for parallel/grid
         self.safe_click(self.SAVE_BUTTON)
 
         try:
 
-            # wait until modal/form disappears
+            logger.info(
+                "Waiting for note modal to close"
+            )
+
             self.wait.until(
                 EC.invisibility_of_element_located(
                     self.SAVE_BUTTON
@@ -481,20 +561,19 @@ class NotesPage(BasePage):
         except Exception as e:
 
             logger.warning(
-                f"Form did not disappear as expected: {e}"
+                f"Modal did not close properly: {e}"
             )
 
-        try:
+        import time
+        time.sleep(2)
 
-            # wait until page stabilizes
-            self.wait.until(
-                EC.element_to_be_clickable(
-                    self.ADD_NOTE_BUTTON
-                )
+        locator = self._note_card_by_title_locator(
+            title
+        )
+
+        self.wait.until(
+            EC.visibility_of_element_located(
+                locator
             )
-
-        except Exception as e:
-
-            logger.warning(
-                f"Page did not stabilize: {e}"
-            )
+        )
+        time.sleep(2)

@@ -1,4 +1,0 @@
-2026-05-06 22:38:10,109 - INFO - Calling login API
-2026-05-06 22:38:10,882 - INFO - Response Status: 200
-2026-05-06 22:38:10,884 - INFO - Creating note via API: Delete API 48e6bbcf
-2026-05-06 22:38:11,777 - INFO - Deleting note via API: 69fb757c81124e02985b8ff0

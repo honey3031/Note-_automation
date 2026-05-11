@@ -1,4 +1,0 @@
-[32mINFO    [0m root:auth_api.py:19 Calling login API
-[32mINFO    [0m root:auth_api.py:33 Response Status: 200
-[32mINFO    [0m root:notes_api.py:41 Creating note via API: Delete API 48e6bbcf
-[32mINFO    [0m root:notes_api.py:63 Deleting note via API: 69fb757c81124e02985b8ff0

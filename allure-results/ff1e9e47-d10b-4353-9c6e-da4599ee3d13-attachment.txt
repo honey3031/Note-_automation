@@ -1,8 +1,0 @@
-[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
-[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-[32mINFO    [0m WDM:logger.py:11 Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
-[32mINFO    [0m root:browser_fixture.py:35 Chrome browser launched
-[32mINFO    [0m root:login_page.py:61 Performing login
-[32mINFO    [0m root:base_page.py:41 Clicking element: ('css selector', "[data-testid='login-submit']")
-[32mINFO    [0m root:login_page.py:77 Checking login success

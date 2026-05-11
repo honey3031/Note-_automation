@@ -1,7 +1,6 @@
 import csv
 import os
-from datetime import datetime
-
+from datetime import datetime, UTC
 from utils.logger import get_logger
 
 
@@ -44,7 +43,7 @@ class PerformanceLogger:
 
             writer.writerow(
                 [
-                    datetime.utcnow().isoformat(),
+                    datetime.now(UTC).isoformat(),
                     metric,
                     f"{value_seconds:.3f}",
                     status

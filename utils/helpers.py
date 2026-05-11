@@ -1,18 +1,47 @@
-import os
-from datetime import datetime
+from pathlib import Path
+from datetime import datetime, UTC
+
+from utils.logger import get_logger
+
+
+logger = get_logger()
 
 
 def take_screenshot(driver, name):
 
-    if not os.path.exists("screenshots"):
-        os.makedirs("screenshots")
-
-    timestamp = datetime.now().strftime(
-        "%Y%m%d_%H%M%S"
+    screenshots_dir = Path(
+        "screenshots"
     )
 
-    path = f"screenshots/{name}_{timestamp}.png"
+    screenshots_dir.mkdir(
+        exist_ok=True
+    )
 
-    driver.save_screenshot(path)
+    timestamp = (
+        datetime.now(UTC)
+        .strftime("%Y%m%d_%H%M%S_%f")
+    )
 
-    return path
+    screenshot_path = (
+        screenshots_dir /
+        f"{name}_{timestamp}.png"
+    )
+
+    try:
+
+        driver.save_screenshot(
+            str(screenshot_path)
+        )
+
+        logger.info(
+            f"Screenshot saved: "
+            f"{screenshot_path}"
+        )
+
+    except Exception as e:
+
+        logger.warning(
+            f"Failed to save screenshot: {e}"
+        )
+
+    return str(screenshot_path)

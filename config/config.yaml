@@ -1,5 +1,15 @@
+environment: "qa"
+
 base_url: "https://practice.expandtesting.com/notes/app"
+
 api_url: "https://practice.expandtesting.com/notes/api"
+
 browser: "chrome"
+
 execution: "local"
+
 timeout: 20
+
+headless: false
+
+parallel_workers: 3

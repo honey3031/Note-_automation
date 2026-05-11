@@ -7,10 +7,9 @@ from config.environment import config
 from utils.logger import get_logger
 
 from selenium.common.exceptions import (
-    StaleElementReferenceException
-)
-from selenium.common.exceptions import (
-    ElementClickInterceptedException
+    StaleElementReferenceException,
+    ElementClickInterceptedException,
+    TimeoutException
 )
 logger = get_logger()
 
@@ -43,18 +42,45 @@ class BasePage:
                 )
 
                 element = self.wait.until(
+                    EC.presence_of_element_located(
+                        locator
+                    )
+                )
+
+                self.driver.execute_script(
+                    "arguments[0].scrollIntoView("
+                    "{block: 'center'});",
+                    element
+                )
+
+                self.wait.until(
                     EC.element_to_be_clickable(
                         locator
                     )
                 )
 
-                element.click()
+                try:
+
+                    element.click()
+
+                except ElementClickInterceptedException:
+
+                    logger.warning(
+                        "Normal click intercepted. "
+                        "Trying JS click."
+                    )
+
+                    self.driver.execute_script(
+                        "arguments[0].click();",
+                        element
+                    )
 
                 return
 
             except (
                 StaleElementReferenceException,
-                ElementClickInterceptedException
+                ElementClickInterceptedException,
+                TimeoutException
             ):
 
                 logger.warning(
@@ -110,10 +136,25 @@ class BasePage:
         return self.wait.until(
             EC.element_to_be_clickable(locator)
         )
+    def wait_for_invisibility(self, locator):
+
+        return self.wait.until(
+            EC.invisibility_of_element_located(
+                locator
+            )
+        )
     def js_click(self, locator):
 
         element = self.wait.until(
-            EC.presence_of_element_located(locator)
+            EC.presence_of_element_located(
+                locator
+            )
+        )
+
+        self.driver.execute_script(
+            "arguments[0].scrollIntoView("
+            "{block: 'center'});",
+            element
         )
 
         self.driver.execute_script(
@@ -138,38 +179,7 @@ class BasePage:
             logger.info("No popup displayed")
     def safe_click(self, locator):
 
-        try:
-
-            self.click(locator)
-
-        except Exception:
-
-            logger.warning(
-                f"Normal click failed for {locator}"
-            )
-
-            logger.info(
-                "Scrolling element into view"
-            )
-
-            element = self.wait.until(
-                EC.presence_of_element_located(
-                    locator
-                )
-            )
-
-            self.driver.execute_script(
-                "arguments[0].scrollIntoView("
-                "{block: 'center'});",
-                element
-            )
-
-            logger.info("Trying JS click")
-
-            self.driver.execute_script(
-                "arguments[0].click();",
-                element
-            )
+        self.click(locator)
     def safe_send_keys(
         self,
         locator,
@@ -193,7 +203,10 @@ class BasePage:
 
                 return
 
-            except Exception as e:
+            except (
+                StaleElementReferenceException,
+                TimeoutException
+            ) as e:
 
                 logger.warning(
                     f"Retry {attempt+1} for send_keys"

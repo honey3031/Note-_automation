@@ -1,8 +1,0 @@
-2026-05-07 10:04:55,590 - INFO - ====== WebDriver manager ======
-2026-05-07 10:04:56,741 - INFO - Get LATEST chromedriver version for google-chrome
-2026-05-07 10:04:57,048 - INFO - Get LATEST chromedriver version for google-chrome
-2026-05-07 10:04:57,352 - INFO - Driver [C:\Users\dell\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
-2026-05-07 10:04:58,388 - INFO - Chrome browser launched
-2026-05-07 10:05:05,504 - INFO - Performing login
-2026-05-07 10:05:05,800 - INFO - Clicking element: ('css selector', "[data-testid='login-submit']")
-2026-05-07 10:05:05,883 - INFO - Checking login success

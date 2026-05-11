@@ -1,35 +1,33 @@
-import requests
-
-from utils.logger import get_logger
+from api.base_api import BaseAPI
 
 from config.environment import config
 
+from utils.logger import get_logger
 
-logger = get_logger()
+
+logger = get_logger(__name__)
 
 
-class NotesAPI:
+class NotesAPI(BaseAPI):
 
     def __init__(self, token):
 
-        self.base_url = config.api_url
-
-        self.headers = {
+        headers = {
             "x-auth-token": token
         }
 
-    def get_notes(self):
-
-        logger.info("Fetching notes via API")
-
-        endpoint = f"{self.base_url}/notes"
-
-        response = requests.get(
-            endpoint,
-            headers=self.headers
+        super().__init__(
+            config.api_url,
+            headers=headers
         )
 
-        return response
+    def get_notes(self):
+
+        logger.info(
+            "Fetching notes via API"
+        )
+
+        return self.get("/notes")
 
     def create_note(
         self,
@@ -40,10 +38,9 @@ class NotesAPI:
     ):
 
         logger.info(
-            f"Creating note via API: {title}"
+            f"Creating note via API: "
+            f"{title}"
         )
-
-        endpoint = f"{self.base_url}/notes"
 
         payload = {
             "title": title,
@@ -52,13 +49,10 @@ class NotesAPI:
             "completed": completed
         }
 
-        response = requests.post(
-            endpoint,
-            json=payload,
-            headers=self.headers
+        return self.post(
+            "/notes",
+            payload
         )
-
-        return response
 
     def update_note(
         self,
@@ -70,11 +64,8 @@ class NotesAPI:
     ):
 
         logger.info(
-            f"Updating note via API: {note_id}"
-        )
-
-        endpoint = (
-            f"{self.base_url}/notes/{note_id}"
+            f"Updating note via API: "
+            f"{note_id}"
         )
 
         payload = {
@@ -84,49 +75,45 @@ class NotesAPI:
             "completed": completed
         }
 
-        response = requests.put(
-            endpoint,
-            json=payload,
-            headers=self.headers
+        return self.put(
+            f"/notes/{note_id}",
+            payload
         )
-
-        return response
 
     def delete_note(self, note_id):
 
         logger.info(
-            f"Deleting note via API: {note_id}"
+            f"Deleting note via API: "
+            f"{note_id}"
         )
 
-        endpoint = (
-            f"{self.base_url}/notes/{note_id}"
+        return self.delete(
+            f"/notes/{note_id}"
         )
-
-        response = requests.delete(
-            endpoint,
-            headers=self.headers
-        )
-
-        return response
 
     def delete_all_notes(self):
 
-        logger.info("Deleting all notes")
+        logger.info(
+            "Deleting all notes"
+        )
 
         response = self.get_notes()
 
-        notes = response.json()["data"]
+        notes = response.json().get(
+            "data",
+            []
+        )
 
         for note in notes:
 
             note_id = note["id"]
 
-            delete_response = self.delete_note(
-                note_id
+            delete_response = (
+                self.delete_note(note_id)
             )
 
             logger.info(
-                f"Deleted note: {note_id} | "
-                f"Status: "
+                f"Deleted note: {note_id} "
+                f"| Status: "
                 f"{delete_response.status_code}"
             )

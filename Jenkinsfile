@@ -2,6 +2,14 @@ pipeline {
 
     agent any
 
+    options {
+
+        timeout(
+            time: 30,
+            unit: 'MINUTES'
+        )
+    }
+
     environment {
 
         VENV = 'venv'
@@ -14,15 +22,14 @@ pipeline {
 
         NOTES_CREDS = credentials('notes-creds')
     }
+    
 
     stages {
-
-        stage('Clone Repository') {
+        stage('Clean Workspace') {
 
             steps {
 
-                git branch: 'main',
-                url: 'https://github.com/honey3031/Note-_automation.git'
+                cleanWs()
             }
         }
 
@@ -51,6 +58,10 @@ pipeline {
                 bat 'docker compose down'
 
                 bat 'docker compose up -d --scale chrome=2'
+                timeout(time: 2, unit: 'MINUTES') {
+
+                    bat 'timeout /t 15'
+                }
             }
         }
 
@@ -59,6 +70,9 @@ pipeline {
             steps {
 
                 bat '''
+                if exist reports rmdir /s /q reports
+                if exist screenshots rmdir /s /q screenshots
+                if exist logs rmdir /s /q logs
                 if not exist logs mkdir logs
                 if not exist reports mkdir reports
                 if not exist screenshots mkdir screenshots
@@ -80,7 +94,14 @@ pipeline {
 
                         def status = bat(
                             returnStatus: true,
-                            script: '.\\%VENV%\\Scripts\\pytest -n 2 tests --alluredir=reports/allure-results --html=reports/report.html --self-contained-html'
+                            script: """
+                            .\\%VENV%\\Scripts\\pytest ^
+                            -n 3 ^
+                            tests ^
+                            --alluredir=reports/allure-results ^
+                            --html=reports/report.html ^
+                            --self-contained-html
+                            """
                         )
 
                         if (status != 0) {

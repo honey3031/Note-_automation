@@ -1,43 +1,76 @@
 import logging
-import os
+from pathlib import Path
+from datetime import datetime, UTC
 
 
-def get_logger():
+def get_logger(name="framework"):
 
-    if not os.path.exists("logs"):
-        os.makedirs("logs")
+    logs_dir = Path("logs")
 
-    logger = logging.getLogger()
+    logs_dir.mkdir(
+        exist_ok=True
+    )
+
+    logger = logging.getLogger(name)
 
     logger.setLevel(logging.INFO)
 
-    if not logger.handlers:
+    if logger.handlers:
 
-        console_handler = logging.StreamHandler()
+        return logger
 
-        formatter = logging.Formatter(
-            "%(asctime)s - %(levelname)s - %(message)s"
+    formatter = logging.Formatter(
+        (
+            "%(asctime)s "
+            "[%(levelname)s] "
+            "%(name)s - %(message)s"
+        )
+    )
+
+    # console logging
+    console_handler = logging.StreamHandler()
+
+    console_handler.setFormatter(
+        formatter
+    )
+
+    logger.addHandler(
+        console_handler
+    )
+
+    # unique log file
+    timestamp = (
+        datetime.now(UTC)
+        .strftime("%Y%m%d_%H%M%S")
+    )
+
+    log_file = (
+        logs_dir /
+        f"test_execution_{timestamp}.log"
+    )
+
+    try:
+
+        file_handler = logging.FileHandler(
+            log_file,
+            encoding="utf-8"
         )
 
-        console_handler.setFormatter(formatter)
+        file_handler.setFormatter(
+            formatter
+        )
 
-        logger.addHandler(console_handler)
+        logger.addHandler(
+            file_handler
+        )
 
-        try:
+    except Exception as e:
 
-            file_handler = logging.FileHandler(
-                "logs/test_execution.log",
-                encoding="utf-8"
-            )
+        logger.warning(
+            f"Failed to initialize "
+            f"file logging: {e}"
+        )
 
-            file_handler.setFormatter(formatter)
-
-            logger.addHandler(file_handler)
-
-        except PermissionError:
-
-            logger.warning(
-                "Log file is locked; continuing with console logging"
-            )
+    logger.propagate = False
 
     return logger
