@@ -1,6 +1,8 @@
 import logging
 from pathlib import Path
-from datetime import datetime, UTC
+
+
+LOG_FILE = "logs/framework.log"
 
 
 def get_logger(name="framework"):
@@ -27,32 +29,10 @@ def get_logger(name="framework"):
         )
     )
 
-    # console logging
-    console_handler = logging.StreamHandler()
-
-    console_handler.setFormatter(
-        formatter
-    )
-
-    logger.addHandler(
-        console_handler
-    )
-
-    # unique log file
-    timestamp = (
-        datetime.now(UTC)
-        .strftime("%Y%m%d_%H%M%S")
-    )
-
-    log_file = (
-        logs_dir /
-        f"test_execution_{timestamp}.log"
-    )
-
     try:
 
         file_handler = logging.FileHandler(
-            log_file,
+            LOG_FILE,
             encoding="utf-8"
         )
 
@@ -64,12 +44,8 @@ def get_logger(name="framework"):
             file_handler
         )
 
-    except Exception as e:
-
-        logger.warning(
-            f"Failed to initialize "
-            f"file logging: {e}"
-        )
+    except Exception:
+        pass
 
     logger.propagate = False
 

@@ -24,14 +24,7 @@ pipeline {
     }
     
 
-    stages {
-        stage('Clean Workspace') {
-
-            steps {
-
-                cleanWs()
-            }
-        }
+    
 
         stage('Create Virtual Environment') {
 
@@ -55,7 +48,7 @@ pipeline {
 
             steps {
 
-                bat 'docker compose down'
+                bat 'if exist docker-compose.yml docker compose down'
 
                 bat 'docker compose up -d --scale chrome=2'
                 timeout(time: 2, unit: 'MINUTES') {

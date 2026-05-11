@@ -55,6 +55,18 @@ def get_driver():
     chrome_options.add_argument(
         "--disable-extensions"
     )
+    chrome_options.add_argument(
+        "--disable-logging"
+    )
+
+    chrome_options.add_argument(
+        "--log-level=3"
+    )
+
+    chrome_options.add_experimental_option(
+        "excludeSwitches",
+        ["enable-logging"]
+    )
 
     chrome_options.add_argument(
         "--disable-infobars"

@@ -34,3 +34,918 @@
 2026-05-06 10:54:31.825 | INFO     | pages.login_page:enter_email:59 - Entering email: honeytalabathula@gmail.com
 2026-05-06 10:54:31.825 | INFO     | pages.base_page:type:36 - Typing text into: ('id', 'email')
 2026-05-06 10:54:31.826 | INFO     | pages.base_page:find_element:18 - Finding element: ('id', 'email')
+2026-05-11 14:46:27,258 [INFO] framework - Allure environment file created
+2026-05-11 14:46:32,523 [INFO] framework - Allure environment file created
+2026-05-11 14:46:32,573 [INFO] framework - Allure environment file created
+2026-05-11 14:46:33,662 [INFO] framework - Allure environment file created
+2026-05-11 14:46:33,961 [INFO] framework - Calling login API
+2026-05-11 14:46:33,962 [INFO] framework - Calling login API
+2026-05-11 14:46:33,971 [INFO] framework - Calling login API
+2026-05-11 14:46:34,988 [INFO] framework - Response Status: 200
+2026-05-11 14:46:34,989 [INFO] api.notes_api - Creating note via API: API Note d0c248e3
+2026-05-11 14:46:34,989 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:46:35,213 [INFO] framework - Response Status: 200
+2026-05-11 14:46:35,213 [INFO] api.notes_api - Creating note via API: 
+2026-05-11 14:46:35,213 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:46:35,213 [INFO] framework - Response Status: 200
+2026-05-11 14:46:35,215 [INFO] api.notes_api - Creating note via API: API Edit d856bca1
+2026-05-11 14:46:35,215 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:46:35,542 [INFO] api.notes_api - Updating note via API: 6a019e760fadc10297de77a3
+2026-05-11 14:46:35,543 [INFO] api.base_api - PUT Request: /notes/6a019e760fadc10297de77a3
+2026-05-11 14:46:35,708 [INFO] framework - Response Status: 200
+2026-05-11 14:46:35,709 [INFO] framework - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a019e760fadc10297de77a7","title":"API Note d0c248e3","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-11T09:16:38.507Z","updated_at":"2026-05-11T09:16:38.507Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 14:46:35,734 [INFO] framework - Calling login API
+2026-05-11 14:46:36,347 [INFO] framework - Calling login API
+2026-05-11 14:46:36,432 [INFO] framework - Response Status: 200
+2026-05-11 14:46:36,433 [INFO] api.notes_api - Creating note via API: Delete API 55f74893
+2026-05-11 14:46:36,434 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:46:36,745 [INFO] framework - Response Status: 200
+2026-05-11 14:46:36,746 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 14:46:36,746 [INFO] api.base_api - GET Request: /notes
+2026-05-11 14:46:36,753 [INFO] api.notes_api - Deleting note via API: 6a019e770fadc10297de77b3
+2026-05-11 14:46:36,753 [INFO] api.base_api - DELETE Request: /notes/6a019e770fadc10297de77b3
+2026-05-11 14:46:36,999 [INFO] framework - Delete response status: 200
+2026-05-11 14:46:37,007 [INFO] framework - Calling login API
+2026-05-11 14:46:37,097 [INFO] framework - Performance metric recorded: GET /notes response=0.336s
+2026-05-11 14:46:37,409 [INFO] framework - Response Status: 200
+2026-05-11 14:46:37,410 [INFO] api.notes_api - Deleting note via API: invalid-note-id
+2026-05-11 14:46:37,410 [INFO] api.base_api - DELETE Request: /notes/invalid-note-id
+2026-05-11 14:46:45,955 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:46:46,035 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:46:46,211 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:46:51,642 [INFO] framework - Performing login
+2026-05-11 14:46:51,811 [INFO] framework - Performing login
+2026-05-11 14:46:52,266 [INFO] framework - Performing login
+2026-05-11 14:47:08,352 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:47:09,119 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:47:10,247 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:47:10,708 [INFO] framework - Calling login API
+2026-05-11 14:47:11,297 [INFO] framework - Response Status: 200
+2026-05-11 14:47:11,299 [INFO] api.notes_api - Creating note via API: API_DELETE_81270d1a
+2026-05-11 14:47:11,299 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:47:12,372 [INFO] framework - Calling login API
+2026-05-11 14:47:12,989 [INFO] framework - Response Status: 200
+2026-05-11 14:47:12,990 [INFO] api.notes_api - Creating note via API: API_UI_d6b9bf69
+2026-05-11 14:47:12,990 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:47:13,781 [INFO] framework - API Create Response Status: 200
+2026-05-11 14:47:13,781 [INFO] framework - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a019e9c0fadc10297de77d0","title":"API_UI_d6b9bf69","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-11T09:17:16.458Z","updated_at":"2026-05-11T09:17:16.458Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 14:47:14,958 [INFO] framework - Creating note: UI_API_5f4a8f03
+2026-05-11 14:47:14,958 [INFO] framework - Clicking add note button
+2026-05-11 14:47:17,971 [INFO] framework - Checking if note created: API_DELETE_81270d1a
+2026-05-11 14:47:18,075 [INFO] framework - Checking if note created: API_UI_d6b9bf69
+2026-05-11 14:47:19,624 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:47:26,534 [INFO] framework - Note found: API_DELETE_81270d1a
+2026-05-11 14:47:26,534 [INFO] api.notes_api - Deleting note via API: 6a019e9a0fadc10297de77c6
+2026-05-11 14:47:26,534 [INFO] api.base_api - DELETE Request: /notes/6a019e9a0fadc10297de77c6
+2026-05-11 14:47:27,917 [INFO] framework - Entering text: UI_API_5f4a8f03
+2026-05-11 14:47:29,785 [INFO] framework - Note found: API_UI_d6b9bf69
+2026-05-11 14:47:30,763 [INFO] framework - Browser closed successfully
+2026-05-11 14:47:32,576 [INFO] framework - Entering text: Created via UI validated via API
+2026-05-11 14:47:33,631 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:47:34,169 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:47:35,087 [INFO] framework - Checking if note created: API_DELETE_81270d1a
+2026-05-11 14:47:35,265 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:47:36,396 [INFO] framework - Performing login
+2026-05-11 14:47:48,926 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:47:51,098 [INFO] framework - Creating note: EDIT_UI_API_81a245a2
+2026-05-11 14:47:51,099 [INFO] framework - Clicking add note button
+2026-05-11 14:47:51,672 [INFO] framework - Calling login API
+2026-05-11 14:47:52,385 [INFO] framework - Response Status: 200
+2026-05-11 14:47:52,386 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 14:47:52,387 [INFO] api.base_api - GET Request: /notes
+2026-05-11 14:47:54,082 [INFO] framework - Browser closed successfully
+2026-05-11 14:47:55,700 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 14:47:57,003 [INFO] framework - Browser closed successfully
+2026-05-11 14:47:58,181 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:47:59,081 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:48:03,228 [INFO] framework - Performing login
+2026-05-11 14:48:03,874 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:48:12,649 [INFO] framework - Performing login
+2026-05-11 14:48:14,734 [INFO] framework - Entering text: EDIT_UI_API_81a245a2
+2026-05-11 14:48:18,848 [INFO] framework - Entering text: Original UI note
+2026-05-11 14:48:20,014 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:48:21,734 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:48:21,991 [INFO] framework - Creating note: DELETE_UI_API_ffb60f1e
+2026-05-11 14:48:21,991 [INFO] framework - Clicking add note button
+2026-05-11 14:48:24,758 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:48:26,750 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:48:37,505 [INFO] framework - Entering text: DELETE_UI_API_ffb60f1e
+2026-05-11 14:48:38,920 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:48:41,997 [INFO] framework - Calling login API
+2026-05-11 14:48:42,069 [INFO] framework - Entering text: Delete validation
+2026-05-11 14:48:43,228 [INFO] framework - Response Status: 200
+2026-05-11 14:48:43,230 [INFO] api.notes_api - Creating note via API: EDIT_API_UI_8c970340
+2026-05-11 14:48:43,231 [INFO] api.base_api - POST Request: /notes
+2026-05-11 14:48:43,815 [INFO] api.notes_api - Updating note via API: 6a019ef60fadc10297de780c
+2026-05-11 14:48:43,815 [INFO] api.base_api - PUT Request: /notes/6a019ef60fadc10297de780c
+2026-05-11 14:48:44,773 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:48:45,107 [INFO] framework - Editing note from 'EDIT_UI_API_81a245a2' to 'EDITED_UI_API_81a245a2'
+2026-05-11 14:48:45,108 [INFO] framework - Waiting for note card visibility: EDIT_UI_API_81a245a2
+2026-05-11 14:48:51,157 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:48:51,301 [INFO] framework - Finding note card by title: EDIT_UI_API_81a245a2
+2026-05-11 14:48:59,531 [INFO] framework - Checking if note created: EDITED_API_UI_8c970340
+2026-05-11 14:49:07,671 [INFO] framework - Entering text: EDITED_UI_API_81a245a2
+2026-05-11 14:49:12,802 [INFO] framework - Note found: EDITED_API_UI_8c970340
+2026-05-11 14:49:16,121 [INFO] framework - Browser closed successfully
+2026-05-11 14:49:23,089 [INFO] framework - Entering text: UI edit validated through API
+2026-05-11 14:49:25,160 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:49:26,261 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:49:28,330 [INFO] framework - Calling login API
+2026-05-11 14:49:29,202 [INFO] framework - Response Status: 200
+2026-05-11 14:49:29,203 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 14:49:29,204 [INFO] api.base_api - GET Request: /notes
+2026-05-11 14:49:29,604 [INFO] framework - Deleting note by title: DELETE_UI_API_ffb60f1e
+2026-05-11 14:49:29,604 [INFO] framework - Getting notes count
+2026-05-11 14:49:29,708 [INFO] framework - Performing login
+2026-05-11 14:49:31,918 [INFO] framework - Total notes found: 61
+2026-05-11 14:49:31,918 [INFO] framework - Finding note card by title: DELETE_UI_API_ffb60f1e
+2026-05-11 14:49:32,687 [INFO] framework - Note edited successfully: EDITED_UI_API_81a245a2
+2026-05-11 14:49:32,695 [INFO] framework - Calling login API
+2026-05-11 14:49:33,199 [INFO] framework - Response Status: 200
+2026-05-11 14:49:33,214 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 14:49:33,214 [INFO] api.base_api - GET Request: /notes
+2026-05-11 14:49:36,553 [INFO] framework - Browser closed successfully
+2026-05-11 14:49:37,017 [WARNING] framework - Normal delete click failed. Trying JS click.
+2026-05-11 14:49:44,873 [WARNING] framework - Delete click intercepted. Using JS click.
+2026-05-11 14:49:45,784 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:49:49,265 [INFO] framework - Performing login
+2026-05-11 14:49:50,624 [INFO] framework - Note deleted successfully: DELETE_UI_API_ffb60f1e
+2026-05-11 14:49:50,625 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 14:49:50,625 [INFO] api.base_api - GET Request: /notes
+2026-05-11 14:49:52,193 [INFO] framework - Browser closed successfully
+2026-05-11 14:49:55,114 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:49:57,472 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:49:58,976 [INFO] framework - Checking login success
+2026-05-11 14:50:06,523 [INFO] framework - Performing login
+2026-05-11 14:50:06,747 [INFO] framework - Browser closed successfully
+2026-05-11 14:50:07,129 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:50:11,464 [INFO] framework - Creating note: MULTI_98f1daa7
+2026-05-11 14:50:11,464 [INFO] framework - Clicking add note button
+2026-05-11 14:50:11,672 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:50:14,490 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:50:16,803 [INFO] framework - Performing login
+2026-05-11 14:50:23,557 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:50:25,693 [INFO] framework - Entering text: MULTI_98f1daa7
+2026-05-11 14:50:27,703 [INFO] framework - Performance metric recorded: UI DOM ready=5.302s
+2026-05-11 14:50:31,112 [INFO] framework - Entering text: Description 0
+2026-05-11 14:50:33,483 [INFO] framework - Screenshot saved: screenshots\test_notes_ui_dom_ready_under_threshold_20260511_092028_20260511_092028_483720.png
+2026-05-11 14:50:33,486 [INFO] framework - Failure screenshot attached to Allure report
+2026-05-11 14:50:34,127 [INFO] framework - Browser closed successfully
+2026-05-11 14:50:34,678 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:50:36,638 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:50:38,079 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:50:40,056 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:50:43,674 [INFO] framework - Performing login
+2026-05-11 14:50:46,512 [INFO] framework - Waiting for error message
+2026-05-11 14:50:48,984 [INFO] framework - Browser closed successfully
+2026-05-11 14:50:52,870 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:50:55,095 [INFO] framework - Creating note: MULTI_57070b8d
+2026-05-11 14:50:55,096 [INFO] framework - Clicking add note button
+2026-05-11 14:50:57,128 [INFO] framework - Performing login
+2026-05-11 14:50:58,593 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:50:59,125 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:51:03,812 [INFO] framework - Performance metric recorded: UI DOM ready=2.961s
+2026-05-11 14:51:04,273 [INFO] framework - Browser closed successfully
+2026-05-11 14:51:04,824 [INFO] framework - Entering text: MULTI_57070b8d
+2026-05-11 14:51:06,974 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:51:09,223 [INFO] framework - Entering text: Description 1
+2026-05-11 14:51:10,058 [INFO] framework - Performing login
+2026-05-11 14:51:14,394 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:51:14,920 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:51:15,869 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:51:21,530 [INFO] framework - Creating note: Automation Note 690e0e45
+2026-05-11 14:51:21,531 [INFO] framework - Clicking add note button
+2026-05-11 14:51:39,827 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:51:40,011 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:51:50,817 [INFO] framework - Clicking add note button
+2026-05-11 14:51:53,942 [INFO] framework - Creating note: MULTI_ba808224
+2026-05-11 14:51:53,943 [INFO] framework - Clicking add note button
+2026-05-11 14:51:58,003 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:51:58,432 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:52:05,832 [INFO] framework - Entering text: Automation Note 690e0e45
+2026-05-11 14:52:08,749 [INFO] framework - Entering text: Validation test
+2026-05-11 14:52:10,405 [INFO] framework - Entering text: Created by Selenium automation
+2026-05-11 14:52:11,155 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:52:12,001 [INFO] framework - Entering text: MULTI_ba808224
+2026-05-11 14:52:13,480 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:52:14,280 [INFO] framework - Entering text: Description 2
+2026-05-11 14:52:14,471 [INFO] framework - Browser closed successfully
+2026-05-11 14:52:15,133 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:52:17,060 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:52:17,593 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:52:18,423 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:52:19,854 [INFO] framework - Performing login
+2026-05-11 14:52:33,586 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:52:37,492 [INFO] framework - Calling login API
+2026-05-11 14:52:38,225 [INFO] framework - Response Status: 200
+2026-05-11 14:52:38,227 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 14:52:38,228 [INFO] api.base_api - GET Request: /notes
+2026-05-11 14:52:38,476 [INFO] framework - Creating note: Edit Note 672148a4
+2026-05-11 14:52:38,476 [INFO] framework - Clicking add note button
+2026-05-11 14:52:41,996 [INFO] framework - Browser closed successfully
+2026-05-11 14:52:44,843 [INFO] framework - Checking if note created: Automation Note 690e0e45
+2026-05-11 14:52:48,379 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:52:48,930 [INFO] framework - Note found: Automation Note 690e0e45
+2026-05-11 14:52:50,098 [INFO] framework - Browser closed successfully
+2026-05-11 14:52:53,921 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:52:57,974 [INFO] framework - Performing login
+2026-05-11 14:52:59,597 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:53:00,023 [INFO] framework - Entering text: Edit Note 672148a4
+2026-05-11 14:53:03,310 [INFO] framework - Performing login
+2026-05-11 14:53:03,316 [INFO] framework - Entering text: Original note description
+2026-05-11 14:53:09,827 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:53:13,894 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:53:17,153 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:53:19,917 [INFO] framework - Checking login success
+2026-05-11 14:53:24,751 [INFO] framework - Logging out
+2026-05-11 14:53:24,751 [INFO] framework - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-11 14:53:31,766 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:53:31,816 [INFO] framework - Checking logout success
+2026-05-11 14:53:33,898 [INFO] framework - Browser closed successfully
+2026-05-11 14:53:36,474 [INFO] framework - Creating note: Delete Note e39ef50b
+2026-05-11 14:53:36,475 [INFO] framework - Clicking add note button
+2026-05-11 14:53:38,533 [INFO] framework - Editing note from 'Edit Note 672148a4' to 'Edited Note 672148a4'
+2026-05-11 14:53:38,533 [INFO] framework - Waiting for note card visibility: Edit Note 672148a4
+2026-05-11 14:53:39,387 [INFO] framework - Finding note card by title: Edit Note 672148a4
+2026-05-11 14:53:39,643 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:53:42,427 [INFO] framework - Entering text: Delete Note e39ef50b
+2026-05-11 14:53:42,624 [INFO] framework - Entering text: Edited Note 672148a4
+2026-05-11 14:53:43,989 [INFO] framework - Entering text: Note created for delete validation
+2026-05-11 14:53:44,396 [INFO] framework - Entering text: Updated by Selenium automation
+2026-05-11 14:53:45,421 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:53:45,806 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:53:46,345 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:53:48,444 [INFO] framework - Note edited successfully: Edited Note 672148a4
+2026-05-11 14:53:48,445 [INFO] framework - Checking if note created: Edited Note 672148a4
+2026-05-11 14:53:55,992 [INFO] framework - Checking if note created: Delete Note e39ef50b
+2026-05-11 14:53:56,106 [INFO] framework - Note found: Delete Note e39ef50b
+2026-05-11 14:53:56,113 [INFO] framework - Deleting note by title: Delete Note e39ef50b
+2026-05-11 14:53:56,113 [INFO] framework - Getting notes count
+2026-05-11 14:53:56,301 [INFO] framework - Total notes found: 66
+2026-05-11 14:53:56,301 [INFO] framework - Finding note card by title: Delete Note e39ef50b
+2026-05-11 14:53:57,834 [WARNING] framework - Delete click intercepted. Using JS click.
+2026-05-11 14:54:00,629 [INFO] framework - Note deleted successfully: Delete Note e39ef50b
+2026-05-11 14:54:00,630 [INFO] framework - Checking if note absent: Delete Note e39ef50b
+2026-05-11 14:54:02,958 [INFO] framework - Browser closed successfully
+2026-05-11 14:54:09,852 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 14:54:10,747 [INFO] framework - Screenshot saved: screenshots\test_edit_note_20260511_092409_20260511_092409_924568.png
+2026-05-11 14:54:10,749 [INFO] framework - Failure screenshot attached to Allure report
+2026-05-11 14:54:10,977 [INFO] framework - Browser closed successfully
+2026-05-11 14:54:14,734 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 14:54:17,413 [INFO] framework - Performing login
+2026-05-11 14:54:22,260 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 14:54:23,684 [INFO] framework - Creating note: Edit Note 41eba7a2
+2026-05-11 14:54:23,684 [INFO] framework - Clicking add note button
+2026-05-11 14:54:26,615 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 14:54:29,786 [INFO] framework - Entering text: Edit Note 41eba7a2
+2026-05-11 14:54:30,714 [INFO] framework - Entering text: Original note description
+2026-05-11 14:54:31,835 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:54:32,444 [INFO] framework - Waiting for note modal to close
+2026-05-11 14:54:41,229 [INFO] framework - Editing note from 'Edit Note 41eba7a2' to 'Edited Note 41eba7a2'
+2026-05-11 14:54:41,229 [INFO] framework - Waiting for note card visibility: Edit Note 41eba7a2
+2026-05-11 14:54:41,447 [INFO] framework - Finding note card by title: Edit Note 41eba7a2
+2026-05-11 14:54:42,662 [INFO] framework - Entering text: Edited Note 41eba7a2
+2026-05-11 14:54:43,346 [INFO] framework - Entering text: Updated by Selenium automation
+2026-05-11 14:54:43,958 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 14:54:44,744 [INFO] framework - Note edited successfully: Edited Note 41eba7a2
+2026-05-11 14:54:44,745 [INFO] framework - Checking if note created: Edited Note 41eba7a2
+2026-05-11 14:54:48,924 [INFO] framework - Note found: Edited Note 41eba7a2
+2026-05-11 14:54:48,925 [INFO] framework - Checking if note created: Edit Note 41eba7a2
+2026-05-11 14:55:10,027 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 14:55:10,228 [INFO] framework - Browser closed successfully
+2026-05-11 15:00:16,266 [INFO] framework - Allure environment file created
+2026-05-11 15:00:19,503 [INFO] framework - Allure environment file created
+2026-05-11 15:00:19,547 [INFO] framework - Allure environment file created
+2026-05-11 15:00:19,704 [INFO] framework - Calling login API
+2026-05-11 15:00:19,705 [INFO] framework - Calling login API
+2026-05-11 15:00:20,244 [INFO] framework - Response Status: 200
+2026-05-11 15:00:20,246 [INFO] api.notes_api - Creating note via API: API Edit 84e9ce63
+2026-05-11 15:00:20,246 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:00:20,375 [INFO] framework - Response Status: 200
+2026-05-11 15:00:20,376 [INFO] api.notes_api - Creating note via API: API Note 3b86fd30
+2026-05-11 15:00:20,377 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:00:23,615 [INFO] api.notes_api - Updating note via API: 6a01a1b20fadc10297de7a71
+2026-05-11 15:00:23,615 [INFO] api.base_api - PUT Request: /notes/6a01a1b20fadc10297de7a71
+2026-05-11 15:00:23,735 [INFO] framework - Response Status: 200
+2026-05-11 15:00:23,735 [INFO] framework - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a01a1b20fadc10297de7a75","title":"API Note 3b86fd30","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-11T09:30:26.521Z","updated_at":"2026-05-11T09:30:26.521Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 15:00:23,748 [INFO] framework - Calling login API
+2026-05-11 15:00:24,333 [INFO] framework - Response Status: 200
+2026-05-11 15:00:24,335 [INFO] api.notes_api - Creating note via API: Delete API 7dcafe2c
+2026-05-11 15:00:24,335 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:00:24,869 [INFO] api.notes_api - Deleting note via API: 6a01a1b30fadc10297de7a7e
+2026-05-11 15:00:24,869 [INFO] api.base_api - DELETE Request: /notes/6a01a1b30fadc10297de7a7e
+2026-05-11 15:00:25,146 [INFO] framework - Delete response status: 200
+2026-05-11 15:00:25,154 [INFO] framework - Calling login API
+2026-05-11 15:00:27,256 [INFO] framework - Response Status: 200
+2026-05-11 15:00:27,257 [INFO] api.notes_api - Creating note via API: 
+2026-05-11 15:00:27,258 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:00:27,612 [INFO] framework - Calling login API
+2026-05-11 15:00:28,660 [INFO] framework - Response Status: 200
+2026-05-11 15:00:28,660 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:00:28,660 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:00:28,673 [INFO] framework - Calling login API
+2026-05-11 15:00:29,043 [INFO] framework - Performance metric recorded: GET /notes response=0.359s
+2026-05-11 15:00:29,068 [INFO] framework - Running in headless mode
+2026-05-11 15:00:29,113 [INFO] framework - Response Status: 200
+2026-05-11 15:00:29,114 [INFO] api.notes_api - Deleting note via API: invalid-note-id
+2026-05-11 15:00:29,114 [INFO] api.base_api - DELETE Request: /notes/invalid-note-id
+2026-05-11 15:00:29,467 [INFO] framework - Running in headless mode
+2026-05-11 15:00:33,633 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:00:33,781 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:00:36,270 [INFO] framework - Performing login
+2026-05-11 15:00:36,461 [INFO] framework - Performing login
+2026-05-11 15:00:41,603 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:00:41,710 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:00:42,105 [INFO] framework - Creating note: DELETE_UI_API_a395dc4b
+2026-05-11 15:00:42,105 [INFO] framework - Clicking add note button
+2026-05-11 15:00:42,165 [INFO] framework - Creating note: UI_API_d3002846
+2026-05-11 15:00:42,166 [INFO] framework - Clicking add note button
+2026-05-11 15:00:43,356 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:00:43,538 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:00:44,518 [INFO] framework - Entering text: DELETE_UI_API_a395dc4b
+2026-05-11 15:00:44,549 [INFO] framework - Entering text: UI_API_d3002846
+2026-05-11 15:00:45,103 [INFO] framework - Entering text: Delete validation
+2026-05-11 15:00:45,133 [INFO] framework - Entering text: Created via UI validated via API
+2026-05-11 15:00:45,560 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:00:45,657 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:00:45,922 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:00:46,098 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:00:52,862 [INFO] framework - Calling login API
+2026-05-11 15:00:52,870 [INFO] framework - Calling login API
+2026-05-11 15:00:53,412 [INFO] framework - Response Status: 200
+2026-05-11 15:00:53,413 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:00:53,413 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:00:53,413 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:00:53,413 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:00:53,765 [INFO] framework - Deleting note by title: DELETE_UI_API_a395dc4b
+2026-05-11 15:00:53,765 [INFO] framework - Getting notes count
+2026-05-11 15:00:53,934 [INFO] framework - Browser closed successfully
+2026-05-11 15:00:53,940 [INFO] framework - Running in headless mode
+2026-05-11 15:00:54,033 [INFO] framework - Total notes found: 70
+2026-05-11 15:00:54,033 [INFO] framework - Finding note card by title: DELETE_UI_API_a395dc4b
+2026-05-11 15:00:56,096 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:00:57,065 [WARNING] framework - Delete click intercepted. Using JS click.
+2026-05-11 15:00:57,423 [INFO] framework - Performing login
+2026-05-11 15:00:59,353 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:00:59,787 [INFO] framework - Calling login API
+2026-05-11 15:00:59,955 [INFO] framework - Note deleted successfully: DELETE_UI_API_a395dc4b
+2026-05-11 15:00:59,955 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:00:59,955 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:01:00,453 [INFO] framework - Response Status: 200
+2026-05-11 15:01:00,454 [INFO] api.notes_api - Creating note via API: API_UI_9602487a
+2026-05-11 15:01:00,454 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:01:00,505 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:00,512 [INFO] framework - Running in headless mode
+2026-05-11 15:01:00,792 [INFO] framework - API Create Response Status: 200
+2026-05-11 15:01:00,793 [INFO] framework - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a01a1d70fadc10297de7abd","title":"API_UI_9602487a","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-11T09:31:03.582Z","updated_at":"2026-05-11T09:31:03.582Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 15:01:01,315 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:02,067 [INFO] framework - Checking if note created: API_UI_9602487a
+2026-05-11 15:01:02,845 [INFO] framework - Performing login
+2026-05-11 15:01:03,292 [INFO] framework - Note found: API_UI_9602487a
+2026-05-11 15:01:03,472 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:03,477 [INFO] framework - Running in headless mode
+2026-05-11 15:01:04,383 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:05,935 [INFO] framework - Performing login
+2026-05-11 15:01:05,940 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:01:06,430 [INFO] framework - Calling login API
+2026-05-11 15:01:06,835 [INFO] framework - Response Status: 200
+2026-05-11 15:01:06,836 [INFO] api.notes_api - Creating note via API: API_DELETE_1d2986e1
+2026-05-11 15:01:06,836 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:01:08,512 [INFO] framework - Checking if note created: API_DELETE_1d2986e1
+2026-05-11 15:01:08,595 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:01:09,086 [INFO] framework - Creating note: EDIT_UI_API_65a666ad
+2026-05-11 15:01:09,087 [INFO] framework - Clicking add note button
+2026-05-11 15:01:09,725 [INFO] framework - Note found: API_DELETE_1d2986e1
+2026-05-11 15:01:09,726 [INFO] api.notes_api - Deleting note via API: 6a01a1dd0fadc10297de7acf
+2026-05-11 15:01:09,726 [INFO] api.base_api - DELETE Request: /notes/6a01a1dd0fadc10297de7acf
+2026-05-11 15:01:10,109 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:01:11,092 [INFO] framework - Checking if note created: API_DELETE_1d2986e1
+2026-05-11 15:01:11,099 [INFO] framework - Entering text: EDIT_UI_API_65a666ad
+2026-05-11 15:01:11,549 [INFO] framework - Entering text: Original UI note
+2026-05-11 15:01:11,935 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:01:12,381 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:01:18,626 [INFO] framework - Editing note from 'EDIT_UI_API_65a666ad' to 'EDITED_UI_API_65a666ad'
+2026-05-11 15:01:18,626 [INFO] framework - Waiting for note card visibility: EDIT_UI_API_65a666ad
+2026-05-11 15:01:18,833 [INFO] framework - Finding note card by title: EDIT_UI_API_65a666ad
+2026-05-11 15:01:19,837 [INFO] framework - Entering text: EDITED_UI_API_65a666ad
+2026-05-11 15:01:20,512 [INFO] framework - Entering text: UI edit validated through API
+2026-05-11 15:01:21,127 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:01:22,135 [INFO] framework - Note edited successfully: EDITED_UI_API_65a666ad
+2026-05-11 15:01:22,135 [INFO] framework - Calling login API
+2026-05-11 15:01:22,653 [INFO] framework - Response Status: 200
+2026-05-11 15:01:22,654 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:01:22,654 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:01:23,149 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:23,154 [INFO] framework - Running in headless mode
+2026-05-11 15:01:23,685 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:25,026 [INFO] framework - Performing login
+2026-05-11 15:01:26,708 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:01:27,157 [INFO] framework - Creating note: MULTI_049df82c
+2026-05-11 15:01:27,157 [INFO] framework - Clicking add note button
+2026-05-11 15:01:28,440 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:01:29,669 [INFO] framework - Entering text: MULTI_049df82c
+2026-05-11 15:01:30,168 [INFO] framework - Entering text: Description 0
+2026-05-11 15:01:30,611 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:01:30,993 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:01:31,423 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 15:01:31,648 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:31,661 [INFO] framework - Running in headless mode
+2026-05-11 15:01:32,663 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:34,379 [INFO] framework - Performing login
+2026-05-11 15:01:36,834 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:01:37,220 [INFO] framework - Calling login API
+2026-05-11 15:01:37,737 [INFO] framework - Response Status: 200
+2026-05-11 15:01:37,738 [INFO] api.notes_api - Creating note via API: EDIT_API_UI_6af3386e
+2026-05-11 15:01:37,738 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:01:37,792 [INFO] framework - Creating note: MULTI_74610c58
+2026-05-11 15:01:37,792 [INFO] framework - Clicking add note button
+2026-05-11 15:01:38,054 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:01:38,133 [INFO] api.notes_api - Updating note via API: 6a01a1fc0fadc10297de7b06
+2026-05-11 15:01:38,134 [INFO] api.base_api - PUT Request: /notes/6a01a1fc0fadc10297de7b06
+2026-05-11 15:01:39,022 [INFO] framework - Entering text: MULTI_74610c58
+2026-05-11 15:01:39,573 [INFO] framework - Entering text: Description 1
+2026-05-11 15:01:40,454 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:01:40,494 [INFO] framework - Checking if note created: EDITED_API_UI_6af3386e
+2026-05-11 15:01:40,924 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:01:41,286 [INFO] framework - Note found: EDITED_API_UI_6af3386e
+2026-05-11 15:01:41,474 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:41,491 [INFO] framework - Running in headless mode
+2026-05-11 15:01:42,242 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:44,376 [INFO] framework - Performing login
+2026-05-11 15:01:45,948 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:01:46,441 [INFO] framework - Checking login success
+2026-05-11 15:01:47,613 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:47,620 [INFO] framework - Running in headless mode
+2026-05-11 15:01:47,626 [INFO] framework - Creating note: MULTI_1b17e6be
+2026-05-11 15:01:47,626 [INFO] framework - Clicking add note button
+2026-05-11 15:01:47,956 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:01:48,296 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:48,761 [INFO] framework - Entering text: MULTI_1b17e6be
+2026-05-11 15:01:49,155 [INFO] framework - Entering text: Description 2
+2026-05-11 15:01:49,487 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:01:49,800 [INFO] framework - Performing login
+2026-05-11 15:01:50,010 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:01:53,548 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:01:56,184 [INFO] framework - Waiting for error message
+2026-05-11 15:01:56,440 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:56,449 [INFO] framework - Running in headless mode
+2026-05-11 15:01:57,003 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:01:57,865 [INFO] framework - Calling login API
+2026-05-11 15:01:58,632 [INFO] framework - Performing login
+2026-05-11 15:01:58,665 [INFO] framework - Response Status: 200
+2026-05-11 15:01:58,666 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:01:58,666 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:01:59,238 [INFO] framework - Browser closed successfully
+2026-05-11 15:01:59,244 [INFO] framework - Running in headless mode
+2026-05-11 15:02:00,380 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:02:01,186 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:02:01,818 [INFO] framework - Checking login success
+2026-05-11 15:02:02,432 [INFO] framework - Performing login
+2026-05-11 15:02:02,923 [INFO] framework - Logging out
+2026-05-11 15:02:02,924 [INFO] framework - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-11 15:02:03,437 [INFO] framework - Checking logout success
+2026-05-11 15:02:04,173 [INFO] framework - Browser closed successfully
+2026-05-11 15:02:04,180 [INFO] framework - Running in headless mode
+2026-05-11 15:02:04,574 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:02:05,064 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:02:05,533 [INFO] framework - Performance metric recorded: UI DOM ready=1.766s
+2026-05-11 15:02:05,628 [INFO] framework - Browser closed successfully
+2026-05-11 15:02:05,636 [INFO] framework - Running in headless mode
+2026-05-11 15:02:06,296 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:02:07,223 [INFO] framework - Performing login
+2026-05-11 15:02:08,060 [INFO] framework - Performing login
+2026-05-11 15:02:09,313 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:02:09,422 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:02:09,768 [INFO] framework - Clicking add note button
+2026-05-11 15:02:09,978 [INFO] framework - Creating note: Automation Note fae6ae9c
+2026-05-11 15:02:09,978 [INFO] framework - Clicking add note button
+2026-05-11 15:02:11,502 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:02:12,051 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:02:12,089 [INFO] framework - Entering text: Validation test
+2026-05-11 15:02:12,497 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:02:13,339 [INFO] framework - Browser closed successfully
+2026-05-11 15:02:13,350 [INFO] framework - Running in headless mode
+2026-05-11 15:02:13,359 [INFO] framework - Entering text: Automation Note fae6ae9c
+2026-05-11 15:02:14,048 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:02:14,105 [INFO] framework - Entering text: Created by Selenium automation
+2026-05-11 15:02:14,445 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:02:14,858 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:02:15,834 [INFO] framework - Performing login
+2026-05-11 15:02:18,660 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:02:19,094 [INFO] framework - Creating note: Delete Note 5f559a1c
+2026-05-11 15:02:19,094 [INFO] framework - Clicking add note button
+2026-05-11 15:02:20,180 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:02:20,991 [INFO] framework - Entering text: Delete Note 5f559a1c
+2026-05-11 15:02:21,277 [INFO] framework - Checking if note created: Automation Note fae6ae9c
+2026-05-11 15:02:21,357 [INFO] framework - Note found: Automation Note fae6ae9c
+2026-05-11 15:02:21,479 [INFO] framework - Entering text: Note created for delete validation
+2026-05-11 15:02:21,483 [INFO] framework - Browser closed successfully
+2026-05-11 15:02:21,491 [INFO] framework - Running in headless mode
+2026-05-11 15:02:21,998 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:02:22,119 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:02:22,433 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:02:24,321 [INFO] framework - Performing login
+2026-05-11 15:02:26,312 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:02:26,728 [INFO] framework - Creating note: Edit Note b63d3a40
+2026-05-11 15:02:26,728 [INFO] framework - Clicking add note button
+2026-05-11 15:02:27,977 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:02:28,915 [INFO] framework - Entering text: Edit Note b63d3a40
+2026-05-11 15:02:29,183 [INFO] framework - Checking if note created: Delete Note 5f559a1c
+2026-05-11 15:02:29,254 [INFO] framework - Note found: Delete Note 5f559a1c
+2026-05-11 15:02:29,254 [INFO] framework - Deleting note by title: Delete Note 5f559a1c
+2026-05-11 15:02:29,254 [INFO] framework - Getting notes count
+2026-05-11 15:02:29,286 [INFO] framework - Entering text: Original note description
+2026-05-11 15:02:29,354 [INFO] framework - Total notes found: 77
+2026-05-11 15:02:29,354 [INFO] framework - Finding note card by title: Delete Note 5f559a1c
+2026-05-11 15:02:29,650 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:02:30,051 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:02:30,753 [WARNING] framework - Normal delete click failed. Trying JS click.
+2026-05-11 15:02:32,199 [WARNING] framework - Delete click intercepted. Using JS click.
+2026-05-11 15:02:35,200 [INFO] framework - Note deleted successfully: Delete Note 5f559a1c
+2026-05-11 15:02:35,200 [INFO] framework - Checking if note absent: Delete Note 5f559a1c
+2026-05-11 15:02:37,472 [INFO] framework - Browser closed successfully
+2026-05-11 15:02:37,550 [INFO] framework - Editing note from 'Edit Note b63d3a40' to 'Edited Note b63d3a40'
+2026-05-11 15:02:37,550 [INFO] framework - Waiting for note card visibility: Edit Note b63d3a40
+2026-05-11 15:02:37,741 [INFO] framework - Finding note card by title: Edit Note b63d3a40
+2026-05-11 15:02:38,657 [INFO] framework - Entering text: Edited Note b63d3a40
+2026-05-11 15:02:39,222 [INFO] framework - Entering text: Updated by Selenium automation
+2026-05-11 15:02:39,807 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:02:40,460 [INFO] framework - Note edited successfully: Edited Note b63d3a40
+2026-05-11 15:02:40,461 [INFO] framework - Checking if note created: Edited Note b63d3a40
+2026-05-11 15:02:43,166 [INFO] framework - Note found: Edited Note b63d3a40
+2026-05-11 15:02:43,167 [INFO] framework - Checking if note created: Edit Note b63d3a40
+2026-05-11 15:03:05,580 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 15:03:05,690 [INFO] framework - Browser closed successfully
+2026-05-11 15:06:34,635 [INFO] framework - Allure environment file created
+2026-05-11 15:06:37,085 [INFO] framework - Allure environment file created
+2026-05-11 15:06:37,273 [INFO] framework - Allure environment file created
+2026-05-11 15:06:37,389 [INFO] framework - Calling login API
+2026-05-11 15:06:37,846 [INFO] framework - Response Status: 200
+2026-05-11 15:06:37,847 [INFO] api.notes_api - Creating note via API: API Note 5aadb3d9
+2026-05-11 15:06:37,847 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:06:38,059 [INFO] framework - Response Status: 200
+2026-05-11 15:06:38,060 [INFO] api.notes_api - Creating note via API: API Edit 318e4a3c
+2026-05-11 15:06:38,060 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:06:38,663 [INFO] framework - Response Status: 200
+2026-05-11 15:06:38,663 [INFO] framework - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a01a3290fadc10297de7b95","title":"API Note 5aadb3d9","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-11T09:36:41.153Z","updated_at":"2026-05-11T09:36:41.153Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 15:06:38,664 [INFO] api.notes_api - Updating note via API: 6a01a3290fadc10297de7b99
+2026-05-11 15:06:38,664 [INFO] api.base_api - PUT Request: /notes/6a01a3290fadc10297de7b99
+2026-05-11 15:06:38,672 [INFO] framework - Calling login API
+2026-05-11 15:06:39,828 [INFO] framework - Response Status: 200
+2026-05-11 15:06:39,830 [INFO] api.notes_api - Creating note via API: Delete API 529509f7
+2026-05-11 15:06:39,830 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:06:39,843 [INFO] framework - Calling login API
+2026-05-11 15:06:40,521 [INFO] framework - Response Status: 200
+2026-05-11 15:06:40,522 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:06:40,522 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:06:40,647 [INFO] api.notes_api - Deleting note via API: 6a01a32b0fadc10297de7ba4
+2026-05-11 15:06:40,648 [INFO] api.base_api - DELETE Request: /notes/6a01a32b0fadc10297de7ba4
+2026-05-11 15:06:40,879 [INFO] framework - Performance metric recorded: GET /notes response=0.340s
+2026-05-11 15:06:40,890 [INFO] framework - Delete response status: 200
+2026-05-11 15:06:40,899 [INFO] framework - Running in headless mode
+2026-05-11 15:06:40,934 [INFO] framework - Calling login API
+2026-05-11 15:06:41,560 [INFO] framework - Response Status: 200
+2026-05-11 15:06:41,561 [INFO] api.notes_api - Creating note via API: 
+2026-05-11 15:06:41,561 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:06:42,208 [INFO] framework - Calling login API
+2026-05-11 15:06:42,806 [INFO] framework - Response Status: 200
+2026-05-11 15:06:42,807 [INFO] api.notes_api - Deleting note via API: invalid-note-id
+2026-05-11 15:06:42,807 [INFO] api.base_api - DELETE Request: /notes/invalid-note-id
+2026-05-11 15:06:43,335 [INFO] framework - Running in headless mode
+2026-05-11 15:06:44,193 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:06:46,149 [INFO] framework - Performing login
+2026-05-11 15:06:47,359 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:06:50,011 [INFO] framework - Performing login
+2026-05-11 15:06:52,523 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:06:53,262 [INFO] framework - Creating note: UI_API_33d5a306
+2026-05-11 15:06:53,262 [INFO] framework - Clicking add note button
+2026-05-11 15:06:54,521 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:06:54,652 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:06:55,035 [INFO] framework - Creating note: DELETE_UI_API_f68eb272
+2026-05-11 15:06:55,035 [INFO] framework - Clicking add note button
+2026-05-11 15:06:55,617 [INFO] framework - Entering text: UI_API_33d5a306
+2026-05-11 15:06:56,281 [INFO] framework - Entering text: Created via UI validated via API
+2026-05-11 15:06:56,449 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:06:56,861 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:06:57,403 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:06:57,569 [INFO] framework - Entering text: DELETE_UI_API_f68eb272
+2026-05-11 15:06:58,271 [INFO] framework - Entering text: Delete validation
+2026-05-11 15:06:58,836 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:06:59,385 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:07:03,633 [INFO] framework - Calling login API
+2026-05-11 15:07:04,269 [INFO] framework - Response Status: 200
+2026-05-11 15:07:04,270 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:07:04,271 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:07:04,772 [INFO] framework - Browser closed successfully
+2026-05-11 15:07:04,795 [INFO] framework - Running in headless mode
+2026-05-11 15:07:05,900 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:07:06,474 [INFO] framework - Calling login API
+2026-05-11 15:07:06,876 [INFO] framework - Response Status: 200
+2026-05-11 15:07:06,877 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:07:06,877 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:07:07,217 [INFO] framework - Deleting note by title: DELETE_UI_API_f68eb272
+2026-05-11 15:07:07,217 [INFO] framework - Getting notes count
+2026-05-11 15:07:07,606 [INFO] framework - Total notes found: 81
+2026-05-11 15:07:07,606 [INFO] framework - Finding note card by title: DELETE_UI_API_f68eb272
+2026-05-11 15:07:07,851 [INFO] framework - Performing login
+2026-05-11 15:07:10,912 [INFO] framework - Browser closed successfully
+2026-05-11 15:07:17,627 [INFO] framework - Allure environment file created
+2026-05-11 15:07:20,584 [INFO] framework - Allure environment file created
+2026-05-11 15:07:20,833 [INFO] framework - Allure environment file created
+2026-05-11 15:07:20,940 [INFO] framework - Allure environment file created
+2026-05-11 15:07:20,995 [INFO] framework - Allure environment file created
+2026-05-11 15:07:21,124 [INFO] framework - Calling login API
+2026-05-11 15:07:21,124 [INFO] framework - Calling login API
+2026-05-11 15:07:21,125 [INFO] framework - Calling login API
+2026-05-11 15:07:21,125 [INFO] framework - Calling login API
+2026-05-11 15:07:21,903 [INFO] framework - Response Status: 200
+2026-05-11 15:07:21,905 [INFO] api.notes_api - Creating note via API: API Edit 45fcdf20
+2026-05-11 15:07:21,905 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:07:22,083 [INFO] framework - Response Status: 200
+2026-05-11 15:07:22,084 [INFO] api.notes_api - Creating note via API: API Note c3a888df
+2026-05-11 15:07:22,084 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:07:22,084 [INFO] framework - Response Status: 200
+2026-05-11 15:07:22,085 [INFO] framework - Response Status: 200
+2026-05-11 15:07:22,085 [INFO] api.notes_api - Creating note via API: 
+2026-05-11 15:07:22,085 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:07:22,086 [INFO] api.notes_api - Deleting note via API: invalid-note-id
+2026-05-11 15:07:22,086 [INFO] api.base_api - DELETE Request: /notes/invalid-note-id
+2026-05-11 15:07:22,374 [INFO] api.notes_api - Updating note via API: 6a01a3550fadc10297de7c54
+2026-05-11 15:07:22,375 [INFO] api.base_api - PUT Request: /notes/6a01a3550fadc10297de7c54
+2026-05-11 15:07:22,587 [INFO] framework - Calling login API
+2026-05-11 15:07:22,610 [INFO] framework - Response Status: 200
+2026-05-11 15:07:22,610 [INFO] framework - Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a01a3550fadc10297de7c5c","title":"API Note c3a888df","description":"Created from API","category":"Home","completed":false,"created_at":"2026-05-11T09:37:25.393Z","updated_at":"2026-05-11T09:37:25.393Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 15:07:22,621 [INFO] framework - Calling login API
+2026-05-11 15:07:22,737 [INFO] framework - Running in headless mode
+2026-05-11 15:07:23,022 [INFO] framework - Response Status: 200
+2026-05-11 15:07:23,023 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:07:23,023 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:07:23,118 [INFO] framework - Response Status: 200
+2026-05-11 15:07:23,119 [INFO] api.notes_api - Creating note via API: Delete API 8817ea43
+2026-05-11 15:07:23,119 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:07:23,123 [INFO] framework - Running in headless mode
+2026-05-11 15:07:23,352 [INFO] framework - Performance metric recorded: GET /notes response=0.326s
+2026-05-11 15:07:23,358 [INFO] framework - Running in headless mode
+2026-05-11 15:07:23,441 [INFO] api.notes_api - Deleting note via API: 6a01a3560fadc10297de7c73
+2026-05-11 15:07:23,441 [INFO] api.base_api - DELETE Request: /notes/6a01a3560fadc10297de7c73
+2026-05-11 15:07:23,690 [INFO] framework - Delete response status: 200
+2026-05-11 15:07:23,695 [INFO] framework - Running in headless mode
+2026-05-11 15:07:24,415 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:07:24,972 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:07:25,641 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:07:25,955 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:07:28,221 [INFO] framework - Performing login
+2026-05-11 15:07:29,589 [INFO] framework - Performing login
+2026-05-11 15:07:30,369 [INFO] framework - Performing login
+2026-05-11 15:07:31,834 [INFO] framework - Performing login
+2026-05-11 15:07:38,570 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:07:38,700 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:07:38,944 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:07:39,530 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:07:39,771 [INFO] framework - Creating note: EDIT_UI_API_45444445
+2026-05-11 15:07:39,772 [INFO] framework - Clicking add note button
+2026-05-11 15:07:39,977 [INFO] framework - Creating note: UI_API_5181ead1
+2026-05-11 15:07:39,982 [INFO] framework - Clicking add note button
+2026-05-11 15:07:40,452 [INFO] framework - Creating note: DELETE_UI_API_4bf0fd93
+2026-05-11 15:07:40,452 [INFO] framework - Clicking add note button
+2026-05-11 15:07:41,611 [INFO] framework - Calling login API
+2026-05-11 15:07:42,029 [INFO] framework - Response Status: 200
+2026-05-11 15:07:42,030 [INFO] api.notes_api - Creating note via API: API_UI_b7bf1e31
+2026-05-11 15:07:42,030 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:07:42,339 [INFO] framework - API Create Response Status: 200
+2026-05-11 15:07:42,339 [INFO] framework - API Create Response Body: {"success":true,"status":200,"message":"Note successfully created","data":{"id":"6a01a3690fadc10297de7d73","title":"API_UI_b7bf1e31","description":"Created via API validated via UI","category":"Home","completed":false,"created_at":"2026-05-11T09:37:45.122Z","updated_at":"2026-05-11T09:37:45.122Z","user_id":"69f9fdfc81124e02985a76bb"}}
+2026-05-11 15:07:43,285 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:07:43,286 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:07:45,900 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:07:46,709 [INFO] framework - Entering text: DELETE_UI_API_4bf0fd93
+2026-05-11 15:07:47,891 [INFO] framework - Entering text: Delete validation
+2026-05-11 15:07:47,916 [INFO] framework - Entering text: UI_API_5181ead1
+2026-05-11 15:07:48,123 [INFO] framework - Entering text: EDIT_UI_API_45444445
+2026-05-11 15:07:48,735 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:07:48,840 [INFO] framework - Entering text: Original UI note
+2026-05-11 15:07:48,892 [INFO] framework - Entering text: Created via UI validated via API
+2026-05-11 15:07:48,993 [INFO] framework - Checking if note created: API_UI_b7bf1e31
+2026-05-11 15:07:50,026 [INFO] framework - Note found: API_UI_b7bf1e31
+2026-05-11 15:07:51,050 [INFO] framework - Browser closed successfully
+2026-05-11 15:07:51,067 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:07:51,086 [INFO] framework - Running in headless mode
+2026-05-11 15:07:51,886 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:07:52,477 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:07:54,249 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:07:56,429 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:07:56,649 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:03,001 [INFO] framework - Performing login
+2026-05-11 15:08:08,201 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:08:08,605 [INFO] framework - Calling login API
+2026-05-11 15:08:08,623 [INFO] framework - Editing note from 'EDIT_UI_API_45444445' to 'EDITED_UI_API_45444445'
+2026-05-11 15:08:08,627 [INFO] framework - Waiting for note card visibility: EDIT_UI_API_45444445
+2026-05-11 15:08:09,026 [INFO] framework - Response Status: 200
+2026-05-11 15:08:09,075 [INFO] framework - Creating note: MULTI_ccddce74
+2026-05-11 15:08:09,075 [INFO] framework - Clicking add note button
+2026-05-11 15:08:09,078 [INFO] framework - Finding note card by title: EDIT_UI_API_45444445
+2026-05-11 15:08:09,118 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:08:09,118 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:08:09,504 [INFO] framework - Deleting note by title: DELETE_UI_API_4bf0fd93
+2026-05-11 15:08:09,504 [INFO] framework - Getting notes count
+2026-05-11 15:08:09,679 [INFO] framework - Total notes found: 87
+2026-05-11 15:08:09,680 [INFO] framework - Finding note card by title: DELETE_UI_API_4bf0fd93
+2026-05-11 15:08:10,222 [INFO] framework - Calling login API
+2026-05-11 15:08:10,651 [INFO] framework - Response Status: 200
+2026-05-11 15:08:10,652 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:08:10,652 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:08:10,750 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:08:11,563 [WARNING] framework - Delete click intercepted. Using JS click.
+2026-05-11 15:08:12,315 [INFO] framework - Entering text: EDITED_UI_API_45444445
+2026-05-11 15:08:13,236 [INFO] framework - Entering text: UI edit validated through API
+2026-05-11 15:08:13,384 [INFO] framework - Entering text: MULTI_ccddce74
+2026-05-11 15:08:14,007 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:08:14,374 [INFO] framework - Entering text: Description 0
+2026-05-11 15:08:15,181 [INFO] framework - Note deleted successfully: DELETE_UI_API_4bf0fd93
+2026-05-11 15:08:15,182 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:08:15,182 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:08:15,504 [INFO] framework - Note edited successfully: EDITED_UI_API_45444445
+2026-05-11 15:08:15,506 [INFO] framework - Calling login API
+2026-05-11 15:08:15,988 [INFO] framework - Response Status: 200
+2026-05-11 15:08:15,993 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:08:15,994 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:08:16,518 [INFO] framework - Browser closed successfully
+2026-05-11 15:08:16,583 [INFO] framework - Running in headless mode
+2026-05-11 15:08:16,602 [INFO] framework - Browser closed successfully
+2026-05-11 15:08:16,657 [INFO] framework - Running in headless mode
+2026-05-11 15:08:16,979 [INFO] framework - Browser closed successfully
+2026-05-11 15:08:17,001 [INFO] framework - Running in headless mode
+2026-05-11 15:08:18,283 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:08:19,482 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:19,623 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:19,791 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:08:20,061 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:20,683 [INFO] framework - Performing login
+2026-05-11 15:08:23,114 [INFO] framework - Performing login
+2026-05-11 15:08:25,569 [INFO] framework - Performing login
+2026-05-11 15:08:34,929 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:08:35,015 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:08:36,207 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:08:36,392 [INFO] framework - Calling login API
+2026-05-11 15:08:36,416 [INFO] framework - Performance metric recorded: UI DOM ready=4.021s
+2026-05-11 15:08:36,799 [INFO] framework - Response Status: 200
+2026-05-11 15:08:36,799 [INFO] api.notes_api - Creating note via API: EDIT_API_UI_19a1aa28
+2026-05-11 15:08:36,800 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:08:36,931 [INFO] framework - Browser closed successfully
+2026-05-11 15:08:36,948 [INFO] framework - Running in headless mode
+2026-05-11 15:08:37,151 [INFO] api.notes_api - Updating note via API: 6a01a39f0fadc10297de7dfb
+2026-05-11 15:08:37,151 [INFO] api.base_api - PUT Request: /notes/6a01a39f0fadc10297de7dfb
+2026-05-11 15:08:37,255 [INFO] framework - Calling login API
+2026-05-11 15:08:37,667 [INFO] framework - Response Status: 200
+2026-05-11 15:08:37,668 [INFO] api.notes_api - Creating note via API: API_DELETE_a506b1df
+2026-05-11 15:08:37,669 [INFO] api.base_api - POST Request: /notes
+2026-05-11 15:08:37,725 [INFO] framework - Creating note: MULTI_4764b18d
+2026-05-11 15:08:37,726 [INFO] framework - Clicking add note button
+2026-05-11 15:08:38,689 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:08:40,077 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:41,351 [INFO] framework - Entering text: MULTI_4764b18d
+2026-05-11 15:08:41,557 [INFO] framework - Checking if note created: EDITED_API_UI_19a1aa28
+2026-05-11 15:08:41,678 [INFO] framework - Checking if note created: API_DELETE_a506b1df
+2026-05-11 15:08:42,216 [INFO] framework - Entering text: Description 1
+2026-05-11 15:08:42,875 [INFO] framework - Performing login
+2026-05-11 15:08:43,479 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:08:44,064 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:08:44,359 [INFO] framework - Note found: API_DELETE_a506b1df
+2026-05-11 15:08:44,360 [INFO] api.notes_api - Deleting note via API: 6a01a3a00fadc10297de7e06
+2026-05-11 15:08:44,360 [INFO] api.base_api - DELETE Request: /notes/6a01a3a00fadc10297de7e06
+2026-05-11 15:08:44,592 [INFO] framework - Note found: EDITED_API_UI_19a1aa28
+2026-05-11 15:08:45,098 [INFO] framework - Browser closed successfully
+2026-05-11 15:08:45,110 [INFO] framework - Running in headless mode
+2026-05-11 15:08:48,117 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:49,140 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:08:50,072 [INFO] framework - Checking login success
+2026-05-11 15:08:50,373 [INFO] framework - Performing login
+2026-05-11 15:08:50,812 [INFO] framework - Checking if note created: API_DELETE_a506b1df
+2026-05-11 15:08:52,190 [INFO] framework - Logging out
+2026-05-11 15:08:52,191 [INFO] framework - Clicking element: ('css selector', "[data-testid='logout']")
+2026-05-11 15:08:52,789 [INFO] framework - Creating note: MULTI_d8a385c6
+2026-05-11 15:08:52,789 [INFO] framework - Clicking add note button
+2026-05-11 15:08:52,956 [INFO] framework - Checking logout success
+2026-05-11 15:08:53,056 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:08:53,667 [INFO] framework - Browser closed successfully
+2026-05-11 15:08:53,679 [INFO] framework - Running in headless mode
+2026-05-11 15:08:55,100 [INFO] framework - Entering text: MULTI_d8a385c6
+2026-05-11 15:08:55,270 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:08:55,490 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:08:55,804 [INFO] framework - Entering text: Description 2
+2026-05-11 15:08:55,986 [INFO] framework - Clicking add note button
+2026-05-11 15:08:56,293 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:08:56,908 [INFO] framework - Performing login
+2026-05-11 15:08:56,958 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:08:57,593 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:08:58,779 [INFO] framework - Entering text: Validation test
+2026-05-11 15:08:59,774 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:01,157 [INFO] framework - Browser closed successfully
+2026-05-11 15:09:01,183 [INFO] framework - Running in headless mode
+2026-05-11 15:09:02,927 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:09:03,379 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:09:03,527 [INFO] framework - Creating note: Automation Note 31a936ad
+2026-05-11 15:09:03,527 [INFO] framework - Clicking add note button
+2026-05-11 15:09:05,120 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:09:05,243 [INFO] framework - Performing login
+2026-05-11 15:09:06,532 [INFO] framework - Entering text: Automation Note 31a936ad
+2026-05-11 15:09:07,290 [INFO] framework - Entering text: Created by Selenium automation
+2026-05-11 15:09:07,463 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:09:07,791 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:07,937 [INFO] framework - Creating note: Delete Note 180505b3
+2026-05-11 15:09:07,938 [INFO] framework - Clicking add note button
+2026-05-11 15:09:08,177 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:09:09,182 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:09:10,735 [INFO] framework - Entering text: Delete Note 180505b3
+2026-05-11 15:09:11,296 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 15:09:12,032 [INFO] framework - Browser closed successfully
+2026-05-11 15:09:12,072 [INFO] framework - Running in headless mode
+2026-05-11 15:09:12,661 [INFO] framework - Entering text: Note created for delete validation
+2026-05-11 15:09:13,979 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:09:14,027 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:14,410 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:09:14,625 [INFO] framework - Performing login
+2026-05-11 15:09:15,338 [INFO] framework - Checking if note created: Automation Note 31a936ad
+2026-05-11 15:09:15,497 [INFO] framework - Note found: Automation Note 31a936ad
+2026-05-11 15:09:16,070 [INFO] framework - Browser closed successfully
+2026-05-11 15:09:16,086 [INFO] framework - Running in headless mode
+2026-05-11 15:09:17,956 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:09:19,898 [INFO] framework - Performing login
+2026-05-11 15:09:23,412 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:09:24,151 [INFO] framework - Screenshot saved: screenshots\test_multiple_notes_ui_api_sync_20260511_093922_20260511_093922_928129.png
+2026-05-11 15:09:24,152 [INFO] framework - Failure screenshot attached to Allure report
+2026-05-11 15:09:25,018 [INFO] framework - Browser closed successfully
+2026-05-11 15:09:27,044 [INFO] framework - Running in headless mode
+2026-05-11 15:09:27,310 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:09:28,056 [INFO] framework - Creating note: Edit Note 72a7e220
+2026-05-11 15:09:28,056 [INFO] framework - Clicking add note button
+2026-05-11 15:09:28,096 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:09:28,351 [INFO] framework - Checking if note created: Delete Note 180505b3
+2026-05-11 15:09:28,475 [INFO] framework - Waiting for error message
+2026-05-11 15:09:28,562 [INFO] framework - Note found: Delete Note 180505b3
+2026-05-11 15:09:28,562 [INFO] framework - Deleting note by title: Delete Note 180505b3
+2026-05-11 15:09:28,563 [INFO] framework - Getting notes count
+2026-05-11 15:09:29,482 [INFO] framework - Browser closed successfully
+2026-05-11 15:09:29,656 [INFO] framework - Total notes found: 91
+2026-05-11 15:09:29,657 [INFO] framework - Finding note card by title: Delete Note 180505b3
+2026-05-11 15:09:30,669 [INFO] framework - Performing login
+2026-05-11 15:09:30,933 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:09:31,628 [WARNING] framework - Delete click intercepted. Using JS click.
+2026-05-11 15:09:32,289 [INFO] framework - Entering text: Edit Note 72a7e220
+2026-05-11 15:09:33,099 [INFO] framework - Entering text: Original note description
+2026-05-11 15:09:33,159 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:09:33,616 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:33,768 [INFO] framework - Creating note: MULTI_66d4f681
+2026-05-11 15:09:33,768 [INFO] framework - Clicking add note button
+2026-05-11 15:09:34,048 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:09:34,522 [INFO] framework - Note deleted successfully: Delete Note 180505b3
+2026-05-11 15:09:34,522 [INFO] framework - Checking if note absent: Delete Note 180505b3
+2026-05-11 15:09:35,033 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:09:36,081 [INFO] framework - Entering text: MULTI_66d4f681
+2026-05-11 15:09:36,916 [INFO] framework - Browser closed successfully
+2026-05-11 15:09:37,134 [INFO] framework - Entering text: Description 0
+2026-05-11 15:09:38,257 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:38,961 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:09:42,292 [INFO] framework - Editing note from 'Edit Note 72a7e220' to 'Edited Note 72a7e220'
+2026-05-11 15:09:42,292 [INFO] framework - Waiting for note card visibility: Edit Note 72a7e220
+2026-05-11 15:09:42,474 [INFO] framework - Finding note card by title: Edit Note 72a7e220
+2026-05-11 15:09:43,343 [INFO] framework - Entering text: Edited Note 72a7e220
+2026-05-11 15:09:43,781 [INFO] framework - Entering text: Updated by Selenium automation
+2026-05-11 15:09:44,150 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:44,673 [INFO] framework - Note edited successfully: Edited Note 72a7e220
+2026-05-11 15:09:44,674 [INFO] framework - Checking if note created: Edited Note 72a7e220
+2026-05-11 15:09:45,159 [INFO] framework - Creating note: MULTI_b8965b50
+2026-05-11 15:09:45,159 [INFO] framework - Clicking add note button
+2026-05-11 15:09:45,592 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:09:46,712 [INFO] framework - Entering text: MULTI_b8965b50
+2026-05-11 15:09:46,841 [INFO] framework - Note found: Edited Note 72a7e220
+2026-05-11 15:09:46,842 [INFO] framework - Checking if note created: Edit Note 72a7e220
+2026-05-11 15:09:47,442 [INFO] framework - Entering text: Description 1
+2026-05-11 15:09:48,456 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:48,809 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:09:55,215 [INFO] framework - Creating note: MULTI_34d93e66
+2026-05-11 15:09:55,215 [INFO] framework - Clicking add note button
+2026-05-11 15:09:55,557 [INFO] framework - Clicking element: ('css selector', "[data-testid='add-new-note']")
+2026-05-11 15:09:56,394 [INFO] framework - Entering text: MULTI_34d93e66
+2026-05-11 15:09:56,777 [INFO] framework - Entering text: Description 2
+2026-05-11 15:09:57,077 [INFO] framework - Clicking element: ('css selector', "[data-testid='note-submit']")
+2026-05-11 15:09:57,536 [INFO] framework - Waiting for note modal to close
+2026-05-11 15:10:03,688 [INFO] framework - Calling login API
+2026-05-11 15:10:04,243 [INFO] framework - Response Status: 200
+2026-05-11 15:10:04,244 [INFO] api.notes_api - Fetching notes via API
+2026-05-11 15:10:04,244 [INFO] api.base_api - GET Request: /notes
+2026-05-11 15:10:05,081 [INFO] framework - Browser closed successfully
+2026-05-11 15:10:05,106 [INFO] framework - Running in headless mode
+2026-05-11 15:10:05,791 [INFO] framework - Remote Chrome browser launched using Selenium Grid
+2026-05-11 15:10:06,866 [ERROR] framework - Error checking note creation: Message: 
+
+2026-05-11 15:10:07,043 [INFO] framework - Browser closed successfully
+2026-05-11 15:10:07,873 [INFO] framework - Performing login
+2026-05-11 15:10:09,632 [INFO] framework - Clicking element: ('css selector', "[data-testid='login-submit']")
+2026-05-11 15:10:10,066 [INFO] framework - Checking login success
+2026-05-11 15:10:11,164 [INFO] framework - Browser closed successfully
