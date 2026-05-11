@@ -49,7 +49,7 @@ pipeline {
 
                 bat 'docker compose up -d --scale chrome=2'
 
-                bat 'timeout /t 15'
+                sleep(time: 15, unit: 'SECONDS')
             }
         }
 
