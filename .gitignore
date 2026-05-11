@@ -1,5 +1,5 @@
 ############################
-# Python bytecode / cache
+# Python cache
 ############################
 __pycache__/
 *.py[cod]
@@ -22,20 +22,17 @@ venv/
 ############################
 screenshots/
 reports/
-html-report/
 allure-results/
 allure-report/
 
 ############################
 # Logs
 ############################
-*.log
 logs/
-
-
+*.log
 
 ############################
-# Test output / temp files
+# Temp files
 ############################
 output/
 tmp/
@@ -68,8 +65,13 @@ build/
 htmlcov/
 
 ############################
-# Selenium drivers (optional)
+# Selenium drivers
 ############################
 chromedriver*
 geckodriver*
 msedgedriver*
+
+############################
+# Environment variables
+############################
+.env

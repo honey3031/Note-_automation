@@ -564,11 +564,25 @@ class NotesPage(BasePage):
                 f"Modal did not close properly: {e}"
             )
 
-        import time
-        time.sleep(2)
+        self.wait.until(
+            lambda driver:
+            driver.execute_script(
+                "return document.readyState"
+            ) == "complete"
+        )
 
         locator = self._note_card_by_title_locator(
             title
+        )
+
+        logger.info(
+            f"Waiting for note visibility: {title}"
+        )
+
+        self.wait.until(
+            EC.presence_of_element_located(
+                locator
+            )
         )
 
         self.wait.until(
@@ -576,4 +590,8 @@ class NotesPage(BasePage):
                 locator
             )
         )
-        time.sleep(2)
+
+        self.wait.until(
+            lambda driver:
+            len(driver.find_elements(*locator)) > 0
+        )

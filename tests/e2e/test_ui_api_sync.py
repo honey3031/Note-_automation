@@ -332,14 +332,31 @@ def test_multiple_notes_ui_api_sync(driver):
             f"Description {i}"
         )
 
+        assert notes_page.is_note_created(title)
+
     notes_api = get_api_client()
 
-    response = notes_api.get_notes()
+    for _ in range(5):
 
-    api_titles = [
-        note["title"]
-        for note in response.json()["data"]
-    ]
+        response = notes_api.get_notes()
+
+        api_titles = [
+            note["title"]
+            for note in response.json()["data"]
+        ]
+
+        if all(
+            title in api_titles
+            for title in titles
+        ):
+
+            break
+
+    else:
+
+        pytest.fail(
+            "All notes not found in API"
+        )
 
     for title in titles:
 

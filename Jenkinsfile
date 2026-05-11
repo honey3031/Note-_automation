@@ -22,9 +22,8 @@ pipeline {
 
         NOTES_CREDS = credentials('notes-creds')
     }
-    
 
-    
+    stages {
 
         stage('Create Virtual Environment') {
 
@@ -38,8 +37,6 @@ pipeline {
 
             steps {
 
-                bat '.\\%VENV%\\Scripts\\python -m pip install --upgrade pip'
-
                 bat '.\\%VENV%\\Scripts\\pip install -r requirements.txt'
             }
         }
@@ -48,13 +45,11 @@ pipeline {
 
             steps {
 
-                bat 'if exist docker-compose.yml docker compose down'
+                bat 'docker compose down'
 
                 bat 'docker compose up -d --scale chrome=2'
-                timeout(time: 2, unit: 'MINUTES') {
 
-                    bat 'timeout /t 15'
-                }
+                bat 'timeout /t 15'
             }
         }
 
@@ -63,9 +58,6 @@ pipeline {
             steps {
 
                 bat '''
-                if exist reports rmdir /s /q reports
-                if exist screenshots rmdir /s /q screenshots
-                if exist logs rmdir /s /q logs
                 if not exist logs mkdir logs
                 if not exist reports mkdir reports
                 if not exist screenshots mkdir screenshots
@@ -89,7 +81,7 @@ pipeline {
                             returnStatus: true,
                             script: """
                             .\\%VENV%\\Scripts\\pytest ^
-                            -n 3 ^
+                            -n 2 ^
                             tests ^
                             --alluredir=reports/allure-results ^
                             --html=reports/report.html ^
@@ -101,7 +93,7 @@ pipeline {
 
                             currentBuild.result = 'UNSTABLE'
 
-                            echo "Pytest exited with code ${status}. Continuing to publish reports."
+                            echo "Pytest exited with code ${status}"
                         }
                     }
                 }
@@ -123,9 +115,11 @@ pipeline {
 
         always {
 
-            archiveArtifacts artifacts: 'reports/**,screenshots/**,logs/**',
+            archiveArtifacts(
+                artifacts: 'reports/**,screenshots/**,logs/**',
                 allowEmptyArchive: true,
                 fingerprint: true
+            )
 
             publishHTML([
                 allowMissing: true,
@@ -136,7 +130,7 @@ pipeline {
                 reportName: 'Automation Test Report'
             ])
 
-            bat 'docker compose down'
+            bat 'if exist docker-compose.yml docker compose down'
         }
 
         success {

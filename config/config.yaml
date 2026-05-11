@@ -7,7 +7,7 @@ api_url: "https://practice.expandtesting.com/notes/api"
 browser: "chrome"
 
 execution: "remote"
-
+grid_url: "http://localhost:4444/wd/hub"
 timeout: 20
 
 headless: true
