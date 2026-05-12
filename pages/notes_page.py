@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
@@ -21,6 +20,10 @@ class NotesPage(BasePage):
     ADD_NOTE_BUTTON = (
         By.CSS_SELECTOR,
         "[data-testid='add-new-note']"
+    )
+    ADD_NOTE_BUTTON_FALLBACK = (
+        By.XPATH,
+        "//button[contains(text(),'Add Note')]"
     )
 
     TITLE_INPUT = (
@@ -46,6 +49,10 @@ class NotesPage(BasePage):
         By.CSS_SELECTOR,
         "[data-testid='note-submit']"
     )
+    SAVE_BUTTON_FALLBACK = (
+        By.XPATH,
+        "//button[@type='submit']"
+    )
 
     NOTES_CONTAINER = (
         By.CSS_SELECTOR,
@@ -69,6 +76,10 @@ class NotesPage(BasePage):
     CONFIRM_DELETE = (
         By.CSS_SELECTOR,
         "[data-testid='note-delete-confirm']"
+    )
+    CONFIRM_DELETE_FALLBACK = (
+        By.XPATH,
+        "//button[contains(text(),'Delete')]"
     )
 
     @staticmethod
@@ -127,7 +138,8 @@ class NotesPage(BasePage):
         )
 
         self.safe_click(
-            self.ADD_NOTE_BUTTON
+            self.ADD_NOTE_BUTTON,
+            self.ADD_NOTE_BUTTON_FALLBACK
         )
 
     def is_note_created(self, title):
@@ -292,8 +304,8 @@ class NotesPage(BasePage):
                 except Exception:
 
                     logger.warning(
-                        "Normal delete click failed. "
-                        "Trying JS click."
+                        "Delete click failed. "
+                        "Using JS click."
                     )
 
                     self.driver.execute_script(
@@ -303,25 +315,24 @@ class NotesPage(BasePage):
 
                 try:
 
-                    delete_button.click()
+                    confirm_button = self.wait.until(
+                        EC.presence_of_element_located(
+                            self.CONFIRM_DELETE
+                        )
+                    )
 
                 except Exception:
 
                     logger.warning(
-                        "Delete click intercepted. "
-                        "Using JS click."
+                        "Primary confirm delete locator failed. "
+                        "Using fallback."
                     )
 
-                    self.driver.execute_script(
-                        "arguments[0].click();",
-                        delete_button
+                    confirm_button = self.wait.until(
+                        EC.presence_of_element_located(
+                            self.CONFIRM_DELETE_FALLBACK
+                        )
                     )
-
-                confirm_button = self.wait.until(
-                    EC.presence_of_element_located(
-                        self.CONFIRM_DELETE
-                    )
-                )
 
                 self.driver.execute_script(
                     "arguments[0].click();",
@@ -488,7 +499,10 @@ class NotesPage(BasePage):
             new_description
         )
 
-        self.safe_click(self.SAVE_BUTTON)
+        self.safe_click(
+            self.SAVE_BUTTON,
+            self.SAVE_BUTTON_FALLBACK
+        )
 
         self.wait.until(
             lambda driver:
@@ -544,7 +558,10 @@ class NotesPage(BasePage):
             description
         )
 
-        self.safe_click(self.SAVE_BUTTON)
+        self.safe_click(
+            self.SAVE_BUTTON,
+            self.SAVE_BUTTON_FALLBACK
+        )
 
         try:
 

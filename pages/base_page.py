@@ -177,19 +177,55 @@ class BasePage:
         except Exception:
 
             logger.info("No popup displayed")
-    def safe_click(self, locator):
+    def safe_click(
+        self,
+        locator,
+        fallback_locator=None
+    ):
 
-        self.click(locator)
+        try:
+
+            logger.info(
+                f"Trying primary locator: {locator}"
+            )
+
+            self.click(locator)
+
+        except Exception as primary_error:
+
+            logger.warning(
+                f"Primary locator failed: "
+                f"{primary_error}"
+            )
+
+            if fallback_locator:
+
+                logger.info(
+                    f"Trying fallback locator: "
+                    f"{fallback_locator}"
+                )
+
+                self.click(fallback_locator)
+
+            else:
+
+                raise
     def safe_send_keys(
         self,
         locator,
         text,
+        fallback_locator=None,
         retries=3
     ):
 
         for attempt in range(retries):
 
             try:
+
+                logger.info(
+                    f"Trying send_keys "
+                    f"with locator: {locator}"
+                )
 
                 element = self.wait.until(
                     EC.visibility_of_element_located(
@@ -209,9 +245,34 @@ class BasePage:
             ) as e:
 
                 logger.warning(
-                    f"Retry {attempt+1} for send_keys"
+                    f"Retry {attempt+1} "
+                    f"for send_keys"
                 )
+
+                if (
+                    fallback_locator
+                    and attempt == retries - 1
+                ):
+
+                    logger.info(
+                        f"Trying fallback locator: "
+                        f"{fallback_locator}"
+                    )
+
+                    fallback_element = self.wait.until(
+                        EC.visibility_of_element_located(
+                            fallback_locator
+                        )
+                    )
+
+                    fallback_element.clear()
+
+                    fallback_element.send_keys(text)
+
+                    return
 
                 if attempt == retries - 1:
 
                     raise e
+
+        

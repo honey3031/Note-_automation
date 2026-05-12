@@ -10,14 +10,23 @@ logger = get_logger()
 class PerformanceLogger:
 
     REPORT_PATH = os.path.join(
-        "reports",
+        "performance_logs",
         "performance_trends.csv"
     )
 
     @classmethod
-    def record(cls, metric, value_seconds, status="pass"):
+    def record(
+        cls,
+        test_name,
+        metric,
+        value_seconds,
+        status="pass"
+    ):
 
-        os.makedirs("reports", exist_ok=True)
+        os.makedirs(
+            "performance_logs",
+            exist_ok=True
+        )
 
         file_exists = os.path.exists(cls.REPORT_PATH)
 
@@ -35,6 +44,7 @@ class PerformanceLogger:
                 writer.writerow(
                     [
                         "timestamp",
+                        "test_name",
                         "metric",
                         "value_seconds",
                         "status"
@@ -44,6 +54,7 @@ class PerformanceLogger:
             writer.writerow(
                 [
                     datetime.now(UTC).isoformat(),
+                    test_name,
                     metric,
                     f"{value_seconds:.3f}",
                     status

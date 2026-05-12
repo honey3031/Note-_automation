@@ -35,6 +35,10 @@ class LoginPage(BasePage):
         By.CSS_SELECTOR,
         "[data-testid='login-submit']"
     )
+    LOGIN_BUTTON_FALLBACK = (
+        By.XPATH,
+        "//button[@type='submit']"
+    )
 
     ADD_NOTE_BUTTON = (
         By.CSS_SELECTOR,
@@ -48,6 +52,10 @@ class LoginPage(BasePage):
     LOGOUT_BUTTON = (
         By.CSS_SELECTOR,
         "[data-testid='logout']"
+    )
+    LOGOUT_BUTTON_FALLBACK = (
+        By.XPATH,
+        "//button[contains(text(),'Logout')]"
     )
 
     
@@ -68,7 +76,10 @@ class LoginPage(BasePage):
 
         self.safe_send_keys(self.PASSWORD, password)
 
-        self.safe_click(self.LOGIN_BUTTON)
+        self.safe_click(
+            self.LOGIN_BUTTON,
+            self.LOGIN_BUTTON_FALLBACK
+        )
 
     def is_login_successful(self):
 
@@ -93,7 +104,10 @@ class LoginPage(BasePage):
 
         logger.info("Logging out")
 
-        self.safe_click(self.LOGOUT_BUTTON)
+        self.safe_click(
+            self.LOGOUT_BUTTON,
+            self.LOGOUT_BUTTON_FALLBACK
+        )
 
 
     def is_logged_out(self):

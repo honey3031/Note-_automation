@@ -13,6 +13,91 @@ from config.environment import config
 
 logger = get_logger()
 
+def generate_failure_analysis(
+    test_name,
+    error_message
+):
+
+    probable_reason = (
+        "Unknown issue"
+    )
+
+    suggested_fix = (
+        "Check logs and screenshots"
+    )
+
+    error_lower = error_message.lower()
+
+    if "timeout" in error_lower:
+
+        probable_reason = (
+            "Element synchronization issue"
+        )
+
+        suggested_fix = (
+            "Increase explicit waits "
+            "or improve locator stability"
+        )
+
+    elif "no such element" in error_lower:
+
+        probable_reason = (
+            "Locator not found"
+        )
+
+        suggested_fix = (
+            "Verify locator strategy "
+            "or page structure"
+        )
+
+    elif "stale element" in error_lower:
+
+        probable_reason = (
+            "DOM updated before interaction"
+        )
+
+        suggested_fix = (
+            "Retry interaction after "
+            "element refresh"
+        )
+
+    elif "connection refused" in error_lower:
+
+        probable_reason = (
+            "Selenium Grid unavailable"
+        )
+
+        suggested_fix = (
+            "Verify Docker containers "
+            "and Grid startup"
+        )
+
+    report = (
+        f"TEST: {test_name}\n\n"
+        f"ERROR:\n{error_message}\n\n"
+        f"PROBABLE REASON:\n"
+        f"{probable_reason}\n\n"
+        f"SUGGESTED FIX:\n"
+        f"{suggested_fix}\n"
+    )
+
+    os.makedirs(
+        "failure-analysis",
+        exist_ok=True
+    )
+
+    file_path = (
+        f"failure-analysis/"
+        f"{test_name}.txt"
+    )
+
+    with open(
+        file_path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(report)
 
 def pytest_sessionstart(session):
 
@@ -110,6 +195,10 @@ def pytest_runtest_makereport(item, call):
                 driver,
                 screenshot_name
             )
+            generate_failure_analysis(
+                item.name,
+                str(call.excinfo.value)
+            )
 
             try:
 
@@ -130,3 +219,5 @@ def pytest_runtest_makereport(item, call):
                 logger.warning(
                     f"Allure attachment failed: {e}"
                 )
+            
+            

@@ -22,8 +22,8 @@ The framework supports:
 * Parallel Execution
 * Remote Selenium Grid Execution
 * Retry Mechanism
-* Self-Healing Click Logic
-* Intelligent Wait Handling
+* Fallback Locator Recovery
+* Explicit Wait Synchronization
 
 ---
 
@@ -41,7 +41,7 @@ The framework supports:
 | Allure               | Reporting             |
 | pytest-xdist         | Parallel Execution    |
 | pytest-rerunfailures | Auto Retry            |
-| webdriver-manager    | Driver Management     |
+| Selenium Manager     | Driver Management     |
 
 ---
 
@@ -123,7 +123,15 @@ notes-automation/
 
 ---
 
-# Advanced Framework Features
+framework_enhancements.md
+## Failure Analysis Support
+
+Framework supports automated failure artifact collection including:
+
+* Screenshot capture on failures
+* Execution logs
+* Failure analysis summaries
+* Root-cause oriented debugging support
 
 ## Parallel Execution
 
@@ -181,6 +189,11 @@ Framework includes:
 * DOM stabilization handling
 * Parallel execution stability improvements
 ---
+## Fallback Locator Recovery
+
+Framework includes fallback locator handling for critical UI actions.
+
+If a primary locator fails during execution, the framework attempts recovery using secondary locator strategies to improve execution stability.
 
 # Setup Instructions
 
@@ -340,6 +353,20 @@ Implemented:
 * DOM stabilization waits
 
 ---
+## Performance Trend Logging
+
+Framework stores historical execution timing metrics in:
+
+```text
+performance_logs/performance_trends.csv
+```
+
+Tracked metrics include:
+
+* API response timings
+* UI DOM readiness timings
+* Pass/fail performance status
+* Timestamp-based trend tracking
 
 # Reporting
 
@@ -395,11 +422,3 @@ docs/advanced_quality_intelligence.md
 * Self-Healing Click Handling
 * Advanced Reporting
 
----
-
-# Author
-
-Honey Talabathula
-
-B.Tech CSE-AIML
-QA Automation Framework Project

@@ -243,6 +243,7 @@ def test_get_notes_response_time():
     elapsed = response.elapsed.total_seconds()
 
     PerformanceLogger.record(
+        "test_get_notes_response_time",
         "GET /notes response",
         elapsed,
         "pass" if elapsed < 2 else "fail"

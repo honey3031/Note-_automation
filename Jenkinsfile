@@ -119,6 +119,7 @@ pipeline {
                 artifacts: 'reports/**,screenshots/**,logs/**',
                 allowEmptyArchive: true,
                 fingerprint: true
+                
             )
 
             publishHTML([

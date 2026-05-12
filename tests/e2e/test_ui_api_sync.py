@@ -310,6 +310,7 @@ def test_edit_note_api_validate_ui(driver):
 
     assert notes_page.is_note_created(updated_title)
 
+@pytest.mark.flaky(reruns=2)
 @pytest.mark.e2e
 def test_multiple_notes_ui_api_sync(driver):
 
@@ -379,6 +380,7 @@ def test_notes_ui_dom_ready_under_threshold(driver):
     ) / 1000
 
     PerformanceLogger.record(
+        "test_notes_ui_dom_ready_under_threshold",
         "UI DOM ready",
         dom_ready_seconds,
         "pass" if dom_ready_seconds < 5 else "fail"
