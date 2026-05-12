@@ -45,7 +45,7 @@ pipeline {
 
             steps {
 
-                bat 'docker compose down'
+                bat 'docker compose down --remove-orphans'
 
                 bat 'docker compose up -d --scale chrome=2'
 
@@ -131,7 +131,7 @@ pipeline {
                 reportName: 'Automation Test Report'
             ])
 
-            bat 'if exist docker-compose.yml docker compose down'
+            bat 'if exist docker-compose.yml docker compose down --remove-orphans'
         }
 
         success {
