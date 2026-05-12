@@ -45,11 +45,15 @@ pipeline {
 
             steps {
 
+                bat '''
+                for /f %%i in ('docker ps -aq') do docker rm -f %%i
+                '''
+
                 bat 'docker compose down --remove-orphans'
 
                 bat 'docker compose up -d --scale chrome=2'
 
-                sleep(time: 15, unit: 'SECONDS')
+                sleep(time: 20, unit: 'SECONDS')
             }
         }
 
