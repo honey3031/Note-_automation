@@ -8,6 +8,7 @@ import allure
 from fixtures.browser_fixture import get_driver
 from utils.helpers import take_screenshot
 from utils.logger import get_logger
+from utils.ai_suggestions import AISuggestions
 from config.environment import config
 
 
@@ -72,13 +73,21 @@ def generate_failure_analysis(
             "and Grid startup"
         )
 
+    ai_suggestion = (
+        AISuggestions.analyze_failure(
+            error_message
+        )
+    )
+
     report = (
         f"TEST: {test_name}\n\n"
         f"ERROR:\n{error_message}\n\n"
         f"PROBABLE REASON:\n"
         f"{probable_reason}\n\n"
         f"SUGGESTED FIX:\n"
-        f"{suggested_fix}\n"
+        f"{suggested_fix}\n\n"
+        f"AI-INSPIRED SUGGESTION:\n"
+        f"{ai_suggestion}\n"
     )
 
     os.makedirs(
