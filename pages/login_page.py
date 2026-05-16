@@ -66,11 +66,7 @@ class LoginPage(BasePage):
 
         logger.info("Performing login")
 
-        self.wait.until(
-            EC.visibility_of_element_located(
-                self.EMAIL
-            )
-        )
+        
 
         self.safe_send_keys(self.EMAIL, email)
 

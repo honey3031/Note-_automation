@@ -12,7 +12,9 @@ from selenium.common.exceptions import (
     TimeoutException
 )
 logger = get_logger()
-
+from mcp.failure_analyzer import (
+    AIFailureAnalyzer
+)
 
 class BasePage:
 
@@ -198,6 +200,27 @@ class BasePage:
                 f"{primary_error}"
             )
 
+            # AI-assisted failure analysis
+            try:
+
+                suggestion = (
+                    AIFailureAnalyzer.analyze(
+                        str(primary_error)
+                    )
+                )
+
+                logger.error(
+                    f"AI Suggestion: "
+                    f"{suggestion}"
+                )
+
+            except Exception as ai_error:
+
+                logger.warning(
+                    f"AI analysis failed: "
+                    f"{ai_error}"
+                )
+
             if fallback_locator:
 
                 logger.info(
@@ -249,6 +272,27 @@ class BasePage:
                     f"for send_keys"
                 )
 
+                # AI-assisted failure analysis
+                try:
+
+                    suggestion = (
+                        AIFailureAnalyzer.analyze(
+                            str(e)
+                        )
+                    )
+
+                    print(
+                        f"\nAI Suggestion:\n"
+                        f"{suggestion}\n"
+                    )
+
+                except Exception as ai_error:
+
+                    logger.warning(
+                        f"AI analysis failed: "
+                        f"{ai_error}"
+                    )
+
                 if (
                     fallback_locator
                     and attempt == retries - 1
@@ -275,4 +319,4 @@ class BasePage:
 
                     raise e
 
-        
+                

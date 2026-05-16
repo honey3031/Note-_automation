@@ -11,7 +11,9 @@ from api.notes_api import NotesAPI
 
 from utils.logger import get_logger
 from utils.performance_logger import PerformanceLogger
-
+from mcp.test_data_generator import (
+    AITestDataGenerator
+)
 
 logger = get_logger()
 
@@ -42,36 +44,33 @@ def test_create_note_api():
 
     notes_api = NotesAPI(token)
 
-    unique_id = str(uuid.uuid4())[:8]
+    ai_data = (
+        AITestDataGenerator
+        .generate_note()
+    )
 
-    title = f"API Note {unique_id}"
+    print(
+        f"\nAI GENERATED DATA:\n"
+        f"{ai_data}\n"
+    )
+
+    title = ai_data[:30]
+
+    description = ai_data
 
     response = notes_api.create_note(
         title,
-        "Created from API"
+        description
     )
 
-    # Log response for debugging
-    logger.info(f"Response Status: {response.status_code}")
-    
-    logger.info(f"Response Body: {response.text}")
-
-    assert response.status_code == 200, \
-        f"Expected 200 but got {response.status_code}. Response: {response.text}"
+    assert response.status_code == 200
 
     response_data = response.json()
 
-    # Handle both 'data' wrapper and direct object
-    if "data" in response_data:
-        actual_data = response_data["data"]
-    else:
-        actual_data = response_data
-
     assert (
-        actual_data.get("title")
+        response_data["data"]["title"]
         == title
-    ), f"Title mismatch. Expected {title}, got {actual_data.get('title')}"
-
+    )
 
 @pytest.mark.api
 def test_delete_note_api():
