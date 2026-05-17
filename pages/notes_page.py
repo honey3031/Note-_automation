@@ -563,11 +563,11 @@ class NotesPage(BasePage):
             self.SAVE_BUTTON_FALLBACK
         )
 
-        try:
+        logger.info(
+            "Waiting for note modal to close"
+        )
 
-            logger.info(
-                "Waiting for note modal to close"
-            )
+        try:
 
             self.wait.until(
                 EC.invisibility_of_element_located(
@@ -578,28 +578,15 @@ class NotesPage(BasePage):
         except Exception as e:
 
             logger.warning(
-                f"Modal did not close properly: {e}"
+                f"Modal close wait issue: {e}"
             )
-
-        self.wait.until(
-            lambda driver:
-            driver.execute_script(
-                "return document.readyState"
-            ) == "complete"
-        )
 
         locator = self._note_card_by_title_locator(
             title
         )
 
         logger.info(
-            f"Waiting for note visibility: {title}"
-        )
-
-        self.wait.until(
-            EC.presence_of_element_located(
-                locator
-            )
+            f"Waiting for created note: {title}"
         )
 
         self.wait.until(
@@ -609,6 +596,7 @@ class NotesPage(BasePage):
         )
 
         self.wait.until(
-            lambda driver:
-            len(driver.find_elements(*locator)) > 0
+            EC.element_to_be_clickable(
+                locator
+            )
         )
