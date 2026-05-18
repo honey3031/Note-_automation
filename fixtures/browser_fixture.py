@@ -24,7 +24,7 @@ def get_driver():
 
     # browser window
     chrome_options.add_argument(
-        "--start-maximized"
+        "--start-window-maximized"
     )
 
     chrome_options.add_argument(

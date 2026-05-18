@@ -27,7 +27,7 @@ def test_valid_login(driver):
     )
 
     assert login_page.is_login_successful()
-
+@pytest.mark.negative
 @pytest.mark.ui
 def test_invalid_login(driver):
 
